@@ -1,48 +1,38 @@
 /* CSS RESET */
-*, body, h1, h2, h3, h4, h6, p, a {
+body
+{ width
+: 100vw
+; height
+: auto
+; overflow
+: hidden
+}
 
-  /* positioning reset */
-  margin
-  : 0
-  ;
 
-  padding
-  : 0
-  ;
-
-  /* text reset */
-  text-decoration
-  : none
-  ;
-
-  text-align
-  : left
-  ;
-
-  color
-  : black
-  ;
-
-  font-size
-  : 1em
-  ;
-
-  font-family
-  : Poppins
-  , -apple-system
-  , BlinkMacSystemFont
-  , 'Roboto'
-  , 'Oxygen'
-  , 'Fira Sans'
-  , 'Helvetica Neue'
-  , sans-serif
-  ;
-
-  -webkit-font-smoothing
-  : antialiased
-  ;
-
-  -moz-osx-font-smoothing
-  : grayscale
-  ;
+*, body, h1, h2, h3, h4, h6, p, a, span
+{ margin
+: 0
+; padding
+: 0
+; text-decoration
+: none
+; text-align
+: left
+; color
+: black
+; font-size
+: 1em
+; font-family
+: Poppins
+, -apple-system
+, BlinkMacSystemFont
+, 'Roboto'
+, 'Oxygen'
+, 'Fira Sans'
+, 'Helvetica Neue'
+, sans-serif
+; -webkit-font-smoothing
+: antialiased
+; -moz-osx-font-smoothing
+: grayscale
 }

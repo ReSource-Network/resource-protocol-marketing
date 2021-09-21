@@ -12,6 +12,7 @@
 /build
 
 # misc
+*.map
 .idea/*
 .DS_Store
 .env.local

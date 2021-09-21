@@ -1,0 +1,62 @@
+nav#nav
+{ display
+: flex
+; flex-flow
+: row nowrap
+; justify-content
+: space-between
+; padding
+: 32px 24px 24px 24px
+; margin
+: 0
+; position
+: fixed
+; top
+: 0
+; left
+: 0
+; right
+: 0
+; width
+: calc(100vw - 48px)
+; height
+: 100px
+}
+
+img#logo
+{ max-width
+: 800px
+; min-width
+: 150px
+; width
+: 30vw
+; margin
+: 100px
+}
+
+div#nav-link-list
+{ flex-flow
+: row nowrap
+; justify-content
+: space-between
+; width
+: auto
+; a
+  { padding
+  : 8px 12px 8px 12px
+  ; margin
+  : 8px
+  ; border-radius
+  : 16px
+  ; font-family
+  : 'Righteous', 'Space Mono', 'Poppins', cursive;
+  ; font-size
+  : 1.2em
+  ; font-weight
+  : 400
+  ; &:hover
+    { background-color: rgba(256, 256, 256, 0.2)
+    }
+  }
+}
+

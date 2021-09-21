@@ -2,7 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-const navLinkNames = ['work', 'art', 'photos', 'contact'];
+//images
+import logoSrc from './resource-finance-logo.svg';
+
+// nav link names
+let navLinkNames = ['discord', 'telegram', 'contact'];
 
 class Nav extends React.Component {
     constructor(props) {
@@ -44,20 +48,34 @@ class Nav extends React.Component {
         )
     }
 
+    renderLogo() {
+        return(
+            <Link
+                to={'/'}
+                onClick={this.handleClickLogo}
+            >
+                { <img
+                    src = {logoSrc}
+                    alt = {'resource finance logo'}
+                    id = {'logo'}
+                /> }
+            </Link>
+        )
+    }
+
     render() {
         return (
-            <nav>
-                <p>j&bull;e</p>
-                <Link
-                    to={''}
-                    onClick={this.handleClickLogo}
-                    id={'resource-logo'}
+            <nav
+                id={'nav'}
+            >
+                { this.renderLogo()
+                }
+                <div
+                    id={'nav-link-list'}
                 >
-                    {'logo'}
-                </Link>
-                <ul>
-                    {this.renderLinks()}
-                </ul>
+                    { this.renderLinks()
+                    }
+                </div>
             </nav>
         )
     }

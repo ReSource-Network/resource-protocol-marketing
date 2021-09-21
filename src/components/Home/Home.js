@@ -45,16 +45,18 @@ class Home extends React.Component {
 
     renderMain() {
         return(
-            <p>nothing here yet</p>
+            <main id={'main'}>
+                <section id={'hero'}>
+                    <h1>Credit lines without interest payments</h1>
+                    <h2>turn untapped resources into <span>liquidity</span></h2>
+                </section>
+            </main>
         )
     }
 
     render() {
         return (
-            <main>
-                {this.renderNav()}
-                {this.renderMain()}
-            </main>
+            this.renderMain()
         )
     }
 }
