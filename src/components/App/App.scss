@@ -1,0 +1,23 @@
+$bgColor
+: #000000
+;
+$textColor
+: #ffffff
+;
+
+body
+{ background-color
+: $bgColor
+}
+
+#background
+{ z-index
+: 99
+; width
+: 100vw
+; height
+: 100vh
+; background-color
+: $bgColor
+}
+
