@@ -27,6 +27,7 @@ div#nav-link-list {
 div#nav-link-list a {
   padding: 8px 12px 8px 12px;
   margin: 8px;
+  color: white;
   border-radius: 16px;
   font-family: "Righteous", "Space Mono", "Poppins", cursive;
   font-size: 1.2em;

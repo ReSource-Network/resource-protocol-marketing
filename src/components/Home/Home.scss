@@ -1,5 +1,6 @@
-$primary: #957fef;
-$primary-active: 168fef;
+$primary: #957FEF;
+$primary-active: #7161EF;
+$primary-variant: #B79CED;
 
 #main section#hero
 { display
@@ -16,31 +17,41 @@ $primary-active: 168fef;
 : 100px 100px 100px 100px
 ; margin
 : 0
+; // header
 ; h1
-  { font-size
-  : 2.4em
-  ; font-weight
-  : 300
-  ; color
-  : $primary-active;
-  ; max-width
-  : 50vw
-  ;
-}
+    { font-size
+    : 2.4em
+    ; font-weight
+    : 300
+    ; color
+    : $primary
+    ; max-width
+    : 50vw
+    }
 ; h2
-  { font-family
-  : 'Space Mono', Monaco, monospace
-  ; font-size
-  : 2.4em
-  ; max-width
-  : 50vw
-  }
+    { font-family
+    : 'Space Mono', Monaco, monospace
+    ; font-size
+    : 2.4em
+    ; color
+    : white
+    ; max-width
+    : 50vw
+    }
 ; span
-  { font-family
-  : 'Space Mono', Monaco, monospace
-  ; font-style
-  : italic
-  ; max-width
-  : 50vw
-  }
+    { font-family
+    : 'Space Mono', Monaco, monospace
+    ; font-style
+    : italic
+    ; max-width
+    : 50vw
+    }
+; div#hero-buttons-container
+    { display
+    : flex
+    ; flex-flow
+    : row nowrap
+    ; margin-top
+    : 48px
+    }
 }

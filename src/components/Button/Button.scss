@@ -1,0 +1,75 @@
+$primary: #957FEF;
+$primary-active: #7161EF;
+$primary-variant: #B79CED;
+$brand-gradient: linear-gradient(to left, #7161ef 100%, #D669FF 100%);
+
+a.button
+{ display
+: flex
+; flex-flow
+: row nowrap
+; align-items
+: center
+; padding
+: 12px 16px
+; margin-right
+: 16px
+; border-radius
+: 16px
+; width
+: fit-content
+; i, svg
+    { width
+    : 18px
+    ; height
+    : 18px
+    ; margin-left
+    : 12px
+    }
+; &.cta
+    { font-size
+    : 18px
+    ; font-weight
+    : 700
+    ; div.icon-text-group
+        { display
+        : flex
+        ; flex-flow
+        : row nowrap
+        ; justify-content
+        : flex-start
+        ; align-items
+        : center
+        }
+    ; &.primary
+        { background-color
+        : rgba(149, 127, 239, 0.2)
+        ; color
+        : white
+        ; fill
+        : white
+        ; &:hover
+            { background-color
+            : rgba(149, 127, 239, 0.4)
+            ; transition
+            : 0.5s
+            }
+        }
+    ; &.default
+        { background-color
+        : transparent
+        ; border
+        : 1px solid rgba(149, 127, 239, 0.2)
+        ; color
+        : $primary
+        ; &:hover
+            { border
+            : 1px solid rgba(149, 127, 239, 0.4)
+            ; color
+            : $primary-active;
+            ; transition
+            : 0.5s
+            }
+        }
+    }
+}

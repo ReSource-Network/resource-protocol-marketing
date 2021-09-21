@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 
 import Nav from '../Nav/Nav';
+import Button from '../Button/Button';
 // import {data} from '../Data';
 
 class Home extends React.Component {
@@ -47,8 +48,42 @@ class Home extends React.Component {
         return(
             <main id={'main'}>
                 <section id={'hero'}>
-                    <h1>Credit lines without interest payments</h1>
-                    <h2>turn untapped resources into <span>liquidity</span></h2>
+
+                    <header>
+                        <h1>
+                            { 'Credit lines without interest payments'
+                            }
+                        </h1>
+
+                        <h2>
+                            { 'turn untapped resources into '
+                            }
+                            <span>
+                            { 'liquidity'
+                            }
+                        </span>
+                        </h2>
+                    </header>
+
+                    <div
+                        id =
+                            { 'hero-buttons-container'
+                            }
+                    >
+                        <Button
+                            text = 'How it works'
+                            type = 'cta'
+                            color = 'default'
+                            iconName = 'arrowDown'
+                        />
+
+                        <Button
+                            text = 'Whitepaper'
+                            type = 'cta'
+                            color = 'primary'
+                            iconName = 'externalLink'
+                        />
+                    </div>
                 </section>
             </main>
         )

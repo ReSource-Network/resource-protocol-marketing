@@ -1,0 +1,45 @@
+a.button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 12px 16px;
+  margin-right: 16px;
+  border-radius: 16px;
+  width: fit-content;
+}
+a.button i, a.button svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+}
+a.button.cta {
+  font-size: 18px;
+  font-weight: 700;
+}
+a.button.cta div.icon-text-group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+a.button.cta.primary {
+  background-color: rgba(149, 127, 239, 0.2);
+  color: white;
+  fill: white;
+}
+a.button.cta.primary:hover {
+  background-color: rgba(149, 127, 239, 0.4);
+  transition: 0.5s;
+}
+a.button.cta.default {
+  background-color: transparent;
+  border: 1px solid rgba(149, 127, 239, 0.2);
+  color: #957FEF;
+}
+a.button.cta.default:hover {
+  border: 1px solid rgba(149, 127, 239, 0.4);
+  color: #7161EF;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=Button.css.map */

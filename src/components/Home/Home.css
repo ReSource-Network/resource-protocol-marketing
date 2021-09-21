@@ -10,18 +10,24 @@
 #main section#hero h1 {
   font-size: 2.4em;
   font-weight: 300;
-  color: 168fef;
+  color: #957FEF;
   max-width: 50vw;
 }
 #main section#hero h2 {
   font-family: "Space Mono", Monaco, monospace;
   font-size: 2.4em;
+  color: white;
   max-width: 50vw;
 }
 #main section#hero span {
   font-family: "Space Mono", Monaco, monospace;
   font-style: italic;
   max-width: 50vw;
+}
+#main section#hero div#hero-buttons-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 48px;
 }
 
 /*# sourceMappingURL=Home.css.map */
