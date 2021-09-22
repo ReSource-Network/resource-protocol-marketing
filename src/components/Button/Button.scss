@@ -1,7 +1,7 @@
 $primary: #957FEF;
 $primary-active: #7161EF;
 $primary-variant: #B79CED;
-$brand-gradient: linear-gradient(to left, #7161ef 100%, #D669FF 100%);
+$brand-gradient: linear-gradient(45deg, #7161ef, #D669FF);
 
 a.button
 { display
@@ -43,16 +43,22 @@ a.button
         }
     ; &.primary
         { background-color
-        : rgba(149, 127, 239, 0.2)
+        : $primary
         ; color
         : white
         ; fill
         : white
         ; &:hover
             { background-color
-            : rgba(149, 127, 239, 0.4)
+            : $primary-active
             ; transition
             : 0.5s
+            }
+        ; &:active
+            { background-color
+            : $primary-active
+            ; transition
+            : 0s
             }
         }
     ; &.default

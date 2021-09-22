@@ -55,3 +55,15 @@ $primary-variant: #B79CED;
     : 48px
     }
 }
+
+main section#how-it-works
+    { display
+    : flex
+    ; flex-flow
+    : column nowrap
+    ; margin
+    : 100vh 0 0 0
+    ; height
+    : auto
+    ;
+}

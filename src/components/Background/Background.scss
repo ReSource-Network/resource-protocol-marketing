@@ -1,0 +1,99 @@
+div#paralax-container
+{ height: 100vh
+; position: absolute
+; top: 0
+; left: 0
+; perspective: 1px
+; width: 100vw
+; overflow-x: hidden
+; overflow-y: scroll
+; z-index: -10
+}
+
+div#gradients-container
+{ position: absolute
+; top: 0
+; left: 0
+; right: 0
+; bottom: 0
+; transform-style: preserve-3d
+; -webkit-transform-style: preserve-3d
+;
+}
+
+img { opacity: 0.5 }
+
+
+// TOP LEFT
+#purple0
+{ position: absolute
+; top: 5px
+; left: -71px
+; width: 670px
+; height: 670px
+; z-index: -20
+}
+
+// TOP LEFT
+#yellow0
+{ position: absolute
+; top: 0
+; left: -269px
+; width: 826px
+; height: 842px
+; z-index: -30
+}
+
+// MIDDLE TOP RIGHT
+#purple1
+{ position: absolute
+; top: 23vh
+; right: -100px
+; width: 1139px
+; height: 1177px
+; z-index: -30
+}
+
+#yellow1
+{ position: absolute
+; top: 20vh
+; right: -100px
+; width: 945px
+; height: 945px
+; z-index: -40
+}
+
+// BOTTOM LEFT
+
+#purple4
+{ position: absolute
+; top: 145vh
+; left: -25vw
+; width: 1210px
+; height: 1250px
+}
+
+#purple3
+{ position: absolute
+; top: 140vh
+; left: -15vw
+; width: 1093px
+; height: 1129px
+}
+
+#yellow2
+{ position: absolute
+; top: 160vh
+; left: -50vw
+; width: 380px
+; height: 380px
+; z-index: -90
+}
+
+#pink0
+{ position: absolute
+; top: 138vh
+; left: -100vw
+; width: 476px
+; height: 476px
+}

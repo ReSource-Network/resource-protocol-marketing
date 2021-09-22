@@ -23,13 +23,17 @@ a.button.cta div.icon-text-group {
   align-items: center;
 }
 a.button.cta.primary {
-  background-color: rgba(149, 127, 239, 0.2);
+  background-color: #957FEF;
   color: white;
   fill: white;
 }
 a.button.cta.primary:hover {
-  background-color: rgba(149, 127, 239, 0.4);
+  background-color: #7161EF;
   transition: 0.5s;
+}
+a.button.cta.primary:active {
+  background-color: #7161EF;
+  transition: 0s;
 }
 a.button.cta.default {
   background-color: transparent;
