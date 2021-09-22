@@ -47,11 +47,16 @@ class Home extends React.Component {
 
     renderMain() {
         return(
-            <main id={'main'}>
+            <main
+                id={'main'}
+                className={'parallax'}
+            >
 
                 <Background />
                 {/*HERO SECTION*/}
-                <section id={'hero'}>
+                <section
+                    id={'hero'}
+                >
 
                     <header>
                         <h1>

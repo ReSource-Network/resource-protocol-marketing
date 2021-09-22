@@ -96,7 +96,7 @@ class Background extends React.Component {
     { return (
         <div
             id=
-                {'paralax-container'
+                {'parallax-container'
                 }
             >
             <div
