@@ -47,10 +47,6 @@ const gradients = [
     , src: yellow1
     , zPosition: zPositions[0]
     },
-    { id: 'yellow1'
-    , src: yellow1
-    , zPosition: zPositions[2]
-    } ,
     { id: 'yellow2'
     , src: yellow2
     , zPosition: zPositions[1]
@@ -83,7 +79,7 @@ class Background extends React.Component {
                 }
             style =
                 {{ transform: `translateZ(${gradient.zPosition[0]}px) scale(${gradient.zPosition[1]})`
-                , webkitTransform: `translateZ(${gradient.zPosition[0]}px) scale(${gradient.zPosition[1]})`
+                , WebkitTransform: `translateZ(${gradient.zPosition[0]}px) scale(${gradient.zPosition[1]})`
                 , transitionDelay: `${this.getTransitionDelay()}s`
                 }}
             alt =

@@ -2,7 +2,6 @@ import React from 'react';
 import Background from '../Background/Background';
 import './Home.css';
 
-import Nav from '../Nav/Nav';
 import Button from '../Button/Button';
 // import {data} from '../Data';
 
@@ -30,19 +29,6 @@ class Home extends React.Component {
             area: window.location.pathname.slice(1).split('/')[1],
             boulder: window.location.pathname.slice(1).split('/')[2]
         }
-    }
-
-
-    // render
-    renderNav() {
-        return (
-            <Nav
-                path={'Home'}
-                toggleColorTheme={this.handleToggleColorTheme}
-                darkColorTheme={this.state.darkColorTheme}
-                showDropdownMenu={this.state.showDropdownMenu}
-            />
-        )
     }
 
     renderMain() {
