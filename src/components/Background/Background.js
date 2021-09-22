@@ -64,6 +64,10 @@ class Background extends React.Component {
         this.renderRadialGradients = this.renderRadialGradients.bind(this);
     }
 
+    getTransitionDelay () { return Math.random() < 0 ? '0.1s' : '0.5s' }
+
+
+
     // render
     renderRadialGradients ()
     { return gradients.map ( (gradient)  =>
@@ -80,6 +84,7 @@ class Background extends React.Component {
             style =
                 {{ transform: `translateZ(${gradient.zPosition[0]}px) scale(${gradient.zPosition[1]})`
                 , webkitTransform: `translateZ(${gradient.zPosition[0]}px) scale(${gradient.zPosition[1]})`
+                , transitionDelay: `${this.getTransitionDelay()}s`
                 }}
             alt =
                 { 'background-radial-gradient'

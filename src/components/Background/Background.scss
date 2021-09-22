@@ -21,7 +21,12 @@ div#gradients-container
 ;
 }
 
-img { opacity: 0.5 }
+img
+{ opacity
+: 0.5
+; animation: fadeInFromBlack 3s
+; animation-fill-mode: forwards
+}
 
 
 // TOP LEFT
@@ -96,4 +101,10 @@ img { opacity: 0.5 }
 ; left: -100vw
 ; width: 476px
 ; height: 476px
+}
+
+
+@keyframes fadeInFromBlack {
+    from {opacity: 0}
+    to {opacity: 0.5}
 }
