@@ -1,0 +1,34 @@
+section#hero {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  height: calc(100vh - 200px);
+  width: calc(100vw - 200px);
+  padding: 100px 100px 100px 100px;
+  margin: 0;
+  z-index: 100;
+}
+section#hero h1 {
+  font-size: 2.4em;
+  font-weight: 300;
+  color: #957FEF;
+  max-width: 50vw;
+}
+section#hero h2 {
+  font-family: "Space Mono", Monaco, monospace;
+  font-size: 2.4em;
+  color: white;
+  max-width: 50vw;
+}
+section#hero span {
+  font-family: "Space Mono", Monaco, monospace;
+  font-style: italic;
+  max-width: 50vw;
+}
+section#hero div#hero-buttons-container {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 48px;
+}
+
+/*# sourceMappingURL=Hero.css.map */

@@ -1,3 +1,7 @@
+div#parallax-container
+{ z-index: -99
+}
+
 //div#parallax-container
 //{ height: 100vh
 //; position: absolute
@@ -80,18 +84,20 @@ img
 ; left: -50vw
 ; width: 1210px
 ; height: 1250px
+; z-index: -30
 }
 
 #purple3
 { top: 140vh
-; left: -15vw
+; left: -50vw
 ; width: 1093px
 ; height: 1129px
+; z-index: -30
 }
 
 #yellow2
 { top: 160vh
-; left: -90vw
+; left: -100vw
 ; width: 380px
 ; height: 380px
 ; z-index: -90
@@ -99,9 +105,10 @@ img
 
 #pink0
 { top: 138vh
-; left: -180vw
+; left: -190vw
 ; width: 476px
 ; height: 476px
+; z-index: -30
 }
 
 

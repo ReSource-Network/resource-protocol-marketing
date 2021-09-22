@@ -1,0 +1,36 @@
+$primary: #957FEF;
+$primary-active: #7161EF;
+$primary-variant: #B79CED;
+
+section#hero
+{ display: flex
+; flex-flow: column nowrap
+; justify-content: flex-end
+; height: calc(100vh - 200px)
+; width: calc(100vw - 200px)
+; padding: 100px 100px 100px 100px ; margin: 0
+; z-index: 100
+; // header
+; h1
+{ font-size: 2.4em
+; font-weight: 300
+; color: $primary
+; max-width: 50vw
+}
+; h2
+  { font-family: 'Space Mono', Monaco, monospace
+  ; font-size: 2.4em
+  ; color: white
+  ; max-width: 50vw
+  }
+; span
+  { font-family: 'Space Mono', Monaco, monospace
+  ; font-style: italic
+  ; max-width: 50vw
+  }
+; div#hero-buttons-container
+  { display: flex
+  ; flex-flow: row nowrap
+  ; margin-top: 48px
+  }
+}

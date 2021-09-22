@@ -1,8 +1,8 @@
 import React from 'react';
 import Background from '../Background/Background';
 import './Home.css';
+import Hero from '../Hero/Hero'
 
-import Button from '../Button/Button';
 // import {data} from '../Data';
 
 class Home extends React.Component {
@@ -38,48 +38,8 @@ class Home extends React.Component {
                 className={'parallax'}
             >
 
+                <Hero />
                 <Background />
-                {/*HERO SECTION*/}
-                <section
-                    id={'hero'}
-                >
-
-                    <header>
-                        <h1>
-                            { 'Credit lines without interest payments'
-                            }
-                        </h1>
-
-                        <h2>
-                            { 'turn untapped resources into '
-                            }
-                            <span>
-                            { 'liquidity'
-                            }
-                        </span>
-                        </h2>
-                    </header>
-
-                    <div
-                        id =
-                            { 'hero-buttons-container'
-                            }
-                        >
-                        <Button
-                            text = 'How it works'
-                            type = 'cta'
-                            color = 'default'
-                            iconName = 'arrowDown'
-                            />
-
-                        <Button
-                            text = 'Whitepaper'
-                            type = 'cta'
-                            color = 'primary'
-                            iconName = 'externalLink'
-                            />
-                    </div>
-                </section>
 
                 {/*HOW IT WORKS SECTION*/}
                 {/*<section id={'how-it-works'}>*/}

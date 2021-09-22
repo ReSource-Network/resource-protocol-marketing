@@ -15,8 +15,8 @@ nav#nav {
 img#logo {
   max-width: 800px;
   min-width: 150px;
-  width: 30vw;
-  margin: 100px;
+  height: 56px;
+  margin: 10px;
 }
 
 div#nav-link-list {

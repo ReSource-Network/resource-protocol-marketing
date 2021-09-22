@@ -95,14 +95,8 @@ class Background extends React.Component {
                 {'parallax-container'
                 }
             >
-            <div
-                id=
-                    {'gradients-container'
-                    }
-                >
-                    { this.renderRadialGradients()
-                    }
-            </div>
+                { this.renderRadialGradients()
+                }
         </div>
     ) };
 
