@@ -14,4 +14,8 @@ body {
   -moz-perspective: 1px;
 }
 
+*, html, body {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=App.css.map */

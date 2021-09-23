@@ -40,6 +40,7 @@ class Hero extends React.Component {
                         type = 'cta'
                         color = 'default'
                         iconName = 'arrowDown'
+                        href = '#howItWorks'
                     />
 
                     <Button

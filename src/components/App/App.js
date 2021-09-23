@@ -10,6 +10,7 @@ function App() {
       <div className="App">
           <Router>
               <Nav />
+              <div id={'parallax-overlay'} />
               <Switch>
                   <Route
                       path={'/'}

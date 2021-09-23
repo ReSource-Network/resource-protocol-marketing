@@ -1,7 +1,19 @@
 div#parallax-container
-{ z-index: -99
+{ z-index: -59
 }
 
+div#parallax-overlay
+{ position: fixed
+; top: 0
+; left: 0
+; height: 100%
+; width: 100%
+; background: url('./images/bg-overlay.png') no-repeat center center
+; opacity: 0.01
+; background-blend-mode: overlay
+; background-size: cover
+; z-index: -50
+}
 //div#parallax-container
 //{ height: 100vh
 //; position: absolute
@@ -34,11 +46,15 @@ div#parallax-container
 //}
 
 // parallax layers
-img
+#parallax-container img
 { opacity: 0.5
 ; position: absolute
 ; animation: fadeInFromBlack 3s
 ; animation-fill-mode: forwards
+; @keyframes fadeInFromBlack
+    { from {opacity: 0}
+      to {opacity: 0.5}
+    }
 }
 
 
@@ -111,8 +127,3 @@ img
 ; z-index: -30
 }
 
-
-@keyframes fadeInFromBlack {
-    from {opacity: 0}
-    to {opacity: 0.5}
-}

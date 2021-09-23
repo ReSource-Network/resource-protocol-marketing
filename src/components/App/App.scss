@@ -19,3 +19,7 @@ body
 ; -webkit-perspective: 1px;
 ; -moz-perspective: 1px;
 }
+
+*, html, body
+{ scroll-behavior: smooth
+}

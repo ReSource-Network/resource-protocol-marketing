@@ -26,7 +26,7 @@ class Button extends React.Component {
                     + this.props.color
                 }
                 href =
-                    { ' '
+                    { this.props.href
                     }
             >
                 <div className={'icon-text-group'}>

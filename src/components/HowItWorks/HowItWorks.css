@@ -1,0 +1,62 @@
+section#howItWorks {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  z-index: 80;
+}
+
+img#lineOfBusinesses {
+  position: absolute;
+  top: calc(100vh - 300px);
+  right: 20vw;
+  width: 80px;
+}
+
+img#animationStill {
+  position: absolute;
+  top: calc(100vh + 100px);
+  right: -3vw;
+  width: 80vw;
+}
+
+.howItWorksCards {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.howItWorksCard {
+  width: 365px;
+  max-width: 20vw;
+  min-height: 140px;
+  height: auto;
+  padding: 100px 24px 72px 24px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2));
+  margin: 8vw;
+  border-radius: 32px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.howItWorksCard:first-child {
+  margin-top: 12vw;
+}
+.howItWorksCard p {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+}
+.howItWorksCard h6 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 8px 0;
+  text-transform: capitalize;
+}
+.howItWorksCard img.howItWorksCardImg {
+  margin: -130px 0 32px 20px;
+  display: block;
+  width: 150px;
+  height: auto;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=HowItWorks.css.map */
