@@ -3,6 +3,7 @@ import Background from '../Background/Background';
 import './Home.css';
 import Hero from '../Hero/Hero'
 import ProtocolRoles from '../ProtocolRoles/ProtocolRoles'
+import HowItWorks from "../HowItWorks/HowItWorks";
 
 // import {data} from '../Data';
 
@@ -42,6 +43,7 @@ class Home extends React.Component {
                 <Hero />
                 <Background />
                 <ProtocolRoles />
+                <HowItWorks />
 
             </main>
         )

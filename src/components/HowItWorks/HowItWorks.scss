@@ -1,0 +1,60 @@
+#howItWorks
+{ display: flex
+; flex-flow: column nowrap
+; align-items: center
+; width: 100vw
+; height: auto
+// fancy padding
+; img.containerPadding
+    { width: 100vw
+    ; height: auto
+    ; &:last-child
+        { transform: scaleX(-1) scaleY(-1)
+        ; -moz-transform: scaleX(-1) scaleY(-1)
+        ; -o-transform: scaleX(-1) scaleY(-1)
+        ; -webkit-transform: scaleX(-1) scaleY(-1)
+        }
+    }
+}
+
+#howItWorksContent
+{ display: flex
+; flex-flow: row nowrap
+; align-content: flex-end
+; justify-content: center
+// style
+; background-color: rgba(256, 256, 256, 0.9)
+; width: 90vw
+; height: auto
+; padding: 5vw 10vw
+// content
+; img#howItWorksContentImg
+    { width: 30%
+    ; height: auto
+    ; align-self: flex-end
+    }
+; div#howItWorksContentTextContainer
+    { display: flex
+    ; flex-flow: column nowrap
+    ; margin-left: 6em
+    ; max-width: 600px
+    }
+; h4#howItWorksContentTitleText
+    { font-size: 3em
+    }
+; div#howItWorksContentDescriptionTextContainer p
+    { margin-bottom: 1em
+    ; font-size: 1.2em
+    ; &:last-child
+        { margin-bottom: 0
+        }
+    }
+}
+
+#howItWorksNewsletterCTA
+{ display: flex
+; flex-flow: row nowrap
+; background-color: rgba(256, 256, 256, 0.9)
+; width: 100vw
+; height: auto
+}

@@ -1,3 +1,59 @@
+#howItWorks {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+}
+#howItWorks img.containerPadding {
+  width: 100vw;
+  height: auto;
+}
+#howItWorks img.containerPadding:last-child {
+  transform: scaleX(-1) scaleY(-1);
+  -moz-transform: scaleX(-1) scaleY(-1);
+  -o-transform: scaleX(-1) scaleY(-1);
+  -webkit-transform: scaleX(-1) scaleY(-1);
+}
 
+#howItWorksContent {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: flex-end;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 90vw;
+  height: auto;
+  padding: 5vw 10vw;
+}
+#howItWorksContent img#howItWorksContentImg {
+  width: 30%;
+  height: auto;
+  align-self: flex-end;
+}
+#howItWorksContent div#howItWorksContentTextContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 6em;
+  max-width: 600px;
+}
+#howItWorksContent h4#howItWorksContentTitleText {
+  font-size: 3em;
+}
+#howItWorksContent div#howItWorksContentDescriptionTextContainer p {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+#howItWorksContent div#howItWorksContentDescriptionTextContainer p:last-child {
+  margin-bottom: 0;
+}
+
+#howItWorksNewsletterCTA {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100vw;
+  height: auto;
+}
 
 /*# sourceMappingURL=HowItWorks.css.map */
