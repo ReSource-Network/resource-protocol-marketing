@@ -1,0 +1,23 @@
+section#stakeInRealEconomy {
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+section#stakeInRealEconomy img {
+  position: relative;
+  right: -30vw;
+  bottom: 20vh;
+}
+section#stakeInRealEconomy p {
+  position: relative;
+  font-weight: 600;
+  font-size: 3em;
+  margin: 10vh 10vw;
+  color: white;
+  max-width: 350px;
+}
+
+/*# sourceMappingURL=StakeInRealEconomy.css.map */

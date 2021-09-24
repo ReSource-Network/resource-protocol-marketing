@@ -1,0 +1,22 @@
+section#stakeInRealEconomy
+{ width: 100vw
+; height: 60vh
+//; border: 1px solid red
+; display: flex
+; flex-flow: column nowrap
+; align-items: flex-start
+; justify-content: flex-start;
+; img
+    { position: relative
+    ; right: -30vw
+    ; bottom: 20vh
+    }
+; p
+    { position: relative
+    ; font-weight: 600
+    ; font-size: 3em
+    ; margin: 10vh 10vw
+    ; color: white
+    ; max-width: 350px
+    }
+}
