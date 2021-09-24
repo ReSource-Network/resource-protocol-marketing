@@ -14,43 +14,43 @@ import
 
 // data
 const telegram =
-    { href: ''
+    { href: 'https://t.me/theresourcenetwork'
     , titleText: 'telegram'
     , descriptionText: 'Announcements and community'
     , icon: faTelegram
     }
 const discord =
-    { href: ''
+    { href: 'https://discord.gg/UuTCRuuZMP'
     , titleText: 'discord'
     , descriptionText: 'Chat with the community'
     , icon: faDiscord
     }
 const twitter =
-    { href: ''
+    { href: 'https://twitter.com/resourcenetco'
     , titleText: 'twitter'
     , descriptionText: 'News and product updates'
     , icon: faTwitter
     }
 const facebook =
-    { href: ''
+    { href: 'https://www.facebook.com/resourcenetwork1'
     , titleText: 'facebook'
     , descriptionText: 'Events and community news'
     , icon: faFacebook
     }
 const medium =
-    { href: ''
+    { href: 'https://re-source.medium.com/'
     , titleText: 'medium'
     , descriptionText: 'Read our blogs and articles'
     , icon: faMedium
     }
 const linkedin =
-    { href: ''
+    { href: 'https://www.linkedin.com/company/resourcenetwork/'
     , titleText: 'linkedin'
     , descriptionText: 'Jobs, blogs, and fundraising news'
     , icon: faLinkedin
     }
 const github =
-    { href: ''
+    { href: 'https://github.com/ReSource-Network/'
     , titleText: 'gitHub'
     , descriptionText: 'Checkout our smart contracts'
     , icon: faGithub
@@ -75,9 +75,6 @@ class SocialLinks extends React.Component {
 
         this.renderSocialLinks = this.renderSocialLinks.bind(this);
     }
-
-    // render
-    // renderNewsletterCTA()
 
     renderSocialLinks()
     { return ( socials.map (social =>
