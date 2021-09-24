@@ -6,6 +6,7 @@ import ProtocolRoles from '../ProtocolRoles/ProtocolRoles'
 import HowItWorks from "../HowItWorks/HowItWorks";
 import StakeInRealEconomy from "../StakeInRealEconomy/StakeInRealEconomy";
 import ReInventingMoney from "../ReInventingMoney/ReInventingMoney";
+import SocialLinks from "../SocialLinks/SocialLinks";
 
 // import {data} from '../Data';
 
@@ -48,6 +49,7 @@ class Home extends React.Component {
                 <HowItWorks />
                 <StakeInRealEconomy />
                 <ReInventingMoney />
+                <SocialLinks />
 
             </main>
         )
