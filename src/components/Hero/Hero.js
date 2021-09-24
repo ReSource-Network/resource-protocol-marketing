@@ -2,6 +2,10 @@ import React from 'react';
 import './Hero.css'
 import Button from "../Button/Button";
 
+// images
+import card0ImgSrc from './images/card-0.svg'
+import card1ImgSrc from './images/card-1.svg'
+
 class Hero extends React.Component {
     constructor(props) {
         super(props);
@@ -13,6 +17,20 @@ class Hero extends React.Component {
             <section
                 id={'hero'}
             >
+
+                <img
+                    className={'creditCardImg'}
+                    src={card0ImgSrc}
+                    id={'card0'}
+                    alt={'crypto credit line card with negative balance'}
+                />
+
+                <img
+                    className={'creditCardImg'}
+                    src={card1ImgSrc}
+                    id={'card1'}
+                    alt={'crypto credit line card with negative balance'}
+                />
 
                 <header>
                     <h1>

@@ -8,10 +8,28 @@ section#hero {
   margin: 0;
   z-index: 100;
 }
+section#hero img.creditCardImg {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-60%);
+  -moz-transform: translateY(-60%);
+  -o-transform: translateY(-60%);
+  -webkit-transform: translateY(-60%);
+  right: -5vw;
+  width: 40vw;
+  min-width: 500px;
+}
+section#hero img.creditCardImg#card1 {
+  right: 2vw;
+}
+section#hero img.creditCardImg#card0 {
+  margin-top: 10vh;
+  width: 35vw;
+}
 section#hero h1 {
   font-size: 2.4em;
-  font-weight: 300;
-  color: #957FEF;
+  font-weight: 600;
+  color: white;
   max-width: 50vw;
 }
 section#hero h2 {
@@ -19,10 +37,12 @@ section#hero h2 {
   font-size: 2.4em;
   color: white;
   max-width: 50vw;
+  font-weight: 400;
 }
 section#hero span {
   font-family: "Space Mono", Monaco, monospace;
   font-style: italic;
+  font-weight: 400;
   max-width: 50vw;
 }
 section#hero div#hero-buttons-container {

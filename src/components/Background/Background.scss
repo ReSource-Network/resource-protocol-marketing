@@ -8,42 +8,12 @@ div#parallax-overlay
 ; left: 0
 ; height: 100%
 ; width: 100%
-; background: url('./images/bg-overlay.png') no-repeat center center
-; opacity: 0.01
-; background-blend-mode: overlay
+; background: url('./images/background-gradient.png') no-repeat center center
+; opacity: 0.8
+//; background-blend-mode: overlay
 ; background-size: cover
 ; z-index: -50
 }
-//div#parallax-container
-//{ height: 100vh
-//; position: absolute
-//; top: 0
-//; left: 0
-//; perspective: 1px
-//; width: 100vw
-//; overflow-x: hidden
-//; overflow-y: scroll
-//; z-index: -10
-//}
-
-//.parallax-group
-//{ position: relative
-//; height: 100vh
-//; transform-style: preserve-3d
-//; -webkit-transform-style: preserve-3d
-//; z-index: -10
-//}
-
-//div#gradients-container
-//{ position: absolute
-//; top: 0
-//; left: 0
-//; right: 0
-//; bottom: 0
-//; transform-style: preserve-3d
-//; -webkit-transform-style: preserve-3d
-//;
-//}
 
 // parallax layers
 #parallax-container img
