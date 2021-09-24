@@ -1,5 +1,5 @@
 // section
-section#howItWorks
+section#protocolRoles
 { height: auto
 ; width: 100vw
 ; display: flex
@@ -22,12 +22,12 @@ img#animationStill
 }
 
 // cards
-.howItWorksCards
+.protocolRolesCards
 { display: flex
 ; flex-flow: column nowrap
 }
 
-.howItWorksCard
+.protocolRolesCard
 { width: 365px
 ; max-width: 20vw
 ; min-height: 140px
@@ -54,7 +54,7 @@ img#animationStill
     ; margin: 8px 0
     ; text-transform: capitalize
   }
-; img.howItWorksCardImg
+; img.protocolRolesCardImg
     { margin: -130px 0 32px 20px
     ; display: block
     ; width: 150px

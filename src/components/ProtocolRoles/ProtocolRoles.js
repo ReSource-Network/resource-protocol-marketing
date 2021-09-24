@@ -1,5 +1,5 @@
 import React from 'react';
-import './HowItWorks.css'
+import './ProtocolRoles.css'
 
 // animation images
 import lineOfBusinessesSrc from './images/line-of-businesses.png'
@@ -52,7 +52,7 @@ class ProtocolRoles extends React.Component {
     { return ( cardsContent.map( card =>
         <div
             className =
-                {'howItWorksCard'
+                {'protocolRolesCard'
                 }
             key =
                 { card.titleText
@@ -60,7 +60,7 @@ class ProtocolRoles extends React.Component {
             >
             <img
                 className =
-                    { 'howItWorksCardImg'
+                    { 'protocolRolesCardImg'
                     }
                 src =
                     { card.imgSrc
@@ -83,7 +83,7 @@ class ProtocolRoles extends React.Component {
     render() {
         return (
             <section
-                id={'howItWorks'}
+                id={'protocolRoles'}
             >
                 <img
                     src={lineOfBusinessesSrc}
@@ -96,7 +96,7 @@ class ProtocolRoles extends React.Component {
                     id={'animationStill'}
                 />
                 <div
-                    id={'howItWorksCards'}
+                    id={'protocolRolesCards'}
                     >
                     {this.renderCards()}
                 </div>
