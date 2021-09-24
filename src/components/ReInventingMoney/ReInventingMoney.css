@@ -1,0 +1,64 @@
+section#reInventingMoney {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 9;
+  margin-top: -15vh;
+}
+section#reInventingMoney img.containerPadding {
+  width: 100vw;
+  height: auto;
+}
+section#reInventingMoney img.containerPadding:last-child {
+  transform: scaleX(-1) scaleY(-1);
+  -moz-transform: scaleX(-1) scaleY(-1);
+  -o-transform: scaleX(-1) scaleY(-1);
+  -webkit-transform: scaleX(-1) scaleY(-1);
+}
+section#reInventingMoney div#reInventingMoneyContent {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 80vw;
+  padding: 5vh 10vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer {
+  width: 450px;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 64px;
+}
+section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer img {
+  width: 150px;
+}
+section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer h6 {
+  font-size: 1.2em;
+  color: black;
+  margin: 16px 0 8px 0;
+  font-weight: 600;
+}
+section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer p {
+  position: relative;
+  color: black;
+  font-weight: 400;
+  font-size: 1em;
+}
+section#reInventingMoney div#reInventingMoneyContent div#fundingGrowthTogetherContent {
+  width: calc(900px + (64px * 2));
+}
+section#reInventingMoney div#reInventingMoneyContent div#fundingGrowthTogetherContent h4 {
+  font-size: 1.6em;
+  margin-bottom: 8px;
+  color: #7161EF;
+}
+section#reInventingMoney div#reInventingMoneyContent div#fundingGrowthTogetherContent p {
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=ReInventingMoney.css.map */

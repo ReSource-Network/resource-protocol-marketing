@@ -5,6 +5,7 @@ import Hero from '../Hero/Hero'
 import ProtocolRoles from '../ProtocolRoles/ProtocolRoles'
 import HowItWorks from "../HowItWorks/HowItWorks";
 import StakeInRealEconomy from "../StakeInRealEconomy/StakeInRealEconomy";
+import ReInventingMoney from "../ReInventingMoney/ReInventingMoney";
 
 // import {data} from '../Data';
 
@@ -46,6 +47,7 @@ class Home extends React.Component {
                 <ProtocolRoles />
                 <HowItWorks />
                 <StakeInRealEconomy />
+                <ReInventingMoney />
 
             </main>
         )

@@ -38,12 +38,12 @@ a.button.cta.primary:active {
 }
 a.button.cta.default {
   background-color: transparent;
-  border: 1px solid rgba(149, 127, 239, 0.2);
-  color: #957FEF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
 }
 a.button.cta.default:hover {
-  border: 1px solid rgba(149, 127, 239, 0.4);
-  color: #7161EF;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
   transition: 0.5s;
 }
 
