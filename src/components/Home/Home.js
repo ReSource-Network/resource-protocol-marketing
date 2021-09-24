@@ -4,6 +4,7 @@ import './Home.css';
 import Hero from '../Hero/Hero'
 import ProtocolRoles from '../ProtocolRoles/ProtocolRoles'
 import HowItWorks from "../HowItWorks/HowItWorks";
+import StakeInRealEconomy from "../StakeInRealEconomy/StakeInRealEconomy";
 
 // import {data} from '../Data';
 
@@ -44,6 +45,7 @@ class Home extends React.Component {
                 <Background />
                 <ProtocolRoles />
                 <HowItWorks />
+                <StakeInRealEconomy />
 
             </main>
         )
