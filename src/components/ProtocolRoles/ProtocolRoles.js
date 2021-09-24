@@ -38,7 +38,7 @@ const cardsContent =
 
 
 
-class HowItWorks extends React.Component {
+class ProtocolRoles extends React.Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -106,4 +106,4 @@ class HowItWorks extends React.Component {
 
 }
 
-export default HowItWorks;
+export default ProtocolRoles;

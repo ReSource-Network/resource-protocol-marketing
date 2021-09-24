@@ -33,7 +33,9 @@ img#animationStill
 ; min-height: 140px
 ; height: auto
 ; padding: 100px 24px 72px 24px
-; background: linear-gradient(135deg, rgba(256, 256, 256, 0.6), rgba(256, 256, 256, 0.2))
+; background: linear-gradient(135deg, rgba(256, 256, 256, 0.4), rgba(256, 256, 256, 0.2))
+; backdrop-filter: blur(15px);
+; -webkit-backdrop-filter: blur(15px);
 ; margin: 8vw
 ; border-radius: 32px
 ; box-shadow: 0 0 40px rgba(0, 0, 0, 0.15)
