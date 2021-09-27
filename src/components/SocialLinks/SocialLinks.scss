@@ -1,10 +1,4 @@
-//$discord: #5865F2
-//$facebook:
-//$twitter:
-//$linkedin:
-//$medium:
-//$telegram:
-//$github:
+$primary: #957fef;
 
 section#socialLinks
 { width: calc(100vw - (64px * 2))
@@ -50,6 +44,13 @@ section#socialLinks
         ; width: 40%
         ; margin: 8px
         ; max-width: 500px
+        ; transition: 0.2s
+        ; &:hover
+            { border: 1px solid white
+            ; color: $primary
+            ; fill: $primary
+            ; background-color: white
+            }
         ; svg
             { width: 48px
             ; height: 48px

@@ -82,6 +82,7 @@ class SocialLinks extends React.Component {
             key={social.titleText}
             className={'socialItemContainer'}
             href={social.href}
+            target={'_blank'}
         >
             <FontAwesomeIcon icon={social.icon} />
             <div

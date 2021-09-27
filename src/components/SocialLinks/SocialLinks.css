@@ -43,6 +43,13 @@ section#socialLinks div#socialLinksContainer a.socialItemContainer {
   width: 40%;
   margin: 8px;
   max-width: 500px;
+  transition: 0.2s;
+}
+section#socialLinks div#socialLinksContainer a.socialItemContainer:hover {
+  border: 1px solid white;
+  color: #957fef;
+  fill: #957fef;
+  background-color: white;
 }
 section#socialLinks div#socialLinksContainer a.socialItemContainer svg {
   width: 48px;

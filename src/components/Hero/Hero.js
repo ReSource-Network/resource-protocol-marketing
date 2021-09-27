@@ -3,8 +3,8 @@ import './Hero.css'
 import Button from "../Button/Button";
 
 // images
-import card0ImgSrc from './images/card-0.svg'
-import card1ImgSrc from './images/card-1.svg'
+import card0ImgSrc from './images/card-0.png'
+import card1ImgSrc from './images/card-1.png'
 
 class Hero extends React.Component {
     constructor(props) {
@@ -34,7 +34,7 @@ class Hero extends React.Component {
 
                 <header>
                     <h1>
-                        { 'Credit lines without interest payments'
+                        { 'Loans without interest payments'
                         }
                     </h1>
 
