@@ -1,57 +1,167 @@
+// BRAND
 $primary: #957FEF;
 $primary-active: #7161EF;
 $primary-variant: #B79CED;
+$space-mono: 'Space Mono', Monaco, monospace;
 
-section#hero
+// SECTION
+
+@mixin hero-section-position
 { display: flex
 ; flex-flow: column nowrap
-; justify-content: flex-end
-; height: calc(100vh - 200px)
-; width: calc(100vw - 200px)
-; padding: 100px 100px 100px 100px ; margin: 0
-; z-index: 100
-; // card images
-; img.creditCardImg
-    { position: absolute
-    ; top: 40%
-    ; transform: translateY(-60%);
-    ; -moz-transform: translateY(-60%);
-    ; -o-transform: translateY(-60%);
-    ; -webkit-transform: translateY(-60%);
-    ; right: -5vw
-    ; width: 40vw
-    ; min-width: 500px
-    ; &#card1
-        { right: 2vw
+; justify-content: center
+; @media screen and (max-width: 1500px)
+    { justify-content: flex-end;
+    }
+}
+
+@mixin hero-section-size
+{ height: 100vh
+; width: 100vw
+; margin: 0
+}
+
+
+// CREDIT CARDS IMAGE
+
+@mixin credit-cards-position
+{ position: absolute
+; // vertical
+; top: 45%
+; transform: translateY(-55%);
+; -moz-transform: translateY(-55%);
+; -o-transform: translateY(-55%);
+; -webkit-transform: translateY(-55%);
+; @media screen and (max-width: 1500px)
+    { top: 40%
+    ; transform: translateY(-60%)
+    ; -moz-transform: translateY(-60%)
+    ; -o-transform: translateY(-60%)
+    ; -webkit-transform: translateY(-60%)
+    }
+; @media screen and (max-width: 500px)
+    { top: 150px
+    ; transform: unset
+    ; -moz-transform: unset
+    ; -o-transform: unset
+    ; -webkit-transform: unset
+    }
+; // horizontal
+; right: -10px
+}
+
+@mixin credit-cards-size
+{ // height
+; height: auto
+; // width
+; width: 40vw
+; min-width: 500px
+; max-width: 800px
+; @media screen and (max-width: 1500px)
+    { width: 700px
+    ; max-width: 80vw
+    }
+; @media screen and (max-width: 800px)
+    { min-width: unset
+    }
+}
+
+@mixin credit-cards-style
+{ @media screen and (max-height: 1000px)
+    { opacity: 0.66
+    }
+}
+
+
+// HEADER
+
+@mixin hero-header-position
+{ display: flex
+; flex-flow: column nowrap
+}
+
+@mixin hero-header-size
+{ margin: 100px
+; @media screen and (max-width: 1000px)
+    { margin: 60px
+    }
+; @media screen and (max-width: 800px)
+    { margin: 32px
+    }
+}
+
+@mixin hero-header-text-size
+{ font-size: 2.8em
+; max-width: 50vw
+; @media screen and (max-width: 1500px)
+    { max-width: unset
+    ; width: 100%
+    }
+; @media screen and (max-width: 800px)
+    { font-size: 2em
+    }
+}
+
+@mixin hero-h1-text-style
+{ font-weight: 600
+; line-height: 120%
+; color: white
+}
+
+@mixin hero-h2-text-style
+{ font-family: $space-mono
+; font-weight: 400
+; line-height: 120%
+; color: white
+}
+
+@mixin hero-buttons-container-position
+{ display: flex
+; flex-flow: row nowrap
+; margin-top: 48px
+; @media screen and (max-width: 800px)
+    { margin-top: 32px
+    }
+; @media screen and (max-width: 500px)
+    { flex-flow: column nowrap
+    ; a
+        { width: auto
+        ; justify-content: center;
         }
-    ; &#card0
-        { margin-top: 10vh
-        ; width: 35vw
+; a:first-child
+        { margin-bottom: 16px
         }
     }
-; // header
+}
+
+
+section#hero
+{ z-index: 100
+; @include hero-section-position
+; @include hero-section-size
+; img.creditCardImg
+    { @include credit-cards-position
+    ; @include credit-cards-size
+    ; @include credit-cards-style
+    }
+; header
+    { z-index: 101
+    ; @include hero-header-size
+    }
 ; h1
-    { font-size: 2.4em
-    ; font-weight: 600
-    ; color: white
-    ; max-width: 50vw
+    { @include hero-h1-text-style
+    ; @include hero-header-text-size
     }
 ; h2
-    { font-family: 'Space Mono', Monaco, monospace
-    ; font-size: 2.4em
-    ; color: white
-    ; max-width: 50vw
-    ; font-weight: 400
-    }
+    { @include hero-h2-text-style
+    ; @include hero-header-text-size
+  }
 ; span
-    { font-family: 'Space Mono', Monaco, monospace
+    { font-family: $space-mono
     ; font-style: italic
-    ; font-weight: 400
-    ; max-width: 50vw
     }
+; // BUTTONS
 ; div#hero-buttons-container
-    { display: flex
-    ; flex-flow: row nowrap
-    ; margin-top: 48px
+    { @include hero-buttons-container-position
     }
 }

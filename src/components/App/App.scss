@@ -1,10 +1,9 @@
-$bgColor: #000000
-;
-$textColor: #ffffff
-;
+$bgColor: #000000;
+$textColor: #ffffff;
 
 body
 { background-color: $bgColor
+; overflow-x: hidden
 }
 
 .parallax
@@ -14,6 +13,12 @@ body
 ; overflow-x: hidden
 ; overflow-y: auto
 ; //
+//; @media screen and (max-width: 500px)
+//    { display: block
+//    ; height: 100vh
+//    ; bottom: 0
+//    ; overflow-y: scroll
+//    }
 ; -webkit-perspective-origin: 100%;
 ; -moz-perspective-origin: 100%;
 ; -webkit-perspective: 1px;

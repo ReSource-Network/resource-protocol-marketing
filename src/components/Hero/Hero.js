@@ -3,8 +3,7 @@ import './Hero.css'
 import Button from "../Button/Button";
 
 // images
-import card0ImgSrc from './images/card-0.png'
-import card1ImgSrc from './images/card-1.png'
+import creditCardsImgSrc from './images/crypto-credit-cards.png'
 
 class Hero extends React.Component {
     constructor(props) {
@@ -17,21 +16,15 @@ class Hero extends React.Component {
             <section
                 id={'hero'}
             >
-
+                {/* CREDIT CARDS IMAGE */}
                 <img
                     className={'creditCardImg'}
-                    src={card0ImgSrc}
-                    id={'card0'}
-                    alt={'crypto credit line card with negative balance'}
-                />
-
-                <img
-                    className={'creditCardImg'}
-                    src={card1ImgSrc}
+                    src={creditCardsImgSrc}
                     id={'card1'}
                     alt={'crypto credit line card with negative balance'}
                 />
 
+                {/* COPY */}
                 <header>
                     <h1>
                         { 'Loans without interest payments'
@@ -46,28 +39,30 @@ class Hero extends React.Component {
                             }
                         </span>
                     </h2>
+
+                    {/* BUTTONS */}
+                    <div
+                        id =
+                            { 'hero-buttons-container'
+                            }
+                    >
+                        <Button
+                            text = 'How it works'
+                            type = 'cta'
+                            color = 'default'
+                            iconName = 'arrowDown'
+                            href = '#howItWorks'
+                        />
+
+                        <Button
+                            text = 'Whitepaper'
+                            type = 'cta'
+                            color = 'primary'
+                            iconName = 'externalLink'
+                        />
+                    </div>
                 </header>
 
-                <div
-                    id =
-                        { 'hero-buttons-container'
-                        }
-                >
-                    <Button
-                        text = 'How it works'
-                        type = 'cta'
-                        color = 'default'
-                        iconName = 'arrowDown'
-                        href = '#howItWorks'
-                    />
-
-                    <Button
-                        text = 'Whitepaper'
-                        type = 'cta'
-                        color = 'primary'
-                        iconName = 'externalLink'
-                    />
-                </div>
             </section>
         )
     };

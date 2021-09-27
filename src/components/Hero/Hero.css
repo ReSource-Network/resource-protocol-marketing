@@ -1,54 +1,140 @@
 section#hero {
+  z-index: 100;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-end;
-  height: calc(100vh - 200px);
-  width: calc(100vw - 200px);
-  padding: 100px 100px 100px 100px;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
-  z-index: 100;
+}
+@media screen and (max-width: 1500px) {
+  section#hero {
+    justify-content: flex-end;
+  }
 }
 section#hero img.creditCardImg {
   position: absolute;
-  top: 40%;
-  transform: translateY(-60%);
-  -moz-transform: translateY(-60%);
-  -o-transform: translateY(-60%);
-  -webkit-transform: translateY(-60%);
-  right: -5vw;
+  top: 45%;
+  transform: translateY(-55%);
+  -moz-transform: translateY(-55%);
+  -o-transform: translateY(-55%);
+  -webkit-transform: translateY(-55%);
+  right: -10px;
+  height: auto;
   width: 40vw;
   min-width: 500px;
+  max-width: 800px;
 }
-section#hero img.creditCardImg#card1 {
-  right: 2vw;
+@media screen and (max-width: 1500px) {
+  section#hero img.creditCardImg {
+    top: 40%;
+    transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+  }
 }
-section#hero img.creditCardImg#card0 {
-  margin-top: 10vh;
-  width: 35vw;
+@media screen and (max-width: 500px) {
+  section#hero img.creditCardImg {
+    top: 150px;
+    transform: unset;
+    -moz-transform: unset;
+    -o-transform: unset;
+    -webkit-transform: unset;
+  }
+}
+@media screen and (max-width: 1500px) {
+  section#hero img.creditCardImg {
+    width: 700px;
+    max-width: 80vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  section#hero img.creditCardImg {
+    min-width: unset;
+  }
+}
+@media screen and (max-height: 1000px) {
+  section#hero img.creditCardImg {
+    opacity: 0.66;
+  }
+}
+section#hero header {
+  z-index: 101;
+  margin: 100px;
+}
+@media screen and (max-width: 1000px) {
+  section#hero header {
+    margin: 60px;
+  }
+}
+@media screen and (max-width: 800px) {
+  section#hero header {
+    margin: 32px;
+  }
 }
 section#hero h1 {
-  font-size: 2.4em;
   font-weight: 600;
+  line-height: 120%;
   color: white;
+  font-size: 2.8em;
   max-width: 50vw;
+}
+@media screen and (max-width: 1500px) {
+  section#hero h1 {
+    max-width: unset;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  section#hero h1 {
+    font-size: 2em;
+  }
 }
 section#hero h2 {
   font-family: "Space Mono", Monaco, monospace;
-  font-size: 2.4em;
-  color: white;
-  max-width: 50vw;
   font-weight: 400;
+  line-height: 120%;
+  color: white;
+  font-size: 2.8em;
+  max-width: 50vw;
+}
+@media screen and (max-width: 1500px) {
+  section#hero h2 {
+    max-width: unset;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  section#hero h2 {
+    font-size: 2em;
+  }
 }
 section#hero span {
   font-family: "Space Mono", Monaco, monospace;
   font-style: italic;
-  font-weight: 400;
-  max-width: 50vw;
 }
 section#hero div#hero-buttons-container {
   display: flex;
   flex-flow: row nowrap;
   margin-top: 48px;
+}
+@media screen and (max-width: 800px) {
+  section#hero div#hero-buttons-container {
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#hero div#hero-buttons-container {
+    flex-flow: column nowrap;
+  }
+  section#hero div#hero-buttons-container a {
+    width: auto;
+    justify-content: center;
+  }
+  section#hero div#hero-buttons-container a:first-child {
+    margin-bottom: 16px;
+  }
 }
 
 /*# sourceMappingURL=Hero.css.map */

@@ -15,6 +15,8 @@ class Home extends React.Component {
         super(props);
         this.state = {
             darkColorTheme: true,
+            width: 0,
+            height: 0
         };
 
         this.handleToggleColorTheme = this.handleToggleColorTheme.bind(this);
@@ -41,8 +43,8 @@ class Home extends React.Component {
             <main
                 id={'main'}
                 className={'parallax'}
+                style={{ height: `${this.height + 'px'}`, color: 'black'}}
             >
-
                 <Hero />
                 <Background />
                 <ProtocolRoles />

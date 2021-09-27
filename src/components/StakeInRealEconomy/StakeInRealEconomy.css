@@ -9,8 +9,9 @@ section#stakeInRealEconomy {
 section#stakeInRealEconomy img {
   position: relative;
   right: -30vw;
-  bottom: 20vh;
+  bottom: 20%;
   z-index: -10;
+  opacity: 0.5;
 }
 section#stakeInRealEconomy p {
   position: relative;
@@ -19,6 +20,8 @@ section#stakeInRealEconomy p {
   margin: 10vh 10vw;
   color: white;
   max-width: 350px;
+  line-height: 100%;
+  z-index: -8;
 }
 
 /*# sourceMappingURL=StakeInRealEconomy.css.map */
