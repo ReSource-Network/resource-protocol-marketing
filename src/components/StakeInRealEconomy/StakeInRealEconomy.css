@@ -2,7 +2,6 @@ section#stakeInRealEconomy {
   position: relative;
   width: 100vw;
   height: 60vh;
-  border: 1px solid red;
 }
 section#stakeInRealEconomy img {
   position: absolute;
@@ -16,7 +15,6 @@ section#stakeInRealEconomy img {
   height: 100%;
   min-width: 60%;
   max-width: 80%;
-  border: 2px solid blue;
   z-index: -10;
 }
 @media screen and (max-width: 1900px) {
