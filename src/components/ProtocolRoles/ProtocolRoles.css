@@ -5,12 +5,42 @@ section#protocolRoles {
   flex-flow: column nowrap;
   z-index: 80;
 }
+@media screen and (max-width: 800px) {
+  section#protocolRoles {
+    flex-flow: column-reverse nowrap;
+  }
+}
 
 img#lineOfBusinesses {
   position: absolute;
   top: calc(100vh - 200px);
   right: 20vw;
   width: 80px;
+}
+@media screen and (max-width: 1300px) {
+  img#lineOfBusinesses {
+    top: calc(100vh - 150px);
+  }
+}
+@media screen and (max-width: 1100px) {
+  img#lineOfBusinesses {
+    top: calc(100vh - 50px);
+  }
+}
+@media screen and (max-width: 800px) {
+  img#lineOfBusinesses {
+    display: none;
+  }
+}
+@media screen and (max-width: 1300px) {
+  img#lineOfBusinesses {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  img#lineOfBusinesses {
+    width: 40px;
+  }
 }
 
 img#animationStill {
@@ -19,18 +49,36 @@ img#animationStill {
   right: -3vw;
   width: 80vw;
 }
+@media screen and (max-width: 800px) {
+  img#animationStill {
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  img#animationStill {
+    top: unset;
+    width: 120vw;
+  }
+}
 
 .protocolRolesCards {
   display: flex;
   flex-flow: column nowrap;
 }
+@media screen and (max-width: 800px) {
+  .protocolRolesCards {
+    justify-content: center;
+  }
+}
 
 .protocolRolesCard {
   margin: 8vw;
+  padding: 100px 24px 72px 24px;
   width: 365px;
   min-height: 140px;
   height: auto;
-  padding: 100px 24px 72px 24px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
@@ -46,6 +94,21 @@ img#animationStill {
     margin-top: 8vh;
   }
 }
+@media screen and (max-width: 1100px) {
+  .protocolRolesCard {
+    padding: 80px 24px 48px 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .protocolRolesCard {
+    margin: 80px auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .protocolRolesCard {
+    margin: 32px 32px 64px 32px;
+  }
+}
 @media screen and (max-width: 1300px) {
   .protocolRolesCard {
     width: 280px;
@@ -57,6 +120,16 @@ img#animationStill {
     width: 200px;
     min-height: 60px;
     padding: 80px 24px 48px 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .protocolRolesCard {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .protocolRolesCard {
+    width: auto;
   }
 }
 .protocolRolesCard p {
