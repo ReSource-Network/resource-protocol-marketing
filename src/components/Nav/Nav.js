@@ -59,7 +59,7 @@ class Nav extends React.Component {
                 <a
                     href={navLink.href}
                     target={'_blank'}
-                    ref={'noreferrer'}
+                    rel={"noreferrer"}
                     id={navLink.buttonText}
                     key={navLink.buttonText}
                 >
