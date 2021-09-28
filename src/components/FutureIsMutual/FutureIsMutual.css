@@ -145,6 +145,13 @@ section#futureIsMutual div#futureIsMutualContentContainer form input#email:hover
     margin: 0 0 16px 0;
   }
 }
+@media screen and (max-width: 500px) {
+  section#futureIsMutual div#futureIsMutualContentContainer form input#email {
+    min-width: 180px;
+    align-self: stretch;
+    width: auto;
+  }
+}
 section#futureIsMutual div#futureIsMutualContentContainer form input#submit {
   display: flex;
   flex-flow: row nowrap;

@@ -170,6 +170,11 @@ $brand-gradient: linear-gradient(45deg, #7161ef, #D669FF);
 { padding: 10px 16px
 ; min-width: 300px
 ; font-size: 18px
+; @media screen and (max-width: 500px)
+    { min-width: 180px
+    ; align-self: stretch
+    ; width: auto
+    }
 }
 
 @mixin fim-email-input-style
