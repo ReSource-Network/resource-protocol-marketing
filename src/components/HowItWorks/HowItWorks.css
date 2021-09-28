@@ -21,15 +21,15 @@
   flex-flow: row nowrap;
   align-content: flex-end;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.9);
   width: 90vw;
   height: auto;
   padding: 5vw 10vw;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 #howItWorksContent img#howItWorksContentImg {
+  align-self: flex-end;
   width: 30%;
   height: auto;
-  align-self: flex-end;
 }
 #howItWorksContent div#howItWorksContentTextContainer {
   display: flex;

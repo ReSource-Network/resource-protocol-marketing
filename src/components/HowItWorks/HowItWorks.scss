@@ -1,53 +1,119 @@
-#howItWorks
+
+
+// SECTION
+
+@mixin hiw-section-position
 { display: flex
 ; flex-flow: column nowrap
 ; align-items: center
-; width: 100vw
+}
+
+@mixin hiw-section-size
+{ width: 100vw
 ; height: auto
-// fancy padding
-; img.containerPadding
-    { width: 100vw
-    ; height: auto
-    ; &:last-child
-        { transform: scaleX(-1) scaleY(-1)
-        ; -moz-transform: scaleX(-1) scaleY(-1)
-        ; -o-transform: scaleX(-1) scaleY(-1)
-        ; -webkit-transform: scaleX(-1) scaleY(-1)
-        }
+}
+
+@mixin hiw-container-padding-size
+{ width: 100vw
+; height: auto
+; &:last-child
+    { transform: scaleX(-1) scaleY(-1)
+    ; -moz-transform: scaleX(-1) scaleY(-1)
+    ; -o-transform: scaleX(-1) scaleY(-1)
+    ; -webkit-transform: scaleX(-1) scaleY(-1)
     }
 }
 
-#howItWorksContent
+
+// CONTENT CONTAINER
+
+@mixin hiw-content-container-position
 { display: flex
 ; flex-flow: row nowrap
 ; align-content: flex-end
 ; justify-content: center
-// style
-; background-color: rgba(256, 256, 256, 0.9)
-; width: 90vw
+}
+
+@mixin hiw-content-container-size
+{ width: 90vw
 ; height: auto
-; padding: 5vw 10vw
-// content
+}
+
+@mixin hiw-content-container-style
+{ padding: 5vw 10vw
+; background-color: rgba(256, 256, 256, 0.9)
+}
+
+
+// HIW CONTENT IMAGE
+
+@mixin hiw-content-img-position
+{ align-self: flex-end
+}
+
+@mixin hiw-content-img-size
+{ width: 30%
+; height: auto
+}
+
+
+// HIW CONTENT TEXT CONTAINER
+
+@mixin hiw-content-text-container-position
+{ display: flex
+; flex-flow: column nowrap
+; margin-left: 6em
+}
+
+@mixin hiw-content-text-container-size
+{ max-width: 600px
+}
+
+
+// HIW CONTENT TEXT
+
+@mixin hiw-content-text-title-style
+{ font-size: 3em
+}
+
+@mixin hiw-content-text-paragraph-position
+{ margin-bottom: 1em
+    ; &:last-child
+    { margin-bottom: 0
+    }
+}
+
+@mixin hiw-content-text-paragraph-style
+{ font-size: 1.2em
+}
+
+
+#howItWorks
+{ @include hiw-section-position
+; @include hiw-section-size
+; img.containerPadding
+    { @include hiw-container-padding-size
+    }
+}
+
+#howItWorksContent
+{ @include hiw-content-container-position
+; @include hiw-content-container-size
+; @include hiw-content-container-style
 ; img#howItWorksContentImg
-    { width: 30%
-    ; height: auto
-    ; align-self: flex-end
+    { @include hiw-content-img-position
+    ; @include hiw-content-img-size
     }
 ; div#howItWorksContentTextContainer
-    { display: flex
-    ; flex-flow: column nowrap
-    ; margin-left: 6em
-    ; max-width: 600px
+    { @include hiw-content-text-container-position
+    ; @include hiw-content-text-container-size
     }
 ; h4#howItWorksContentTitleText
-    { font-size: 3em
+    { @include hiw-content-text-title-style
     }
 ; div#howItWorksContentDescriptionTextContainer p
-    { margin-bottom: 1em
-    ; font-size: 1.2em
-    ; &:last-child
-        { margin-bottom: 0
-        }
+    { @include hiw-content-text-paragraph-position
+    ; @include hiw-content-text-paragraph-style
     }
 }
 
