@@ -3,6 +3,10 @@ $primary: #957fef;
 section#socialLinks
 { width: calc(100vw - (64px * 2))
 ; padding: 64px
+; @media screen and (max-width: 550px)
+    { padding: 16px
+    ; width: calc(100vw - (16px * 2))
+    }
 ; display: flex
 ; flex-flow: column nowrap
 ; align-items: center;
@@ -16,6 +20,10 @@ section#socialLinks
 ; div#socialLinksContainer
     { display: flex
     ; flex-flow: row wrap
+    ; @media screen and (max-width: 1200px)
+        { flex-flow: column nowrap
+        ; align-items: center;
+        }
     ; align-items: flex-start
     ; justify-content: center;
     ; height: auto
@@ -41,6 +49,17 @@ section#socialLinks
         ; cursor: pointer
         ; fill: white
         ; width: 40%
+        ; @media screen and (max-width: 1200px)
+            { width: 360px
+            }
+        ; @media screen and (max-width: 550px)
+            { width: auto
+            ; flex-flow: column nowrap
+            ; justify-content: flex-start
+            ; align-items: flex-start
+            ; align-self: stretch
+            ; svg { margin-bottom: 16px }
+            }
         ; margin: 8px
         ; max-width: 500px
         ; transition: 0.2s

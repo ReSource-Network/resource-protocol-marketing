@@ -5,6 +5,12 @@ section#socialLinks {
   flex-flow: column nowrap;
   align-items: center;
 }
+@media screen and (max-width: 550px) {
+  section#socialLinks {
+    padding: 16px;
+    width: calc(100vw - (16px * 2));
+  }
+}
 section#socialLinks h4 {
   font-size: 1.6em;
   color: white;
@@ -20,6 +26,12 @@ section#socialLinks div#socialLinksContainer {
   height: auto;
   width: calc(80% + (8px * 4));
   max-width: calc((500px * 2) + (8px * 4));
+}
+@media screen and (max-width: 1200px) {
+  section#socialLinks div#socialLinksContainer {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 }
 section#socialLinks div#socialLinksContainer::after {
   content: "";
@@ -44,6 +56,23 @@ section#socialLinks div#socialLinksContainer a.socialItemContainer {
   margin: 8px;
   max-width: 500px;
   transition: 0.2s;
+}
+@media screen and (max-width: 1200px) {
+  section#socialLinks div#socialLinksContainer a.socialItemContainer {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 550px) {
+  section#socialLinks div#socialLinksContainer a.socialItemContainer {
+    width: auto;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  section#socialLinks div#socialLinksContainer a.socialItemContainer svg {
+    margin-bottom: 16px;
+  }
 }
 section#socialLinks div#socialLinksContainer a.socialItemContainer:hover {
   border: 1px solid white;
