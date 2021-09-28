@@ -32,16 +32,28 @@
 ; flex-flow: row nowrap
 ; align-content: flex-end
 ; justify-content: center
+; @media screen and (max-width: 1000px)
+    { align-content: center
+    }
+; @media screen and (max-width: 700px)
+    { flex-flow: column nowrap
+    }
 }
 
 @mixin hiw-content-container-size
 { width: 90vw
 ; height: auto
+; @media screen and (max-width: 1000px)
+    { width: 80vw
+    }
 }
 
 @mixin hiw-content-container-style
 { padding: 5vw 10vw
 ; background-color: rgba(256, 256, 256, 0.9)
+; @media screen and (max-width: 1000px)
+    { padding: 5vw 10vw
+    }
 }
 
 
@@ -49,11 +61,28 @@
 
 @mixin hiw-content-img-position
 { align-self: flex-end
+; @media screen and (max-width: 1000px)
+    { align-self: center
+    }
+; @media screen and (max-width: 700px)
+    { align-self: flex-start
+    }
 }
 
 @mixin hiw-content-img-size
 { width: 30%
 ; height: auto
+; @media screen and (max-width: 1000px)
+    { width: 50%
+    ; position: absolute
+    ; left: -20%
+    }
+; @media screen and (max-width: 700px)
+    { position: unset
+    ; width: 80%
+    ; max-width: 300px
+    ; margin-top: 48px
+    }
 }
 
 
@@ -63,6 +92,12 @@
 { display: flex
 ; flex-flow: column nowrap
 ; margin-left: 6em
+; @media screen and (max-width: 1000px)
+    { margin-left: 35%
+    }
+; @media screen and (max-width: 700px)
+    { margin: 48px 0
+    }
 }
 
 @mixin hiw-content-text-container-size
@@ -74,6 +109,12 @@
 
 @mixin hiw-content-text-title-style
 { font-size: 3em
+; @media screen and (max-width: 1300px)
+    { font-size: 2em
+    }
+; @media screen and (max-width: 1000px)
+    { font-size: 1.6em
+    }
 }
 
 @mixin hiw-content-text-paragraph-position
@@ -81,12 +122,21 @@
     ; &:last-child
     { margin-bottom: 0
     }
+; @media screen and (max-width: 1300px)
+    { font-size: 1.15em
+    }
+; @media screen and (max-width: 1000px)
+    { font-size: 1.1em
+    }
 }
 
 @mixin hiw-content-text-paragraph-style
 { font-size: 1.2em
 }
 
+
+
+// APPLIED STYLES
 
 #howItWorks
 { @include hiw-section-position
