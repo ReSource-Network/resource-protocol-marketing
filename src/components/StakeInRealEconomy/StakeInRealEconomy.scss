@@ -1,25 +1,84 @@
-section#stakeInRealEconomy
+// SECTION
+
+@mixin sire-section-position
+{ position: relative
+}
+
+@mixin sire-section-size
 { width: 100vw
 ; height: 60vh
-; display: flex
-; flex-flow: column nowrap
-; align-items: flex-start
-; justify-content: flex-start;
-; img
-    { position: relative
-    ; right: -30vw
-    ; bottom: 20%
-    ; z-index: -10
-    ; opacity: 0.5
+; border: 1px solid red
+}
+
+// IMAGE
+
+@mixin sire-img-position
+{ position: absolute
+; left: 58%
+; top: 65%
+; transform: translate(-42%, -35%)
+; -moz-transform: translate(-42%, -35%)
+; -o-transform: translate(-42%, -35%)
+; -webkit-transform: translate(-42%, -35%)
+; @media screen and (max-width: 1900px)
+    { top: 60%
+    ; transform: translate(-42%, -40%)
+    ; -moz-transform: translate(-42%, -40%)
+    ; -o-transform: translate(-42%, -40%)
+    ; -webkit-transform: translate(-42%, -40%)
     }
-; p
-    { position: relative
-    ; font-weight: 600
-    ; font-size: 3em
-    ; margin: 10vh 10vw
-    ; color: white
-    ; max-width: 350px
-    ; line-height: 100%
+}
+
+@mixin sire-img-size
+{ height: 100%
+; min-width: 60%
+; max-width: 80%
+; border: 2px solid blue
+}
+
+@mixin sire-img-style
+{ opacity: 0.5
+}
+
+// TEXT
+
+@mixin sire-title-position
+{ position: relative
+; margin: 10vh 10vw
+}
+
+@mixin sire-title-size
+{ font-size: 3em
+; max-width: 350px
+; @media screen and (max-width: 1000px)
+    { font-size: 2.4em
+    }
+; @media screen and (max-width: 550px)
+    { font-size: 2.0em
+    ; max-width: 250px
+    }
+}
+
+@mixin sire-title-style
+{ font-weight: 600
+; color: white
+; line-height: 100%
+}
+
+
+section#stakeInRealEconomy
+{ @include sire-section-position
+; @include sire-section-size
+; img
+    { @include sire-img-position
+    ; @include sire-img-style
+    ; @include sire-img-size
+    ; z-index: -10
+    }
+; h4
+    { @include sire-title-position
+    ; @include sire-title-size
+    ; @include sire-title-style
     ; z-index: -8
     }
 }

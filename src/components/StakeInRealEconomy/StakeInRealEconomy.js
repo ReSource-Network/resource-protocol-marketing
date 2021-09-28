@@ -16,9 +16,9 @@ class StakeInRealEconomy extends React.Component {
             <section
                 id={'stakeInRealEconomy'}
             >
-                <p>
+                <h4>
                     { 'Stake into the real economy' }
-                </p>
+                </h4>
                 <img
                     src={cityIllustrationSrc}
                     alt={'city buildings illustration'}

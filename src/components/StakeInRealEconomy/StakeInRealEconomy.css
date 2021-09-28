@@ -1,27 +1,53 @@
 section#stakeInRealEconomy {
+  position: relative;
   width: 100vw;
   height: 60vh;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  border: 1px solid red;
 }
 section#stakeInRealEconomy img {
-  position: relative;
-  right: -30vw;
-  bottom: 20%;
-  z-index: -10;
+  position: absolute;
+  left: 58%;
+  top: 65%;
+  transform: translate(-42%, -35%);
+  -moz-transform: translate(-42%, -35%);
+  -o-transform: translate(-42%, -35%);
+  -webkit-transform: translate(-42%, -35%);
   opacity: 0.5;
+  height: 100%;
+  min-width: 60%;
+  max-width: 80%;
+  border: 2px solid blue;
+  z-index: -10;
 }
-section#stakeInRealEconomy p {
+@media screen and (max-width: 1900px) {
+  section#stakeInRealEconomy img {
+    top: 60%;
+    transform: translate(-42%, -40%);
+    -moz-transform: translate(-42%, -40%);
+    -o-transform: translate(-42%, -40%);
+    -webkit-transform: translate(-42%, -40%);
+  }
+}
+section#stakeInRealEconomy h4 {
   position: relative;
-  font-weight: 600;
-  font-size: 3em;
   margin: 10vh 10vw;
-  color: white;
+  font-size: 3em;
   max-width: 350px;
+  font-weight: 600;
+  color: white;
   line-height: 100%;
   z-index: -8;
+}
+@media screen and (max-width: 1000px) {
+  section#stakeInRealEconomy h4 {
+    font-size: 2.4em;
+  }
+}
+@media screen and (max-width: 550px) {
+  section#stakeInRealEconomy h4 {
+    font-size: 2em;
+    max-width: 250px;
+  }
 }
 
 /*# sourceMappingURL=StakeInRealEconomy.css.map */
