@@ -1,0 +1,134 @@
+
+// SECTION
+
+@mixin fim-section-position
+{ display: flex
+; flex-flow: row nowrap
+; justify-content: center
+; align-items: center
+}
+
+@mixin fim-section-size
+{ width: 100vw
+; height: auto
+; padding: 64px
+}
+
+
+
+// IMAGE
+
+@mixin fim-img-position
+{ margin-right: -48px
+;
+}
+
+@mixin fim-img-size
+{ margin-right: -48px
+; height: 700px
+}
+
+@mixin fim-img-style
+{ opacity: 0.5
+}
+
+
+// CONTAINERS
+
+@mixin fim-container-container-position
+{ display: flex
+; flex-flow: row nowrap
+; justify-content: center;
+; align-items: center;
+}
+
+@mixin fim-container-container-size
+{ width: auto
+; height: auto
+; padding: 16px
+}
+
+@mixin fim-container-container-style
+{ border-radius: 32px
+; border: 1px solid rgba(256, 256, 256, 0.2)
+}
+
+@mixin fim-container-position
+{ display: flex
+; flex-flow: column nowrap
+}
+
+@mixin fim-container-size
+{ width: auto
+; height: auto
+; padding: 16px
+}
+
+@mixin fim-container-style
+{ border-radius: 16px
+; border: 1px solid rgba(256, 256, 256, 0.4)
+}
+
+
+// CONTENT
+
+@mixin fim-email-form-position
+{ display: flex
+; flex-flow: row nowrap
+}
+
+@mixin fim-email-form-size
+{ padding: 16px
+}
+
+// EMAIL INPUT
+
+@mixin fim-email-input-style
+{ padding: 16px
+}
+
+@mixin fim-email-input-position
+{ margin-right: 8px
+}
+
+@mixin fim-email-input-size
+{ padding: 4px 12px
+}
+
+@mixin fim-email-input-style
+{ border-radius: 8px
+; border: 1px solid rgba(256, 256, 256, 0.6)
+; outline: none
+; background: none
+}
+
+
+
+section#futureIsMutual
+{ @include fim-section-position
+; @include fim-section-size
+; img
+    { @include fim-img-position
+    ; @include fim-img-size
+    ; @include fim-img-style
+    }
+; div#futureIsMutualContentContainerContainer
+    { @include fim-container-container-position
+    ; @include fim-container-container-size
+    ; @include fim-container-container-style
+    }
+; div#futureIsMutualContentContainer
+    { @include fim-container-position
+    ; @include fim-container-size
+    ; @include fim-container-style
+    ; form
+        { @include fim-email-form-position
+        ; @include fim-email-form-size
+        ; input#email
+            { @include fim-email-input-style
+            ; @include fim-email-input-position
+            ; @include fim-email-input-size
+            }
+        }
+    }
+}

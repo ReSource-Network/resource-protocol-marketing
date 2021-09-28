@@ -1,3 +1,7 @@
+// email capture
+require('dotenv').config()
+import { env } from 'process';
+
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import "./App.css"
@@ -23,5 +27,7 @@ function App() {
       </div>
   );
 }
+
+export const authToken=env('AUTH_TOKEN')
 
 export default App;

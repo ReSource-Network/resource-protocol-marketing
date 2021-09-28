@@ -1,0 +1,50 @@
+section#futureIsMutual {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 64px;
+}
+section#futureIsMutual img {
+  margin-right: -48px;
+  margin-right: -48px;
+  height: 700px;
+  opacity: 0.5;
+}
+section#futureIsMutual div#futureIsMutualContentContainerContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 16px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+section#futureIsMutual div#futureIsMutualContentContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: auto;
+  height: auto;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+section#futureIsMutual div#futureIsMutualContentContainer form {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 16px;
+}
+section#futureIsMutual div#futureIsMutualContentContainer form input#email {
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  outline: none;
+  background: none;
+  margin-right: 8px;
+  padding: 4px 12px;
+}
+
+/*# sourceMappingURL=FutureIsMutual.css.map */

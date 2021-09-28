@@ -8,6 +8,7 @@ import StakeInRealEconomy from "../StakeInRealEconomy/StakeInRealEconomy";
 import ReInventingMoney from "../ReInventingMoney/ReInventingMoney";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import Partners from "../Partners/Partners";
+import FutureIsMutual from "../FutureIsMutual/FutureIsMutual";
 
 // import {data} from '../Data';
 
@@ -54,6 +55,7 @@ class Home extends React.Component {
                 <ReInventingMoney />
                 <SocialLinks />
                 <Partners />
+                <FutureIsMutual />
 
             </main>
         )
