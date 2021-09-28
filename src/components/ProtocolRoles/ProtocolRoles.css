@@ -8,7 +8,7 @@ section#protocolRoles {
 
 img#lineOfBusinesses {
   position: absolute;
-  top: calc(100vh - 300px);
+  top: calc(100vh - 200px);
   right: 20vw;
   width: 80px;
 }
@@ -26,6 +26,7 @@ img#animationStill {
 }
 
 .protocolRolesCard {
+  margin: 8vw;
   width: 365px;
   max-width: 20vw;
   min-height: 140px;
@@ -50,15 +51,15 @@ img#animationStill {
   font-size: 24px;
   font-weight: 600;
   line-height: 120%;
-  margin: 8px 0;
   text-transform: capitalize;
+  margin: 8px 0;
 }
 .protocolRolesCard img.protocolRolesCardImg {
   margin: -130px 0 32px 20px;
   display: block;
+  text-transform: capitalize;
   width: 150px;
   height: auto;
-  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=ProtocolRoles.css.map */

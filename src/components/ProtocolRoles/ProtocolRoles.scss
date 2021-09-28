@@ -1,65 +1,132 @@
-// section
-section#protocolRoles
+
+// SECTION
+
+@mixin protocol-roles-section-position
 { height: auto
 ; width: 100vw
 ; display: flex
 ; flex-flow: column nowrap
-; z-index: 80
 }
 
-// animation
-img#lineOfBusinesses
-{ position: absolute
-; top: calc(100vh - 300px)
-; right: 20vw
-; width: 80px
+@mixin protocol-roles-section-size
+{ width: 100vw
 }
-img#animationStill
+
+
+
+// ANIMATION
+
+@mixin line-of-businesses-position
+{ position: absolute
+; top: calc(100vh - 200px)
+; right: 20vw
+}
+
+@mixin line-of-businesses-size
+{ width: 80px
+}
+
+@mixin protocol-roles-animation-position
 { position: absolute
 ; top: calc(100vh + 100px)
 ; right: -3vw
-; width: 80vw
 }
 
-// cards
-.protocolRolesCards
+@mixin protocol-roles-animation-size
+{ width: 80vw
+}
+
+
+
+// ROLES CARDS
+
+@mixin protocol-roles-cards-container-position
 { display: flex
-; flex-flow: column nowrap
+; flex-flow: column nowrap;
 }
 
-.protocolRolesCard
+@mixin protocol-roles-card-position
+{ margin: 8vw
+}
+
+@mixin protocol-roles-card-size
 { width: 365px
 ; max-width: 20vw
 ; min-height: 140px
 ; height: auto
 ; padding: 100px 24px 72px 24px
-; background: linear-gradient(135deg, rgba(256, 256, 256, 0.4), rgba(256, 256, 256, 0.2))
+}
+
+@mixin protocol-roles-card-style
+{ background: linear-gradient(135deg, rgba(256, 256, 256, 0.4), rgba(256, 256, 256, 0.2))
 ; backdrop-filter: blur(15px);
 ; -webkit-backdrop-filter: blur(15px);
 ; margin: 8vw
 ; border-radius: 32px
 ; box-shadow: 0 0 40px rgba(0, 0, 0, 0.15)
+}
+
+@mixin protocol-roles-card-paragraph-style
+{ font-size: 24px
+; font-weight: normal
+; line-height: 32px
+}
+
+@mixin protocol-roles-card-title-style
+{ font-size: 24px
+; font-weight: 600
+; line-height: 120%
+; text-transform: capitalize
+}
+
+@mixin protocol-roles-card-img-position
+{ margin: -130px 0 32px 20px
+; display: block
+; text-transform: capitalize
+}
+
+@mixin protocol-roles-card-img-size
+{ width: 150px
+; height: auto
+}
+
+
+// APPLIED STYLES
+
+section#protocolRoles
+{ @include protocol-roles-section-position
+; z-index: 80
+}
+img#lineOfBusinesses
+{ @include line-of-businesses-position
+; @include line-of-businesses-size
+}
+img#animationStill
+{ @include protocol-roles-animation-position
+; @include protocol-roles-animation-size
+}
+
+.protocolRolesCards
+{ @include protocol-roles-cards-container-position
+}
+
+.protocolRolesCard
+{ @include protocol-roles-card-position
+; @include protocol-roles-card-size
+; @include protocol-roles-card-style
 ; &:first-child
     { margin-top: 12vw
     }
 ; p
-    { font-size: 24px
-    ; font-weight: normal
-    ; line-height: 32px
+    { @include protocol-roles-card-paragraph-style
     }
 ; h6
-    { font-size: 24px
-    ; font-weight: 600
-    ; line-height: 120%
+    { @include protocol-roles-card-title-style
     ; margin: 8px 0
-    ; text-transform: capitalize
-  }
+    }
 ; img.protocolRolesCardImg
-    { margin: -130px 0 32px 20px
-    ; display: block
-    ; width: 150px
-    ; height: auto
-    ; text-transform: capitalize
+    { @include protocol-roles-card-img-position
+    ; @include protocol-roles-card-img-size
     }
 }
 
