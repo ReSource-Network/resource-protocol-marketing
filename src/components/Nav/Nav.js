@@ -1,12 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faTelegram, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import './Nav.css';
 
 //images
 import logoSrc from './resource-finance-logo.svg';
 
-// nav link names
-let navLinkNames = ['discord', 'telegram', 'contact'];
+
+// data
+const telegram =
+    { href: 'https://t.me/theresourcenetwork'
+    , buttonText: 'telegram'
+    , icon: faTelegram
+    }
+const discord =
+    { href: 'https://discord.gg/UuTCRuuZMP'
+    , buttonText: 'discord'
+    , icon: faDiscord
+    }
+const contact =
+    { href: 'mailto:contact@resourcenetwork.co'
+    , buttonText: 'contact'
+    , icon: faEnvelope
+    }
+
+const navLinks = [discord, telegram, contact];
+
 
 class Nav extends React.Component {
     constructor(props) {
@@ -34,16 +55,16 @@ class Nav extends React.Component {
     // render
     renderLinks() {
         return(
-            navLinkNames.map(page =>
-                <Link
-                    to={'/' + page}
-                    className={this.state.selected === page ? 'selected' : ''}
-                    onClick={this.handleClickNavLink}
-                    id={page}
-                    key={page}
+            navLinks.map(navLink =>
+                <a
+                    href={navLink.href}
+                    target={'_blank'}
+                    ref={'noreferrer'}
+                    id={navLink.buttonText}
+                    key={navLink.buttonText}
                 >
-                    {page}
-                </Link>
+                    <FontAwesomeIcon icon={navLink.icon} />
+                </a>
             )
         )
     }
