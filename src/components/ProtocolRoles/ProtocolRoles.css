@@ -28,7 +28,6 @@ img#animationStill {
 .protocolRolesCard {
   margin: 8vw;
   width: 365px;
-  max-width: 20vw;
   min-height: 140px;
   height: auto;
   padding: 100px 24px 72px 24px;
@@ -42,17 +41,46 @@ img#animationStill {
 .protocolRolesCard:first-child {
   margin-top: 12vw;
 }
+@media screen and (max-width: 1300px) {
+  .protocolRolesCard:first-child {
+    margin-top: 8vh;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .protocolRolesCard {
+    width: 280px;
+    min-height: 100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .protocolRolesCard {
+    width: 200px;
+    min-height: 60px;
+    padding: 80px 24px 48px 24px;
+  }
+}
 .protocolRolesCard p {
   font-size: 24px;
   font-weight: normal;
   line-height: 32px;
 }
+@media screen and (max-width: 1300px) {
+  .protocolRolesCard p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 .protocolRolesCard h6 {
   font-size: 24px;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 100%;
   text-transform: capitalize;
   margin: 8px 0;
+}
+@media screen and (max-width: 1300px) {
+  .protocolRolesCard h6 {
+    font-size: 18px;
+  }
 }
 .protocolRolesCard img.protocolRolesCardImg {
   margin: -130px 0 32px 20px;
@@ -60,6 +88,21 @@ img#animationStill {
   text-transform: capitalize;
   width: 150px;
   height: auto;
+}
+@media screen and (max-width: 1100px) {
+  .protocolRolesCard img.protocolRolesCardImg {
+    margin: -100px 0 32px 20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .protocolRolesCard img.protocolRolesCardImg {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .protocolRolesCard img.protocolRolesCardImg {
+    width: 80px;
+  }
 }
 
 /*# sourceMappingURL=ProtocolRoles.css.map */

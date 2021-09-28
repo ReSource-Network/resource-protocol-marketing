@@ -47,14 +47,28 @@
 
 @mixin protocol-roles-card-position
 { margin: 8vw
+; &:first-child
+    { margin-top: 12vw
+    ; @media screen and (max-width: 1300px)
+        { margin-top: 8vh
+        }
+    }
 }
 
 @mixin protocol-roles-card-size
 { width: 365px
-; max-width: 20vw
 ; min-height: 140px
 ; height: auto
 ; padding: 100px 24px 72px 24px
+; @media screen and (max-width: 1300px)
+    { width: 280px
+    ; min-height: 100px
+    }
+; @media screen and (max-width: 1100px)
+    { width: 200px
+    ; min-height: 60px
+    ; padding: 80px 24px 48px 24px
+    }
 }
 
 @mixin protocol-roles-card-style
@@ -70,24 +84,40 @@
 { font-size: 24px
 ; font-weight: normal
 ; line-height: 32px
+; @media screen and (max-width: 1300px)
+    { font-size: 18px
+    ; line-height: 24px
+    }
 }
 
 @mixin protocol-roles-card-title-style
 { font-size: 24px
 ; font-weight: 600
-; line-height: 120%
+; line-height: 100%
 ; text-transform: capitalize
+; @media screen and (max-width: 1300px)
+    { font-size: 18px
+    }
 }
 
 @mixin protocol-roles-card-img-position
 { margin: -130px 0 32px 20px
 ; display: block
 ; text-transform: capitalize
+; @media screen and (max-width: 1100px)
+    { margin: -100px 0 32px 20px
+    }
 }
 
 @mixin protocol-roles-card-img-size
 { width: 150px
 ; height: auto
+; @media screen and (max-width: 1300px)
+    { width: 100px
+    }
+; @media screen and (max-width: 1100px)
+    { width: 80px
+    }
 }
 
 
@@ -114,9 +144,6 @@ img#animationStill
 { @include protocol-roles-card-position
 ; @include protocol-roles-card-size
 ; @include protocol-roles-card-style
-; &:first-child
-    { margin-top: 12vw
-    }
 ; p
     { @include protocol-roles-card-paragraph-style
     }
