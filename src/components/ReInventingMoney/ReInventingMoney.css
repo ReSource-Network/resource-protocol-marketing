@@ -1,12 +1,12 @@
 section#reInventingMoney {
-  width: 100vw;
-  height: auto;
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: flex-start;
-  z-index: 9;
   margin-top: -15vh;
+  width: 100vw;
+  height: auto;
+  z-index: 9;
 }
 section#reInventingMoney img.containerPadding {
   width: 100vw;
@@ -19,46 +19,101 @@ section#reInventingMoney img.containerPadding:last-child {
   -webkit-transform: scaleX(-1) scaleY(-1);
 }
 section#reInventingMoney div#reInventingMoneyContent {
-  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
   width: 80vw;
   padding: 5vh 10vw;
-  display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+@media screen and (max-width: 2100px) {
+  section#reInventingMoney div#reInventingMoneyContent {
+    flex-flow: row wrap;
+  }
+}
+@media screen and (max-width: 1500px) {
+  section#reInventingMoney div#reInventingMoneyContent {
+    padding: 5vw;
+    width: 90vw;
+  }
 }
 section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer {
-  width: 450px;
-  height: auto;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin: 64px;
+  width: 450px;
+  height: auto;
+}
+@media screen and (max-width: 1300px) {
+  section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer {
+    margin: 48px;
+  }
+}
+@media screen and (max-width: 800px) {
+  section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer {
+    margin: 48px 0;
+  }
+}
+@media screen and (max-width: 1300px) {
+  section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer {
+    width: calc( 50vw - ( (2vw * 2) + (64px * 2) ) );
+  }
+}
+@media screen and (max-width: 800px) {
+  section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer {
+    width: 80vw;
+  }
 }
 section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer img {
   width: 150px;
 }
 section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer h6 {
   font-size: 1.2em;
-  color: black;
   margin: 16px 0 8px 0;
+  font-size: 1.2em;
+  margin: 16px 0 8px 0;
+  color: black;
   font-weight: 600;
 }
 section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer p {
   position: relative;
+  font-size: 1em;
   color: black;
   font-weight: 400;
-  font-size: 1em;
 }
-section#reInventingMoney div#reInventingMoneyContent div#fundingGrowthTogetherContent {
-  width: calc(900px + (64px * 2));
+
+div#fundingGrowthTogetherContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+div#fundingGrowthTogetherTextContainer {
   margin-bottom: 64px;
+  width: calc(900px + (64px * 2));
 }
-section#reInventingMoney div#reInventingMoneyContent div#fundingGrowthTogetherContent h4 {
+@media screen and (max-width: 1300px) {
+  div#fundingGrowthTogetherTextContainer {
+    width: calc( 100vw - ( (5vw * 2) + (64px * 2) ) );
+  }
+}
+@media screen and (max-width: 800px) {
+  div#fundingGrowthTogetherTextContainer {
+    width: 80vw;
+  }
+}
+div#fundingGrowthTogetherTextContainer h4 {
   font-size: 1.6em;
   margin-bottom: 8px;
   color: #7161EF;
 }
-section#reInventingMoney div#reInventingMoneyContent div#fundingGrowthTogetherContent p {
+div#fundingGrowthTogetherTextContainer p {
   font-size: 1.2em;
 }
 

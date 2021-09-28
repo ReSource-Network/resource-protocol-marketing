@@ -126,9 +126,11 @@ class ReInventingMoney extends React.Component {
                     id={'reInventingMoneyContent'}
                     >
                     { this.renderReInventingMoneyContent() }
-                    <div
-                        id={'fundingGrowthTogetherContent'}
-                    >
+                </div>
+                <div
+                    id={'fundingGrowthTogetherContainer'}
+                >
+                    <div id={'fundingGrowthTogetherTextContainer'}>
                         <h4>
                             {fundingGrowthText.titleText}
                         </h4>
