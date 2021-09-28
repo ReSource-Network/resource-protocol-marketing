@@ -9,6 +9,7 @@ import ReInventingMoney from "../ReInventingMoney/ReInventingMoney";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import Partners from "../Partners/Partners";
 import FutureIsMutual from "../FutureIsMutual/FutureIsMutual";
+import Footer from "../Footer/Footer";
 
 // import {data} from '../Data';
 
@@ -56,6 +57,7 @@ class Home extends React.Component {
                 <SocialLinks />
                 <Partners />
                 <FutureIsMutual />
+                <Footer />
 
             </main>
         )
