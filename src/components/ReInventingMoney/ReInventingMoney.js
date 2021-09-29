@@ -1,17 +1,18 @@
 import React from 'react';
-import './ReInventingMoney.css'
+import './ReInventingMoney.css';
+import {getCloudinaryImagePath} from "../App/App";
 
 // images
-import reInventingMoneyImgSrc from './images/reInventingMoney.svg'
-import reInventingFinanceImgSrc from './images/reInventingFinance.svg'
-import uncollatoralizedImgSrc from './images/uncollateralized.svg'
-import intelligentlyInclusiveImgSrc from './images/intelligentlyInclusive.svg'
+const reInventingMoneyImgSrcName = 'reInventingMoney_nrflaj.svg'
+const reInventingFinanceImgSrcName = 'reInventingFinance_o6om23.svg'
+const uncollatoralizedImgSrcName = 'uncollateralized_t9z6ds.svg'
+const intelligentlyInclusiveImgSrcName = 'intelligentlyInclusive_iep5oo.svg'
 // section padding img
-import containerPaddingImgSrc from './images/container-padding.svg'
+const containerPaddingImgSrcName = 'container-padding_ihcaa9.svg'
 
 // data
 const fundingGrowthText =
-    { titleText: 'Funding growth together'
+{ titleText: 'Funding growth together'
     , descriptionText:
               'Hundreds of businesses, SaaS companies and freelancers already rely on '
             + 'ReSource to grow their operations without being dependent on traditional finance.'
@@ -24,7 +25,7 @@ const reInventingMoney =
     + 'achieving autonomous stability. ReSource stablecoins are not '
     + 'artificially pegged to fiat or other assets, but derive their '
     + 'stable value from the goods and services traded with them.'
-, imgSrc: reInventingMoneyImgSrc
+, imgSrcName: reInventingMoneyImgSrcName
 , altText: 'person with idea illustrated icon'
 }
 const reInventingFinance =
@@ -32,7 +33,7 @@ const reInventingFinance =
 , descriptionText:
       'The ReSource Protocol does not only disarm intermediaries and custodians, '
     + 'but decentralizes the logic of credit itself, effectively removing the creditor from the equation.'
-    , imgSrc: reInventingFinanceImgSrc
+    , imgSrcName: reInventingFinanceImgSrcName
     , altText: 'presentation with charts illustrated icon'
 }
 const uncollateralized =
@@ -40,7 +41,7 @@ const uncollateralized =
 , descriptionText:
       'A distributed network of underwriters allows for the issuance of uncollateralized credit'
     + 'without compromising on decentralization and security. '
-, imgSrc: uncollatoralizedImgSrc
+, imgSrcName: uncollatoralizedImgSrcName
 , altText: 'uncollateralized illustrated icon'
 }
 const intelligentlyInclusive =
@@ -49,7 +50,7 @@ const intelligentlyInclusive =
     'Instead of relying on credit scoring agencies, participants can utilize their social capital, '
     + 'vouch for each other, or use a variety of reputation mechanisms to prove credit worthiness. '
     + 'This isn’t only more fair than traditional credit scores, but also more smart and reliable.'
-, imgSrc: intelligentlyInclusiveImgSrc
+, imgSrcName: intelligentlyInclusiveImgSrcName
 , altText: 'laptop cloud messages illustrated icon'
 }
 
@@ -83,7 +84,7 @@ class ReInventingMoney extends React.Component {
         >
             <img
                 src =
-                    { content.imgSrc
+                    { getCloudinaryImagePath(content.imgSrcName)
                     }
                 alt =
                     { content.altText
@@ -119,7 +120,7 @@ class ReInventingMoney extends React.Component {
             >
                 <img
                     className={ 'containerPadding' }
-                    src={ containerPaddingImgSrc }
+                    src={ getCloudinaryImagePath(containerPaddingImgSrcName)}
                     alt={'fancy container padding'}
                 />
                 <div
@@ -141,7 +142,7 @@ class ReInventingMoney extends React.Component {
                 </div>
                 <img
                     className={ 'containerPadding' }
-                    src={ containerPaddingImgSrc }
+                    src={ getCloudinaryImagePath(containerPaddingImgSrcName) }
                     alt={'fancy container padding'}
                 />
             </section>

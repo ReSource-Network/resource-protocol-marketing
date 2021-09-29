@@ -1,9 +1,11 @@
 import React from 'react';
 import './Hero.css'
 import Button from "../Button/Button";
+import {getCloudinaryImagePath} from "../App/App";
 
 // images
-import creditCardsImgSrc from './images/crypto-credit-cards.png'
+const creditCardsPngSrcName = 'crypto-credit-cards_iabj40.png'
+const creditCardsWebpSrcName = 'crypto-credit-cards_smht6f.webp'
 
 class Hero extends React.Component {
     constructor(props) {
@@ -17,12 +19,23 @@ class Hero extends React.Component {
                 id={'hero'}
             >
                 {/* CREDIT CARDS IMAGE */}
-                <img
+                <picture
                     className={'creditCardImg'}
-                    src={creditCardsImgSrc}
-                    id={'card1'}
-                    alt={'crypto credit line card with negative balance'}
-                />
+                >
+                    <source
+                        srcSet={getCloudinaryImagePath(creditCardsWebpSrcName)}
+                        type={'image/webp'}
+                    />
+                    <source
+                        srcSet={getCloudinaryImagePath(creditCardsPngSrcName)}
+                        type={'image/png'}
+                    />
+                    <img
+                        alt={'crypto credit line card with negative balance'}
+                        src={getCloudinaryImagePath(creditCardsPngSrcName)}
+                        className={'creditCardImg'}
+                    />
+                </picture>
 
                 {/* COPY */}
                 <header>

@@ -8,7 +8,7 @@ div#parallax-overlay {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("./images/background-gradient.jpg") no-repeat center center;
+  background: url("https://res.cloudinary.com/resource-network/image/upload/v1632950256/resource-protocol/background-gradient_tvmimy.jpg") no-repeat center center;
   opacity: 0.8;
   background-size: cover;
   z-index: -50;

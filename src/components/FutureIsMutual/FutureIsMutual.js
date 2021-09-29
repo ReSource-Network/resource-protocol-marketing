@@ -3,9 +3,10 @@ import React from "react";
 // for email capture
 import axios from "axios";
 import { customAlphabet } from "nanoid";
+import {getCloudinaryImagePath} from "../App/App";
 
 // images
-import futureIsMutualImgSrc from "./images/future-is-mutual.svg";
+const futureIsMutualImgSrcName = 'future-is-mutual_thynoz.svg'
 
 // for email capture
 const nanoid = customAlphabet("1234567890abcdef", 10);
@@ -38,7 +39,7 @@ class FutureIsMutual extends React.Component {
         return (
             <section id={"futureIsMutual"}>
                 <img
-                    src={futureIsMutualImgSrc}
+                    src={getCloudinaryImagePath(futureIsMutualImgSrcName)}
                     id={"futureIsMutualImg"}
                     alt={"person walking through space stepping on planets"}
                 />

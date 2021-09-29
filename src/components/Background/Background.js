@@ -1,15 +1,17 @@
 import React from 'react';
 import './Background.css'
+import {getCloudinaryImagePath} from "../App/App";
 
 // radial gradients
-import pink0 from './images/pink-0.svg'
-import purple0 from './images/purple-0.svg'
-import purple1 from './images/purple-1.svg'
-import purple3 from './images/purple-3.svg'
-import purple4 from './images/purple-4.svg'
-import yellow0 from './images/yellow-0.svg'
-import yellow1 from './images/yellow-1.svg'
-import yellow2 from './images/yellow-2.svg'
+const pink0SrcName = './gradient-spheres/pink-0_dhajsi.svg'
+const purple0SrcName = './gradient-spheres/purple-0_sgfzis.svg'
+const purple1SrcName = './gradient-spheres/purple-1_m8sgb3.svg'
+const purple3SrcName = './gradient-spheres/purple-3_getywv.svg'
+const purple4SrcName = './gradient-spheres/purple-4_fjddm0.svg'
+const yellow0SrcName = './gradient-spheres/yellow-0_yme947.svg'
+const yellow1SrcName = './gradient-spheres/yellow-1_yohyfj.svg'
+const yellow2SrcName = './gradient-spheres/yellow-2_dyulyb.svg'
+
 
 // [zPositions , scale]
 const zPositions =
@@ -21,35 +23,35 @@ const zPositions =
 
 const gradients = [
     { id: 'purple0'
-    , src: purple0
+    , srcName: purple0SrcName
     , zPosition: zPositions[0]
     } ,
     { id: 'purple1'
-    , src: purple1
+    , srcName: purple1SrcName
     , zPosition: zPositions[1]
     } ,
     { id: 'purple3'
-    , src: purple3
+    , srcName: purple3SrcName
     , zPosition: zPositions[1]
     } ,
     { id: 'purple4'
-    , src: purple4
+    , srcName: purple4SrcName
     , zPosition: zPositions[1]
     } ,
     { id: 'pink0'
-    , src: pink0
+    , srcName: pink0SrcName
     , zPosition: zPositions[2]
     } ,
     { id: 'yellow0'
-    , src: yellow0
+    , srcName: yellow0SrcName
     , zPosition: zPositions[0]
     } ,
     { id: 'yellow1'
-    , src: yellow1
+    , srcName: yellow1SrcName
     , zPosition: zPositions[0]
     },
     { id: 'yellow2'
-    , src: yellow2
+    , srcName: yellow2SrcName
     , zPosition: zPositions[1]
     }]
 
@@ -76,7 +78,7 @@ class Background extends React.Component {
                 { gradient.id
                 }
             src =
-                { gradient.src
+                { getCloudinaryImagePath(gradient.srcName)
                 }
             style =
                 {{ transform: `translateZ(${gradient.zPosition[0]}px) scale(${gradient.zPosition[1]})`

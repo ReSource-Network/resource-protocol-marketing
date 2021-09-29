@@ -9,6 +9,9 @@ import Home from "../Home/Home";
 // Set env vars
 require("dotenv").config();
 
+export const getCloudinaryVideoPath = (fileName) => 'https://res.cloudinary.com/resource-network/video/upload/v1632944401/resource-protocol/' + fileName;
+export const getCloudinaryImagePath = (fileName) => 'https://res.cloudinary.com/resource-network/image/upload/v1632945917/resource-protocol/' + fileName;
+
 function App() {
   return (
     <div className="App">

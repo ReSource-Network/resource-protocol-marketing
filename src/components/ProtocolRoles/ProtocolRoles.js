@@ -1,46 +1,37 @@
 import React from 'react';
 import './ProtocolRoles.css'
+import {getCloudinaryImagePath, getCloudinaryVideoPath} from '../App/App'
 
-// animation images
-import lineOfBusinessesSrc from './images/line-of-businesses.png'
-// import animationStillSrc from './images/animation-still.svg'
 
-// card images
-import underwritersImgSrc from './images/underwriters.svg'
-import merchantsImgSrc from './images/merchants.svg'
-import operatorImgSrc from './images/operator.svg'
+// animation video
+const animationMpVideoSrcName = 'hiw-animation_w8ckww.mov'
+const animationWebmVideoSrcName = 'hiw-animation_i21vlx.webm'
 
 // card data
 const underwriters =
     { titleText: 'underwriters'
     , descriptionText: 'Earn rewards for validating Merchants'
-    , imgSrc: underwritersImgSrc
+    , imgSrcName: 'underwriters_hslvwx.svg'
     , imgAltText: 'laptop illustrated icon'
     }
 const merchants =
     { titleText: 'merchants'
     , descriptionText: 'Access 0% interest credit lines, collateralized by their own inventory'
-    , imgSrc: merchantsImgSrc
+    , imgSrcName: 'merchants_ubguhy.svg'
     , imgAltText: 'merchants and business owners illustrated icon'
     }
 const operator =
     { titleText: 'operators'
     , descriptionText: 'Create new instances of credit networks with the ReSource protocol'
-    , imgSrc: operatorImgSrc
+    , imgSrcName: 'operator_yl0wgo.svg'
     , imgAltText: 'router illustrated icon'
     }
 
 const cardsContent =
-    [ underwriters
+    [ operator
     , merchants
-    , operator
+    , underwriters
     ]
-
-
-const animationMpVideoSrc =
-    'https://res.cloudinary.com/resource-network/video/upload/v1632894696/resource-protocol/animation-transparent_l25jho.mov'
-const animationWebmVideoSrc =
-    'https://res.cloudinary.com/resource-network/video/upload/v1632897292/resource-protocol/animation-transparent_fhcx8c.webm'
 
 
 
@@ -69,7 +60,7 @@ class ProtocolRoles extends React.Component {
                     { 'protocolRolesCardImg'
                     }
                 src =
-                    { card.imgSrc
+                    { getCloudinaryImagePath(card.imgSrcName)
                     }
                 alt=
                     { card.imgAltText
@@ -91,11 +82,6 @@ class ProtocolRoles extends React.Component {
             <section
                 id={'protocolRoles'}
             >
-                <img
-                    src={lineOfBusinessesSrc}
-                    alt={'line of merchants waiting to join network'}
-                    id={'lineOfBusinesses'}
-                />
 
                 <video
                     id={'animation'}
@@ -109,12 +95,12 @@ class ProtocolRoles extends React.Component {
                     preload
                 >
                     <source
-                        src={animationMpVideoSrc}
-                        type={'video/mp4'}
+                        src={getCloudinaryVideoPath(animationWebmVideoSrcName)}
+                        type={'video/webm'}
                     />
                     <source
-                        src={animationWebmVideoSrc}
-                        type={'video/webm'}
+                        src={getCloudinaryVideoPath(animationMpVideoSrcName)}
+                        type={'video/mp4'}
                     />
                     Your browser does not support the video tag.
                 </video>
