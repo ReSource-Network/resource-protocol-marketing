@@ -139,7 +139,7 @@ section#hero
 { z-index: 100
 ; @include hero-section-position
 ; @include hero-section-size
-; img.creditCardImg
+; picture.creditCardImg, img.creditCardImg
     { @include credit-cards-position
     ; @include credit-cards-size
     ; @include credit-cards-style

@@ -1,8 +1,9 @@
 import React from 'react';
 import './Footer.css';
+import { getCloudinaryImagePath } from "../App/App";
 
 // images
-import logosImgSrc from './images/footer-logos.svg';
+const logosImgSrcName = 'footer-logos_bzcfwy.svg'
 
 
 class Footer extends React.Component {
@@ -21,7 +22,7 @@ class Footer extends React.Component {
             >
                 <img
                     id={'footer-logos'}
-                    src={logosImgSrc}
+                    src={getCloudinaryImagePath(logosImgSrcName)}
                     alt={'resource network logos'}
                 />
                 <p><span>&copy;</span> ReSource Network</p>

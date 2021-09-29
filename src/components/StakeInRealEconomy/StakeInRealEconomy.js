@@ -1,8 +1,9 @@
 import React from 'react';
 import './StakeInRealEconomy.css'
+import {getCloudinaryImagePath} from "../App/App";
 
 // animation images
-import cityIllustrationSrc from './images/buildings.svg'
+const cityImgSrcName = 'city-buildings_i3hjgz.svg'
 
 
 class StakeInRealEconomy extends React.Component {
@@ -19,8 +20,9 @@ class StakeInRealEconomy extends React.Component {
                 <h4>
                     { 'Stake into the real economy' }
                 </h4>
+
                 <img
-                    src={cityIllustrationSrc}
+                    src={getCloudinaryImagePath(cityImgSrcName)}
                     alt={'city buildings illustration'}
                     id={'StakeInRealEconomyCityIllustration'}
                 />
