@@ -1,7 +1,8 @@
 import React from 'react';
-import './Hero.css'
+import './Hero.css';
 import Button from "../Button/Button";
 import {getCloudinaryImagePath} from "../App/App";
+import Typical from 'react-typical';
 
 // images
 const creditCardsPngSrcName = 'crypto-credit-cards_iabj40.png'
@@ -39,18 +40,25 @@ class Hero extends React.Component {
 
                 {/* COPY */}
                 <header>
-                    <h1>
-                        { 'Loans without interest payments'
-                        }
-                    </h1>
+                    {/*<h1>*/}
+                        <Typical
+                            loop={Infinity}
+                            wrapper={'h1'}
+                            steps={
+                                [ 'Credit without creditors'
+                                , 1000
+                                , 'Loans without interest payments'
+                                , 1000
+                                , 'Trade without cash'
+                                , 1000
+                                ]
+                            }
+                        />
+                    {/*</h1>*/}
 
                     <h2>
-                        { 'turn untapped resources into '
+                        { 'turn untapped resources into liquidity '
                         }
-                        <span>
-                            { 'liquidity'
-                            }
-                        </span>
                     </h2>
 
                     {/* BUTTONS */}

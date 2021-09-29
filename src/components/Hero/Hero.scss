@@ -156,10 +156,6 @@ section#hero
     { @include hero-h2-text-style
     ; @include hero-header-text-size
   }
-; span
-    { font-family: $space-mono
-    ; font-style: italic
-    }
 ; // BUTTONS
 ; div#hero-buttons-container
     { @include hero-buttons-container-position
