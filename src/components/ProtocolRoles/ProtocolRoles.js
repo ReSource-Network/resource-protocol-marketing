@@ -3,7 +3,7 @@ import './ProtocolRoles.css'
 
 // animation images
 import lineOfBusinessesSrc from './images/line-of-businesses.png'
-import animationStillSrc from './images/animation-still.svg'
+// import animationStillSrc from './images/animation-still.svg'
 
 // card images
 import underwritersImgSrc from './images/underwriters.svg'
@@ -35,6 +35,12 @@ const cardsContent =
     , merchants
     , operator
     ]
+
+
+const animationMpVideoSrc =
+    'https://res.cloudinary.com/resource-network/video/upload/v1632894696/resource-protocol/animation-transparent_l25jho.mov'
+const animationWebmVideoSrc =
+    'https://res.cloudinary.com/resource-network/video/upload/v1632897292/resource-protocol/animation-transparent_fhcx8c.webm'
 
 
 
@@ -90,11 +96,29 @@ class ProtocolRoles extends React.Component {
                     alt={'line of merchants waiting to join network'}
                     id={'lineOfBusinesses'}
                 />
-                <img
-                    src={animationStillSrc}
-                    alt={'line of merchants waiting to join network'}
-                    id={'animationStill'}
-                />
+
+                <video
+                    id={'animation'}
+                    width={`${window.innerWidth * 0.8}`}
+                    height={`${window.innerWidth * 0.8}`}
+                    // controls
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload
+                >
+                    <source
+                        src={animationMpVideoSrc}
+                        type={'video/mp4'}
+                    />
+                    <source
+                        src={animationWebmVideoSrc}
+                        type={'video/webm'}
+                    />
+                    Your browser does not support the video tag.
+                </video>
+
                 <div
                     id={'protocolRolesCards'}
                     >

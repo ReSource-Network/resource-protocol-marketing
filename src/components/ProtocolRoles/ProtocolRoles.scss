@@ -45,7 +45,8 @@
 }
 
 @mixin protocol-roles-animation-position
-{ position: absolute
+{ display: block
+; position: absolute
 ; top: calc(100vh + 100px)
 ; right: -3vw
 ; @media screen and (max-width: 800px)
@@ -63,6 +64,9 @@
     }
 }
 
+@mixin protocol-roles-animation-style
+{ background-blend-mode: lighten
+}
 
 
 // ROLES CARDS
@@ -73,6 +77,9 @@
 ; @media screen and (max-width: 800px)
     { justify-content: center }
 }
+
+
+// ROLES CARD
 
 @mixin protocol-roles-card-position
 { margin: 8vw
@@ -124,6 +131,9 @@
 ; box-shadow: 0 0 40px rgba(0, 0, 0, 0.15)
 }
 
+
+// ROLES CARD TEXT
+
 @mixin protocol-roles-card-paragraph-style
 { font-size: 24px
 ; font-weight: normal
@@ -143,6 +153,9 @@
     { font-size: 18px
     }
 }
+
+
+// ROLES CARD IMG
 
 @mixin protocol-roles-card-img-position
 { margin: -130px 0 32px 20px
@@ -175,9 +188,10 @@ img#lineOfBusinesses
 { @include line-of-businesses-position
 ; @include line-of-businesses-size
 }
-img#animationStill
+video#animation
 { @include protocol-roles-animation-position
 ; @include protocol-roles-animation-size
+; @include protocol-roles-animation-style
 }
 
 .protocolRolesCards
