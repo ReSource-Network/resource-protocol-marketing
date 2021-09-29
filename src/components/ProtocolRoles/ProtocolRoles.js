@@ -4,7 +4,8 @@ import {getCloudinaryImagePath, getCloudinaryVideoPath} from '../App/App'
 
 
 // animation video
-const animationMpVideoSrcName = 'hiw-animation_w8ckww.mov'
+// const animationMpVideoSrcName = 'hiw-animation_w8ckww.mov'
+const animationMpVideoSrcName = 'hiw-animation_lvekag.mov'
 const animationWebmVideoSrcName = 'hiw-animation_i21vlx.webm'
 
 // card data
@@ -95,12 +96,12 @@ class ProtocolRoles extends React.Component {
                     preload
                 >
                     <source
-                        src={getCloudinaryVideoPath(animationWebmVideoSrcName)}
-                        type={'video/webm'}
-                    />
-                    <source
                         src={getCloudinaryVideoPath(animationMpVideoSrcName)}
                         type={'video/mp4'}
+                    />
+                    <source
+                        src={getCloudinaryVideoPath(animationWebmVideoSrcName)}
+                        type={'video/webm'}
                     />
                     Your browser does not support the video tag.
                 </video>
