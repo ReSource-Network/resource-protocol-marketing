@@ -38,16 +38,16 @@
 { opacity: 0.5
 }
 
-// TEXT
+// TITLE TEXT
 
 @mixin sire-title-position
 { position: relative
-; margin: 10vh 10vw
+; margin: 8vh 10vw 0 10vw
 }
 
 @mixin sire-title-size
 { font-size: 3em
-; max-width: 350px
+; max-width: 700px
 ; @media screen and (max-width: 1000px)
     { font-size: 2.4em
     }
@@ -64,6 +64,32 @@
 }
 
 
+// PARAGRAPH TEXT
+
+
+@mixin sire-paragraph-position
+{ position: relative
+; margin: 32px 10vw 0 10vw
+}
+
+@mixin sire-paragraph-size
+{ font-size: 1.4em
+; max-width: 700px
+; @media screen and (max-width: 1000px)
+    { font-size: 1.4em
+    }
+; @media screen and (max-width: 550px)
+    { font-size: 1.0em
+    ; max-width: 450px
+    }
+}
+
+@mixin sire-paragraph-style
+{ font-weight: 300
+; line-height: 120%
+; color: white
+}
+
 section#stakeInRealEconomy
 { @include sire-section-position
 ; @include sire-section-size
@@ -78,5 +104,9 @@ section#stakeInRealEconomy
     ; @include sire-title-size
     ; @include sire-title-style
     ; z-index: -8
+    }
+; p { @include sire-paragraph-position
+    ; @include sire-paragraph-size
+    ; @include sire-paragraph-style
     }
 }
