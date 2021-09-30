@@ -100,7 +100,7 @@ class ProtocolRoles extends React.Component {
                     id={'animation'}
                     width={`${this.state.width * 0.8}`}
                     height={`${this.state.width * 0.8}`}
-                    // controls
+                    poster={'https://res.cloudinary.com/resource-network/image/upload/v1632976534/resource-protocol/animation-poster_yvjxuo.png'}
                     autoPlay
                     muted
                     loop
