@@ -74,10 +74,12 @@ class Hero extends React.Component {
                         />
 
                         <Button
-                            text = 'Whitepaper'
+                            text = 'Litepaper'
                             type = 'cta'
                             color = 'primary'
                             iconName = 'externalLink'
+                            href = 'https://resource-protocol.gitbook.io/resource-litepaper/'
+                            target = '_blank'
                         />
                     </div>
                 </header>

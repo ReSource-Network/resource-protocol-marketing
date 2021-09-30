@@ -28,6 +28,9 @@ class Button extends React.Component {
                 href =
                     { this.props.href
                     }
+                target =
+                    { this.props.target
+                    }
             >
                 <div className={'icon-text-group'}>
                     <p>
