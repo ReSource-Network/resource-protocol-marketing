@@ -34,6 +34,15 @@ const cardsContent =
     ]
 
 
+// check for iOS
+let isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+    || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+
+// check for Safari
+const agent = navigator.userAgent.toLowerCase();
+let isSafari = (agent.indexOf('safari') > -1) && (agent.indexOf('chrome') <= -1)
+
+
 
 class ProtocolRoles extends React.Component {
     constructor(props) {
@@ -96,27 +105,31 @@ class ProtocolRoles extends React.Component {
                 id={'protocolRoles'}
             >
 
-                <video
-                    id={'animation'}
-                    width={`${this.state.width * 0.8}`}
-                    height={`${this.state.width * 0.8}`}
-                    poster={'https://res.cloudinary.com/resource-network/image/upload/v1632976534/resource-protocol/animation-poster_yvjxuo.png'}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload
-                >
-                    <source
-                        src={getCloudinaryVideoPath(animationMpVideoSrcName)}
-                        type={'video/mp4'}
-                    />
-                    <source
-                        src={getCloudinaryVideoPath(animationWebmVideoSrcName)}
-                        type={'video/webm'}
-                    />
-                    Your browser does not support the video tag.
-                </video>
+                { isIOS && isSafari ?
+                    null
+                    :
+                    <video
+                        id={'animation'}
+                        width={`${this.state.width * 0.8}`}
+                        height={`${this.state.width * 0.8}`}
+                        poster={'https://res.cloudinary.com/resource-network/image/upload/v1632976534/resource-protocol/animation-poster_yvjxuo.png'}
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload
+                    >
+                        <source
+                            src={getCloudinaryVideoPath(animationMpVideoSrcName)}
+                            type={'video/mp4'}
+                        />
+                        <source
+                            src={getCloudinaryVideoPath(animationWebmVideoSrcName)}
+                            type={'video/webm'}
+                        />
+                        Your browser does not support the video tag.
+                    </video>
+                }
 
                 <div
                     id={'protocolRolesCards'}
