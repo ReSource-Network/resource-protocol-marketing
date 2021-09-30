@@ -29,7 +29,7 @@ class Button extends React.Component {
                     { this.props.href
                     }
                 target =
-                    { this.props.target
+                    { this.props.target ? this.props.target : null
                     }
             >
                 <div className={'icon-text-group'}>
