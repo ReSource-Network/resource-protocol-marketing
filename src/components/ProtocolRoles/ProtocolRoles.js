@@ -4,7 +4,6 @@ import {getCloudinaryImagePath, getCloudinaryVideoPath} from '../App/App'
 
 
 // animation video
-// const animationMpVideoSrcName = 'hiw-animation_w8ckww.mov'
 const animationMpVideoSrcName = 'hiw-animation_lvekag.mov'
 const animationWebmVideoSrcName = 'hiw-animation_i21vlx.webm'
 
@@ -39,10 +38,23 @@ const cardsContent =
 class ProtocolRoles extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state =
+            { width: window.innerWidth
+            }
 
         // bind
         this.renderCards = this.renderCards.bind(this)
+    }
+
+    // window resize re-rendering
+    updateDimensions = () => {
+        this.setState({ width: window.innerWidth });
+    };
+    componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateDimensions);
     }
 
     // render
@@ -86,8 +98,8 @@ class ProtocolRoles extends React.Component {
 
                 <video
                     id={'animation'}
-                    width={`${window.innerWidth * 0.8}`}
-                    height={`${window.innerWidth * 0.8}`}
+                    width={`${this.state.width * 0.8}`}
+                    height={`${this.state.width * 0.8}`}
                     // controls
                     autoPlay
                     muted
