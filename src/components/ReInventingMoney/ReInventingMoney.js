@@ -49,7 +49,7 @@ const intelligentlyInclusive =
 , descriptionText:
     'Instead of relying on credit scoring agencies, participants can utilize their social capital, '
     + 'vouch for each other, or use a variety of reputation mechanisms to prove credit worthiness. '
-    + 'This isn’t only more fair than traditional credit scores, but also more smart and reliable.'
+    + 'This isn’t only more fair than traditional credit scores, but also smarter and more reliable.'
 , imgSrcName: intelligentlyInclusiveImgSrcName
 , altText: 'laptop cloud messages illustrated icon'
 }
