@@ -1,6 +1,5 @@
 import "./FutureIsMutual.css";
 import React from "react";
-// for email capture
 import axios from "axios";
 import { customAlphabet } from "nanoid";
 import {getCloudinaryImagePath} from "../App/App";

@@ -67,5 +67,77 @@ section#stakeInRealEconomy p {
     max-width: 450px;
   }
 }
+section#stakeInRealEconomy form {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 48px 10vw 0 10vw;
+}
+@media screen and (max-width: 800px) {
+  section#stakeInRealEconomy form {
+    flex-flow: column nowrap;
+  }
+}
+section#stakeInRealEconomy form input#email {
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  outline: none;
+  background: none;
+  color: white;
+  transition: 0.25s;
+  margin-right: 16px;
+  padding: 10px 16px;
+  min-width: 300px;
+  font-size: 18px;
+}
+section#stakeInRealEconomy form input#email::placeholder {
+  color: #d9d9d9;
+}
+section#stakeInRealEconomy form input#email:focus {
+  border: 1px solid white;
+}
+section#stakeInRealEconomy form input#email:hover {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+@media screen and (max-width: 800px) {
+  section#stakeInRealEconomy form input#email {
+    margin: 0 0 16px 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#stakeInRealEconomy form input#email {
+    min-width: 180px;
+    align-self: stretch;
+    width: auto;
+  }
+}
+section#stakeInRealEconomy form input#submit {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  width: fit-content;
+  font-size: 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #957FEF;
+  color: white;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 800px) {
+  section#stakeInRealEconomy form input#submit {
+    width: auto;
+  }
+}
+section#stakeInRealEconomy form input#submit:hover {
+  background-color: #7161EF;
+  transition: 0.5s;
+}
+section#stakeInRealEconomy form input#submit:active {
+  background-color: #7161EF;
+  transition: 0s;
+}
 
 /*# sourceMappingURL=StakeInRealEconomy.css.map */
