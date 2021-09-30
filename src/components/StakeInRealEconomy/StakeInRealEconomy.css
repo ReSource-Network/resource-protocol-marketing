@@ -67,6 +67,11 @@ section#stakeInRealEconomy p {
     max-width: 450px;
   }
 }
+@media screen and (max-width: 350px) {
+  section#stakeInRealEconomy p {
+    display: none;
+  }
+}
 section#stakeInRealEconomy form {
   display: flex;
   flex-flow: row nowrap;
