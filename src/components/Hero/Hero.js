@@ -66,20 +66,20 @@ class Hero extends React.Component {
                             }
                     >
                         <Button
-                            text = 'How it works'
-                            type = 'cta'
-                            color = 'default'
-                            iconName = 'arrowDown'
-                            href = '#howItWorks'
+                            text = {'How it works'}
+                            type = {'cta'}
+                            color = {'default'}
+                            iconName = {'arrowDown'}
+                            href = {'#howItWorks'}
                         />
 
                         <Button
-                            text = 'Litepaper'
-                            type = 'cta'
-                            color = 'primary'
-                            iconName = 'externalLink'
-                            href = 'https://resource-protocol.gitbook.io/resource-litepaper/'
-                            target = '_blank'
+                            text = {'Litepaper'}
+                            type = {'cta'}
+                            color = {'primary'}
+                            iconName = {'externalLink'}
+                            href = {'https://resource-protocol.gitbook.io/resource-litepaper/'}
+                            target = {'_blank'}
                         />
                     </div>
                 </header>

@@ -51,7 +51,7 @@ class Partners extends React.Component {
     renderPartnerImages()
     { return ( partners.map (partner =>
         <a
-            key={partner.titleText}
+            key={partner.altText}
             className={'partnerItem'}
             href={partner.href}
             target={'_blank'}

@@ -117,7 +117,7 @@ class ProtocolRoles extends React.Component {
                         muted
                         loop
                         playsInline
-                        preload
+                        preload={'true'}
                     >
                         <source
                             src={getCloudinaryVideoPath(animationMpVideoSrcName)}
