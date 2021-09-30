@@ -40,24 +40,22 @@ class Hero extends React.Component {
 
                 {/* COPY */}
                 <header>
-                    {/*<h1>*/}
-                        <Typical
-                            loop={Infinity}
-                            wrapper={'h1'}
-                            steps={
-                                [ 'Credit without creditors'
-                                , 1000
-                                , 'Loans without interest payments'
-                                , 1000
-                                , 'Trade without cash'
-                                , 1000
-                                ]
-                            }
-                        />
-                    {/*</h1>*/}
+                    <Typical
+                        loop={Infinity}
+                        wrapper={'h1'}
+                        steps={
+                            [ 'Credit without creditors'
+                            , 1000
+                            , 'Loans without interest payments'
+                            , 1000
+                            , 'Trade without cash'
+                            , 1000
+                            ]
+                        }
+                    />
 
                     <h2>
-                        { 'turn untapped resources into liquidity '
+                        { 'Turn untapped resources into liquidity '
                         }
                     </h2>
 

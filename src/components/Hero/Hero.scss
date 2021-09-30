@@ -90,7 +90,7 @@ $space-mono: 'Space Mono', Monaco, monospace;
     }
 }
 
-@mixin hero-header-text-size
+@mixin hero-h1-text-size
 { font-size: 2.8em
 ; max-width: 50vw
 ; @media screen and (max-width: 1500px)
@@ -100,6 +100,17 @@ $space-mono: 'Space Mono', Monaco, monospace;
 ; @media screen and (max-width: 800px)
     { font-size: 2em
     }
+}
+@mixin hero-h2-text-size
+{ font-size: 2.0em
+; max-width: 50vw
+; @media screen and (max-width: 1500px)
+{ max-width: unset
+; width: 100%
+}
+; @media screen and (max-width: 800px)
+{ font-size: 1.4em
+}
 }
 
 @mixin hero-h1-text-style
@@ -150,11 +161,12 @@ section#hero
     }
 ; h1
     { @include hero-h1-text-style
-    ; @include hero-header-text-size
+    ; @include hero-h1-text-size
     }
 ; h2
     { @include hero-h2-text-style
-    ; @include hero-header-text-size
+    ; @include hero-h2-text-size
+    ; margin-top: 12px
   }
 ; // BUTTONS
 ; div#hero-buttons-container
