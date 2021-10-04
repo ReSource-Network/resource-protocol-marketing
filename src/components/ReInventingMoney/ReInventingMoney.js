@@ -21,18 +21,18 @@ const fundingGrowthText =
 const reInventingMoney =
 { titleText: 'ReInventing Money'
 , descriptionText:
-      'The ReSource Protocol gives rise to a new class of stablecoins, '
-    + 'achieving autonomous stability. ReSource stablecoins are not '
-    + 'artificially pegged to fiat or other assets, but derive their '
-    + 'stable value from the goods and services traded with them.'
+      'The ReSource Protocol gives rise to a new class of stablecoins,'
+    + ' achieving autonomous stability. ReSource stablecoins are not'
+    + ' artificially pegged to fiat or other assets, but derive their'
+    + ' stable value from the goods and services traded with them.'
 , imgSrcName: reInventingMoneyImgSrcName
 , altText: 'person with idea illustrated icon'
 }
 const reInventingFinance =
 { titleText: 'ReInventing Finance'
 , descriptionText:
-      'The ReSource Protocol does not only disarm intermediaries and custodians, '
-    + 'but decentralizes the logic of credit itself, effectively removing the creditor from the equation.'
+      'The ReSource Protocol does not only disarm intermediaries and custodians,'
+    + ' but decentralizes the logic of credit itself, effectively removing the creditor from the equation.'
     , imgSrcName: reInventingFinanceImgSrcName
     , altText: 'presentation with charts illustrated icon'
 }
@@ -40,16 +40,16 @@ const uncollateralized =
 { titleText: 'Uncollateralized, Secure & Decentralized'
 , descriptionText:
       'A distributed network of underwriters allows for the issuance of uncollateralized credit'
-    + 'without compromising on decentralization and security. '
+    + ' without compromising on decentralization and security. '
 , imgSrcName: uncollatoralizedImgSrcName
 , altText: 'uncollateralized illustrated icon'
 }
 const intelligentlyInclusive =
 { titleText: 'Intelligently Inclusive'
 , descriptionText:
-    'Instead of relying on credit scoring agencies, participants can utilize their social capital, '
-    + 'vouch for each other, or use a variety of reputation mechanisms to prove credit worthiness. '
-    + 'This isn’t only more fair than traditional credit scores, but also smarter and more reliable.'
+    'Instead of relying on credit scoring agencies, participants can utilize their social capital,'
+    + ' vouch for each other, or use a variety of reputation mechanisms to prove credit worthiness.'
+    + ' This isn’t only more fair than traditional credit scores, but also smarter and more reliable.'
 , imgSrcName: intelligentlyInclusiveImgSrcName
 , altText: 'laptop cloud messages illustrated icon'
 }
