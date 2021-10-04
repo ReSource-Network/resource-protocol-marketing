@@ -2,6 +2,7 @@ section#stakeInRealEconomy {
   position: relative;
   width: 100vw;
   height: 60vh;
+  min-height: 600px;
 }
 section#stakeInRealEconomy img {
   position: absolute;
@@ -41,7 +42,7 @@ section#stakeInRealEconomy h4 {
     font-size: 2.4em;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   section#stakeInRealEconomy h4 {
     font-size: 2em;
     max-width: 250px;
@@ -61,15 +62,10 @@ section#stakeInRealEconomy p {
     font-size: 1.4em;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   section#stakeInRealEconomy p {
     font-size: 1em;
     max-width: 450px;
-  }
-}
-@media screen and (max-width: 350px) {
-  section#stakeInRealEconomy p {
-    display: none;
   }
 }
 section#stakeInRealEconomy form {
