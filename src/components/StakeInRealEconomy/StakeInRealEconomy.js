@@ -1,8 +1,8 @@
 import React from 'react';
 import './StakeInRealEconomy.css';
 import axios from "axios";
-import { customAlphabet } from "nanoid";
-import {getCloudinaryImagePath} from "../App/App";
+import { customAlphabet } from 'nanoid';
+import { getCloudinaryImagePath } from '../App/App';
 
 // for email capture
 const nanoid = customAlphabet("1234567890abcdef", 10);
