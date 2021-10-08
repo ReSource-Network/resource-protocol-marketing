@@ -118,6 +118,8 @@ class ProtocolRoles extends React.Component {
                         loop
                         playsInline
                         preload={'true'}
+                        data-src={getCloudinaryVideoPath(animationMpVideoSrcName)+'?autoplay=1'}
+                        src={getCloudinaryVideoPath(animationMpVideoSrcName)+'?autoplay=1'}
                     >
                         <source
                             src={getCloudinaryVideoPath(animationMpVideoSrcName)}
