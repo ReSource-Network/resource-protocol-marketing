@@ -4,6 +4,7 @@ import axios from "axios";
 import { customAlphabet } from "nanoid";
 import { getCloudinaryImagePath } from "../App/App";
 import { useState } from "react";
+
 // images
 const futureIsMutualImgSrcName = "future-is-mutual_thynoz.svg";
 
@@ -11,9 +12,7 @@ const futureIsMutualImgSrcName = "future-is-mutual_thynoz.svg";
 const nanoid = customAlphabet("1234567890abcdef", 10);
 const apiKey = process.env.REACT_APP_CIO_API_KEY;
 const siteId = process.env.REACT_APP_CIO_SITE_ID;
-
-console.log("FutureIsMutual.js -- apiKey:", apiKey);
-console.log("FutureIsMutual.js -- siteId:", siteId);
+const writeToken = process.env.REACT_APP_SEGMENT_WRITE_KEY;
 
 export const FutureIsMutual = () => {
   const [email, setEmail] = useState();
@@ -21,8 +20,8 @@ export const FutureIsMutual = () => {
 
   const handleChange = (e) => {
     const { value } = e.target;
-    console.log("FutureIsMutual.js -- value:", value);
-    setEmail(value);
+    const emailState = value.trim().toLowerCase();
+    setEmail(emailState);
   };
 
   const handleSubmit = async (e) => {
@@ -69,7 +68,7 @@ export const FutureIsMutual = () => {
 
 // for email capture
 const captureFormSubmissionEmail = async (email) => {
-  const axiosConfig = {
+  const customerIOConfig = {
     method: "POST",
     url: "https://track.customer.io/api/v1/forms/resource_protocol_email/submit",
     crossDomain: true,
@@ -89,7 +88,33 @@ const captureFormSubmissionEmail = async (email) => {
     }),
   };
 
-  return axios(axiosConfig);
+  const segmentConfig = {
+    method: "POST",
+    url: "https://api.segment.io/v1/track",
+    crossDomain: true,
+    mode: "CORS",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    auth: {
+      username: writeToken,
+      password: "",
+    },
+    data: JSON.stringify({
+      userId: nanoid(),
+      event: "EmailCapture-ResourceProtocolMarketing",
+      properties: {
+        email: email,
+        tags: "ReSource Protocol Marketing Capture",
+      },
+    }),
+  };
+
+  try {
+    return await Promise.all([axios(segmentConfig), axios(customerIOConfig)]);
+  } catch (e) {
+    console.log("Error submitting to segment & customerio: ", e);
+  }
 };
 
 export default FutureIsMutual;
