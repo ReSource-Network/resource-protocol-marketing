@@ -24,14 +24,30 @@ img#logo {
     height: 40px;
   }
 }
+@media screen and (max-width: 400px) {
+  img#logo {
+    height: 32px;
+  }
+}
 
 div#nav-link-list {
   flex-flow: row nowrap;
   justify-content: space-between;
-  margin-top: 10px;
   width: auto;
 }
-div#nav-link-list a {
+@media screen and (max-width: 310px) {
+  div#nav-link-list {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 310px) {
+  div#nav-link-list {
+    width: 50px;
+  }
+}
+div#nav-link-list svg {
   margin: 8px;
   padding: 10px 12px;
   font-size: 1.2em;
@@ -42,11 +58,28 @@ div#nav-link-list a {
   transition: 0.5s;
 }
 @media screen and (max-width: 600px) {
-  div#nav-link-list a {
+  div#nav-link-list svg {
     margin: 4px;
   }
 }
-div#nav-link-list a:hover {
+@media screen and (max-width: 400px) {
+  div#nav-link-list svg {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+}
+@media screen and (max-width: 400px) {
+  div#nav-link-list svg {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+}
+@media screen and (max-width: 310px) {
+  div#nav-link-list svg {
+    width: 1.2em;
+  }
+}
+div#nav-link-list svg:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
 

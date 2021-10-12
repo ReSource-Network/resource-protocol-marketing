@@ -32,6 +32,9 @@
 ; @media screen and (max-width: 600px)
     { height: 40px
     }
+; @media screen and (max-width: 400px)
+    { height: 32px
+    }
 }
 
 
@@ -41,11 +44,18 @@
 @mixin nav-links-list-position
 { flex-flow: row nowrap
 ; justify-content: space-between
-; margin-top: 10px
+; @media screen and (max-width: 310px)
+    { flex-flow: column nowrap
+    ; justify-content: flex-start;
+    ; align-items: center
+    }
 }
 
 @mixin nav-links-list-size
 { width: auto
+; @media screen and (max-width: 310px)
+    { width: 50px
+    }
 }
 
 
@@ -57,11 +67,22 @@
 ; @media screen and (max-width: 600px)
     { margin: 4px
     }
+; @media screen and (max-width: 400px)
+    { font-size: 1em
+    ; padding: 4px 8px
+    }
 }
 
 @mixin nav-link-size
 { padding: 10px 12px
 ; font-size: 1.2em
+; @media screen and (max-width: 400px)
+    { font-size: 1em
+    ; padding: 4px 8px
+    }
+; @media screen and (max-width: 310px)
+    { width: 1.2em
+    }
 }
 
 @mixin nav-link-style
@@ -93,7 +114,7 @@ img#logo
 div#nav-link-list
 { @include nav-links-list-position
 ; @include nav-links-list-size
-; a
+; svg
     { @include nav-link-position
     ; @include nav-link-size
     ; @include nav-link-style
