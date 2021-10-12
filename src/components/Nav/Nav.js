@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faTelegram, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import './Nav.css';
+import {getCloudinaryImagePath} from "../App/App";
 
 //images
-import logoSrc from './resource-finance-logo.svg';
+const logoSrcName = 'resource-finance-logo_bts9hl.svg';
 
 
 // data
@@ -76,7 +77,7 @@ class Nav extends React.Component {
                 onClick={this.handleClickLogo}
             >
                 { <img
-                    src = {logoSrc}
+                    src = {getCloudinaryImagePath(logoSrcName)}
                     alt = {'resource finance logo'}
                     id = {'logo'}
                 /> }

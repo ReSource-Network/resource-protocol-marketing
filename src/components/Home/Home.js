@@ -9,35 +9,18 @@ import ReInventingMoney from "../ReInventingMoney/ReInventingMoney";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import Partners from "../Partners/Partners";
 import FutureIsMutual from "../FutureIsMutual/FutureIsMutual";
+import Footer from "../Footer/Footer";
 
-// import {data} from '../Data';
+
 
 class Home extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            darkColorTheme: true,
             width: 0,
             height: 0
         };
 
-        this.handleToggleColorTheme = this.handleToggleColorTheme.bind(this);
-    }
-
-    // handle event
-    handleToggleColorTheme(event) {
-        event.preventDefault();
-        this.setState({menu: !this.state.darkColorTheme})
-    }
-
-
-    // get
-    getPath() {
-        return {
-            location: window.location.pathname.slice(1).split('/')[0],
-            area: window.location.pathname.slice(1).split('/')[1],
-            boulder: window.location.pathname.slice(1).split('/')[2]
-        }
     }
 
     renderMain() {
@@ -56,6 +39,7 @@ class Home extends React.Component {
                 <SocialLinks />
                 <Partners />
                 <FutureIsMutual />
+                <Footer />
 
             </main>
         )

@@ -1,4 +1,3 @@
-// email capture
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
@@ -6,8 +5,12 @@ import "./App.css";
 import Nav from "../Nav/Nav";
 import Home from "../Home/Home";
 
-// Set env vars
-require("dotenv").config();
+export const getCloudinaryVideoPath = (fileName) =>
+  "https://res.cloudinary.com/resource-network/video/upload/v1632944401/resource-protocol/" +
+  fileName;
+export const getCloudinaryImagePath = (fileName) =>
+  "https://res.cloudinary.com/resource-network/image/upload/v1632945917/resource-protocol/" +
+  fileName;
 
 function App() {
   return (

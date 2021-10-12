@@ -52,7 +52,7 @@ const linkedin =
 const github =
     { href: 'https://github.com/ReSource-Network/'
     , titleText: 'gitHub'
-    , descriptionText: 'Checkout our smart contracts'
+    , descriptionText: 'Check out our code'
     , icon: faGithub
     }
 

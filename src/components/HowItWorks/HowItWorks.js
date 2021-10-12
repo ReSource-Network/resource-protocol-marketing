@@ -1,9 +1,10 @@
 import React from 'react';
 import './HowItWorks.css'
+import {getCloudinaryImagePath} from "../App/App";
 
 // images
-import howItWorksIllustratedIconSrc from './images/how-it-works-illustrated-icon.svg'
-import containerPaddingImgSrc from './images/container-padding.svg'
+const howItWorksIllustratedIconSrcName = 'uncollateralized_t9z6ds.svg'
+const containerPaddingImgSrcName = 'container-padding_ihcaa9.svg'
 
 // data
 const howItWorksText =
@@ -31,7 +32,6 @@ class ProtocolRoles extends React.Component {
     }
 
     // render
-    // renderNewsletterCTA()
 
     renderHowItWorksContent()
     { return (
@@ -40,7 +40,7 @@ class ProtocolRoles extends React.Component {
             >
             <img
                 id={'howItWorksContentImg'}
-                src={howItWorksIllustratedIconSrc}
+                src={getCloudinaryImagePath(howItWorksIllustratedIconSrcName)}
                 alt={'computer dashboard with chairs illustrated icon'}
                 />
             <div
@@ -75,7 +75,7 @@ render() {
                 >
                 <img
                     className={'containerPadding'}
-                    src={containerPaddingImgSrc}
+                    src={getCloudinaryImagePath(containerPaddingImgSrcName)}
                     alt={'wavy container padding'}
                     />
                 { this.renderHowItWorksContent() }
@@ -85,7 +85,7 @@ render() {
                 </div>
                 <img
                     className={'containerPadding'}
-                    src={containerPaddingImgSrc}
+                    src={getCloudinaryImagePath(containerPaddingImgSrcName)}
                     alt={'wavy container padding'}
                 />
         </section>

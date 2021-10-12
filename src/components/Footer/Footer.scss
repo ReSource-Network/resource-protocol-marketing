@@ -1,0 +1,23 @@
+footer
+{ // position
+; display: flex
+; flex-flow: column nowrap
+; align-items: flex-start
+; justify-content: flex-start
+; // size
+; width: calc(100vw - 64px * 2)
+; height: auto
+; padding: 64px 64px 96px 64px
+; // style
+; background-color: black
+; img
+    { width: 150px
+    ; height: auto
+    ; fill: white
+    ; margin-bottom: 16px
+    }
+; p
+    { font-size: 12px
+    ; color: white
+    }
+}

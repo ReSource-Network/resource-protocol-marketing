@@ -43,21 +43,23 @@ img#lineOfBusinesses {
   }
 }
 
-img#animationStill {
+video#animation {
+  display: block;
   position: absolute;
   top: calc(100vh + 100px);
   right: -3vw;
   width: 80vw;
+  background-blend-mode: lighten;
 }
 @media screen and (max-width: 800px) {
-  img#animationStill {
+  video#animation {
     position: relative;
     align-self: flex-end;
     margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 800px) {
-  img#animationStill {
+  video#animation {
     top: unset;
     width: 120vw;
   }
