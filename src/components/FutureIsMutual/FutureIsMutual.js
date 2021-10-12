@@ -30,7 +30,7 @@ class FutureIsMutual extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        const { email } = this.state;
+        const { email } = this.state.email;
         return captureFormSubmissionEmail(email);
     }
 
