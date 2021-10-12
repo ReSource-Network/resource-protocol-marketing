@@ -57,7 +57,7 @@ export const FutureIsMutual = () => {
             <input
               id={"submit"}
               type={"submit"}
-              value={submitted ? "Submitted" : "Take part"}
+              value={submitted ? "Submitted!" : "Take part"}
             />
           </form>
         </div>
