@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
 
     <!--
         FONTS
     -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Space+Mono:ital@0;1&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Space+Mono:ital@0;1&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
 
     <!--
         SHORTCUT ICON
     -->
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/images/favicon.png" />
-    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/images/favicon.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="%PUBLIC_URL%/images/favicon.png"
+    />
     <!--<link rel="apple-touch-icon" href="touch-icon-iphone.png">-->
-    <link rel="apple-touch-icon" sizes="64x64" href="%PUBLIC_URL%/images/logo@64.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/images/logo@192.png" />
-    <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/images/logo@512.png" />
-    <link rel="apple-touch-icon" sizes="1024x1024" href="%PUBLIC_URL%/images/logo@1024.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="64x64"
+      href="%PUBLIC_URL%/images/logo@64.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="%PUBLIC_URL%/images/logo@192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="%PUBLIC_URL%/images/logo@512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="%PUBLIC_URL%/images/logo@1024.png"
+    />
 
     <!--
         VIEWPORT
     -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <meta name="viewport" content="height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta
+      name="viewport"
+      content="height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
 
     <!--
         THEME
@@ -36,8 +65,8 @@
         TITLE
     -->
     <meta
-            name="ReSource Protocol"
-            content="Turn untapped resources into liquidity"
+      name="ReSource Protocol"
+      content="Turn untapped resources into liquidity"
     />
 
     <!--
@@ -45,19 +74,15 @@
     -->
     <meta name="og:title" content="ReSource Protocol" />
     <meta name="og:url" content="https://resource.finance" />
-    <meta name="og:image" content="https://res.cloudinary.com/resource-network/image/upload/v1632972406/resource-protocol/og-image_tsrmnx.png" />
+    <meta
+      name="og:image"
+      content="https://res.cloudinary.com/resource-network/image/upload/v1632972406/resource-protocol/og-image_tsrmnx.png"
+    />
     <meta name="og:site_name" content="ReSource Finance" />
-    <meta
-            name="description"
-            content="A protocol for business credit."
-    />
-    <meta
-            name="og:description"
-            content="A Protocol for Business Credit."
-    />
+    <meta name="description" content="A protocol for business credit." />
+    <meta name="og:description" content="A Protocol for Business Credit." />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="colorful ReSource Finance logo" />
-
 
     <!--
         MANIFEST
@@ -68,26 +93,81 @@
         ANALYTICS Hotjar Tracking Code
     -->
     <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:2496077,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2496077, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
 
     <!--
         Global site tag (gtag.js) - Google Analytics
     -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SCE3XDZFSJ"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SCE3XDZFSJ"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-SCE3XDZFSJ');
+      gtag("config", "G-SCE3XDZFSJ");
+    </script>
+
+    <!--
+        LOCALIZE IL8N
+    -->
+    <script src="https://global.localizecdn.com/localize.js"></script>
+    <script>
+      !(function (a) {
+        if (!a.Localize) {
+          a.Localize = {};
+          for (
+            var e = [
+                "translate",
+                "untranslate",
+                "phrase",
+                "initialize",
+                "translatePage",
+                "setLanguage",
+                "getLanguage",
+                "detectLanguage",
+                "getAvailableLanguages",
+                "untranslatePage",
+                "bootstrap",
+                "prefetch",
+                "on",
+                "off",
+                "hideWidget",
+                "showWidget",
+                "getSourceLanguage",
+              ],
+              t = 0;
+            t < e.length;
+            t++
+          )
+            a.Localize[e[t]] = function () {};
+        }
+      })(window);
+    </script>
+
+    <script>
+      Localize.initialize({
+        key: "c8c71c3a8a77c",
+        rememberLanguage: true,
+        autoApprove: true,
+      });
     </script>
 
     <!--
@@ -95,35 +175,76 @@
     -->
     <title>ReSource Protocol</title>
 
-
     <!--
         TRANSLATIONS
     -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <script src="https://global.localizecdn.com/localize.js"></script>
-    <script>!function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","getSourceLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off","hideWidget","showWidget"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);</script>
     <script>
-        Localize.initialize({
-            key: 'c8c71c3a8a77c',
-            rememberLanguage: true,
-        });
+      !(function (a) {
+        if (!a.Localize) {
+          a.Localize = {};
+          for (
+            var e = [
+                "translate",
+                "untranslate",
+                "phrase",
+                "initialize",
+                "translatePage",
+                "setLanguage",
+                "getLanguage",
+                "getSourceLanguage",
+                "detectLanguage",
+                "getAvailableLanguages",
+                "untranslatePage",
+                "bootstrap",
+                "prefetch",
+                "on",
+                "off",
+                "hideWidget",
+                "showWidget",
+              ],
+              t = 0;
+            t < e.length;
+            t++
+          )
+            a.Localize[e[t]] = function () {};
+        }
+      })(window);
     </script>
-</head>
-<body>
-<noscript>You need to enable JavaScript to run this app.</noscript>
-<div id="root"></div>
-<!--
+    <script>
+      Localize.initialize({
+        key: "c8c71c3a8a77c",
+        rememberLanguage: true,
+      });
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
     Hi there, inspector. :P
 -->
-<!-- Twitter universal website tag code -->
-<script>
-    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-        a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-    // Insert Twitter Pixel ID and Standard Event data below
-    twq('init','o6da4');
-    twq('track','PageView');
-</script>
-<!-- End Twitter universal website tag code -->
-</body>
+    <!-- Twitter universal website tag code -->
+    <script>
+      !(function (e, t, n, s, u, a) {
+        e.twq ||
+          ((s = e.twq =
+            function () {
+              s.exe ? s.exe.apply(s, arguments) : s.queue.push(arguments);
+            }),
+          (s.version = "1.1"),
+          (s.queue = []),
+          (u = t.createElement(n)),
+          (u.async = !0),
+          (u.src = "//static.ads-twitter.com/uwt.js"),
+          (a = t.getElementsByTagName(n)[0]),
+          a.parentNode.insertBefore(u, a));
+      })(window, document, "script");
+      // Insert Twitter Pixel ID and Standard Event data below
+      twq("init", "o6da4");
+      twq("track", "PageView");
+    </script>
+    <!-- End Twitter universal website tag code -->
+  </body>
 </html>
