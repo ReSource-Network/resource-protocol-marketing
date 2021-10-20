@@ -1,16 +1,26 @@
 /* CSS RESET */
-body
-{ width: 100vw
-; height: auto
+body {
+  width: 100vw;
+  height: auto;
 }
 
-*, body, h1, h2, h3, h4, h6, p, a, span
-{ margin: 0
-; padding: 0
-; text-decoration: none
-; text-align: left
-; font-size: 1em
-; font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Fira Sans', 'Helvetica Neue', sans-serif
-; -webkit-font-smoothing: antialiased
-; -moz-osx-font-smoothing: grayscale
+*,
+body,
+h1,
+h2,
+h3,
+h4,
+h6,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1em;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Fira Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

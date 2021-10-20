@@ -1,126 +1,123 @@
 // SECTION
 
-@mixin partners-section-position
-{ display: flex
-; flex-flow: column nowrap;
-; justify-content: center;
-; align-items: center;
+@mixin partners-section-position {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-@mixin partners-section-size
-{ width: calc(100vw - (64px * 2))
-; height: auto
-; padding: 0 64px 64px 64px
-; @media screen and (max-width: 550px)
-    { width: calc(100vw - (16px * 2))
-    ; padding: 16px
-    }
+@mixin partners-section-size {
+  width: calc(100vw - (64px * 2));
+  height: auto;
+  padding: 0 64px 64px 64px;
+  @media screen and (max-width: 550px) {
+    width: calc(100vw - (16px * 2));
+    padding: 16px;
+  }
 }
 
 // SECTION TITLE
 
-@mixin partners-section-title-position
-{ margin-bottom: 64px
+@mixin partners-section-title-position {
+  margin-bottom: 64px;
 }
 
-@mixin partners-section-title-size
-{ font-size: 1.6em
+@mixin partners-section-title-size {
+  font-size: 1.6em;
 }
 
-@mixin partners-section-title-style
-{ color: white
-; font-weight: 600
-; text-align: center
+@mixin partners-section-title-style {
+  color: white;
+  font-weight: 600;
+  text-align: center;
 }
 
 // PARTNER ITEMS CONTAINER
 
-@mixin partners-items-container-position
-{ display: flex
-; flex-flow: row nowrap
-; align-items: center
-; justify-content: center
-; @media screen and (max-width: 1200px)
-    { flex-flow: column nowrap
-    }
+@mixin partners-items-container-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 1200px) {
+    flex-flow: column nowrap;
+  }
 }
 
-@mixin partners-items-container-size
-{ width: calc(80% + (8px * 4))
-; @media screen and (max-width: 550px)
-    { width: calc(80% + (16px * 2))
-    ; padding: 16px
-    }
+@mixin partners-items-container-size {
+  width: calc(80% + (8px * 4));
+  @media screen and (max-width: 550px) {
+    width: calc(80% + (16px * 2));
+    padding: 16px;
+  }
 }
-
 
 // PARTNER ITEM
 
-@mixin partner-item-position
-{ display: flex
-; flex-flow: row nowrap
-; align-items: center
-; justify-content: center
-; margin: 8px
+@mixin partner-item-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
 }
 
-@mixin partner-item-size
-{ width: auto
-; height: auto
-; padding: 32px
-; @media screen and (max-width: 1200px)
-    { width: 360px
-    }
-; @media screen and (max-width: 550px)
-    { width: auto
-    ; align-self: stretch
-    }
+@mixin partner-item-size {
+  width: auto;
+  height: auto;
+  padding: 32px;
+  @media screen and (max-width: 1200px) {
+    width: 360px;
+  }
+  @media screen and (max-width: 550px) {
+    width: auto;
+    align-self: stretch;
+  }
 }
 
-@mixin partner-item-style
-{ border: 1px solid rgba(256, 256, 256, 0.2)
-; border-radius: 16px
-; &:hover
-    { border: 1px solid rgba(256, 256, 256, 0.4)
-    }
+@mixin partner-item-style {
+  border: 1px solid rgba(256, 256, 256, 0.2);
+  border-radius: 16px;
+  &:hover {
+    border: 1px solid rgba(256, 256, 256, 0.4);
+  }
 }
-
 
 // PARTNER IMG
 
-@mixin partner-img-position
-{ display: flex
-; flex-flow: row nowrap
-; align-items: center
-; justify-content: space-around
+@mixin partner-img-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@mixin partner-img-size
-{ width: auto
-; height: 48px
+@mixin partner-img-size {
+  width: auto;
+  height: 48px;
 }
 
-
-
-section#partners
-{ @include partners-section-position
-; @include partners-section-size
-; h4
-    { @include partners-section-title-position
-    ; @include partners-section-title-size
-    ; @include partners-section-title-style
+section#partners {
+  @include partners-section-position;
+  @include partners-section-size;
+  h4 {
+    @include partners-section-title-position;
+    @include partners-section-title-size;
+    @include partners-section-title-style;
+  }
+  div#partnersItemsContainer {
+    @include partners-items-container-position;
+    @include partners-items-container-size;
+    a.partnerItem {
+      @include partner-item-position;
+      @include partner-item-size;
+      @include partner-item-style;
     }
-; div#partnersItemsContainer
-    { @include partners-items-container-position
-    ; @include partners-items-container-size
-    ; a.partnerItem
-        { @include partner-item-position
-        ; @include partner-item-size
-        ; @include partner-item-style
-        }
-    ; picture, img
-        { @include partner-img-position
-        ; @include partner-img-size
-        }
+    picture,
+    img {
+      @include partner-img-position;
+      @include partner-img-size;
     }
+  }
 }

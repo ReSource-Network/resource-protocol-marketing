@@ -1,175 +1,169 @@
 // BRAND
-$primary: #957FEF;
-$primary-active: #7161EF;
-$primary-variant: #B79CED;
-$space-mono: 'Space Mono', Monaco, monospace;
+$primary: #957fef;
+$primary-active: #7161ef;
+$primary-variant: #b79ced;
+$space-mono: "Space Mono", Monaco, monospace;
 
 // SECTION
 
-@mixin hero-section-position
-{ display: flex
-; flex-flow: column nowrap
-; justify-content: center
-; @media screen and (max-width: 1500px)
-    { justify-content: flex-end;
-    }
+@mixin hero-section-position {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  @media screen and (max-width: 1500px) {
+    justify-content: flex-end;
+  }
 }
 
-@mixin hero-section-size
-{ height: 100vh
-; width: 100vw
-; margin: 0
+@mixin hero-section-size {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
 }
-
 
 // CREDIT CARDS IMAGE
 
-@mixin credit-cards-position
-{ position: absolute
-; // vertical
-; top: 45%
-; transform: translateY(-55%);
-; -moz-transform: translateY(-55%);
-; -o-transform: translateY(-55%);
-; -webkit-transform: translateY(-55%);
-; @media screen and (max-width: 1500px)
-    { top: 40%
-    ; transform: translateY(-60%)
-    ; -moz-transform: translateY(-60%)
-    ; -o-transform: translateY(-60%)
-    ; -webkit-transform: translateY(-60%)
-    }
-; @media screen and (max-width: 500px)
-    { top: 150px
-    ; transform: unset
-    ; -moz-transform: unset
-    ; -o-transform: unset
-    ; -webkit-transform: unset
-    }
-; // horizontal
-; right: -10px
+@mixin credit-cards-position {
+  position: absolute; // vertical
+  top: 45%;
+  transform: translateY(-55%);
+  -moz-transform: translateY(-55%);
+  -o-transform: translateY(-55%);
+  -webkit-transform: translateY(-55%);
+  @media screen and (max-width: 1500px) {
+    top: 40%;
+    transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+  }
+  @media screen and (max-width: 500px) {
+    top: 150px;
+    transform: unset;
+    -moz-transform: unset;
+    -o-transform: unset;
+    -webkit-transform: unset;
+  } // horizontal
+  right: -10px;
 }
 
-@mixin credit-cards-size
-{ // height
-; height: auto
-; // width
-; width: 40vw
-; min-width: 500px
-; max-width: 800px
-; @media screen and (max-width: 1500px)
-    { width: 700px
-    ; max-width: 80vw
-    }
-; @media screen and (max-width: 800px)
-    { min-width: unset
-    }
+@mixin credit-cards-size {
+  // height
+  height: auto; // width
+  width: 40vw;
+  min-width: 500px;
+  max-width: 800px;
+  @media screen and (max-width: 1500px) {
+    width: 700px;
+    max-width: 80vw;
+  }
+  @media screen and (max-width: 800px) {
+    min-width: unset;
+  }
 }
 
-@mixin credit-cards-style
-{ @media screen and (max-height: 1000px)
-    { opacity: 0.66
-    }
+@mixin credit-cards-style {
+  @media screen and (max-height: 1000px) {
+    opacity: 0.66;
+  }
 }
-
 
 // HEADER
 
-@mixin hero-header-position
-{ display: flex
-; flex-flow: column nowrap
+@mixin hero-header-position {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-@mixin hero-header-size
-{ margin: 100px
-; @media screen and (max-width: 1000px)
-    { margin: 60px
-    }
-; @media screen and (max-width: 800px)
-    { margin: 32px
-    }
-}
-
-@mixin hero-h1-text-size
-{ font-size: 2.8em
-; max-width: 50vw
-; @media screen and (max-width: 1500px)
-    { max-width: unset
-    ; width: 100%
-    }
-; @media screen and (max-width: 800px)
-    { font-size: 2em
-    }
-}
-@mixin hero-h2-text-size
-{ font-size: 2.0em
-; max-width: 50vw
-; @media screen and (max-width: 1500px)
-{ max-width: unset
-; width: 100%
-}
-; @media screen and (max-width: 800px)
-{ font-size: 1.4em
-}
-}
-
-@mixin hero-h1-text-style
-{ font-weight: 600
-; line-height: 120%
-; color: white
-}
-
-@mixin hero-h2-text-style
-{ font-family: $space-mono
-; font-weight: 400
-; line-height: 120%
-; color: white
-}
-
-@mixin hero-buttons-container-position
-{ display: flex
-; flex-flow: row nowrap
-; margin-top: 48px
-; @media screen and (max-width: 800px)
-    { margin-top: 32px
-    }
-; @media screen and (max-width: 500px)
-    { flex-flow: column nowrap
-    ; a
-        { width: auto
-        ; justify-content: center;
-        }
-; a:first-child
-        { margin-bottom: 16px
-        }
-    }
-}
-
-
-section#hero
-{ z-index: 100
-; @include hero-section-position
-; @include hero-section-size
-; picture.creditCardImg, img.creditCardImg
-    { @include credit-cards-position
-    ; @include credit-cards-size
-    ; @include credit-cards-style
-    }
-; header
-    { z-index: 101
-    ; @include hero-header-size
-    }
-; h1
-    { @include hero-h1-text-style
-    ; @include hero-h1-text-size
-    }
-; h2
-    { @include hero-h2-text-style
-    ; @include hero-h2-text-size
-    ; margin-top: 12px
+@mixin hero-header-size {
+  margin: 100px;
+  @media screen and (max-width: 1000px) {
+    margin: 60px;
   }
-; // BUTTONS
-; div#hero-buttons-container
-    { @include hero-buttons-container-position
+  @media screen and (max-width: 800px) {
+    margin: 32px;
+  }
+}
+
+@mixin hero-h1-text-size {
+  font-size: 2.8em;
+  max-width: 50vw;
+  @media screen and (max-width: 1500px) {
+    max-width: unset;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 2em;
+  }
+}
+@mixin hero-h2-text-size {
+  font-size: 2em;
+  max-width: 50vw;
+  @media screen and (max-width: 1500px) {
+    max-width: unset;
+    width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 1.4em;
+  }
+}
+
+@mixin hero-h1-text-style {
+  font-weight: 600;
+  line-height: 120%;
+  color: white;
+}
+
+@mixin hero-h2-text-style {
+  font-family: $space-mono;
+  font-weight: 400;
+  line-height: 120%;
+  color: white;
+}
+
+@mixin hero-buttons-container-position {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 48px;
+  @media screen and (max-width: 800px) {
+    margin-top: 32px;
+  }
+  @media screen and (max-width: 500px) {
+    flex-flow: column nowrap;
+    a {
+      width: auto;
+      justify-content: center;
     }
+    a:first-child {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+section#hero {
+  z-index: 100;
+  @include hero-section-position;
+  @include hero-section-size;
+  picture.creditCardImg,
+  img.creditCardImg {
+    @include credit-cards-position;
+    @include credit-cards-size;
+    @include credit-cards-style;
+  }
+  header {
+    z-index: 101;
+    @include hero-header-size;
+  }
+  h1 {
+    @include hero-h1-text-style;
+    @include hero-h1-text-size;
+  }
+  h2 {
+    @include hero-h2-text-style;
+    @include hero-h2-text-size;
+    margin-top: 12px;
+  } // BUTTONS
+  div#hero-buttons-container {
+    @include hero-buttons-container-position;
+  }
 }

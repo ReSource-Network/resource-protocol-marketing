@@ -8,7 +8,8 @@ a.button {
   width: fit-content;
   cursor: pointer;
 }
-a.button i, a.button svg {
+a.button i,
+a.button svg {
   width: 18px;
   height: 18px;
   margin-left: 12px;
@@ -24,16 +25,16 @@ a.button.cta div.icon-text-group {
   align-items: center;
 }
 a.button.cta.primary {
-  background-color: #957FEF;
+  background-color: #957fef;
   color: white;
   fill: white;
 }
 a.button.cta.primary:hover {
-  background-color: #7161EF;
+  background-color: #7161ef;
   transition: 0.5s;
 }
 a.button.cta.primary:active {
-  background-color: #7161EF;
+  background-color: #7161ef;
   transition: 0s;
 }
 a.button.cta.default {

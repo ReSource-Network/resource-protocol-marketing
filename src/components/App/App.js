@@ -1,16 +1,16 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
+import React from "react"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import "./App.css"
 
-import Nav from "../Nav/Nav";
-import Home from "../Home/Home";
+import Nav from "../Nav/Nav"
+import Home from "../Home/Home"
 
 export const getCloudinaryVideoPath = (fileName) =>
   "https://res.cloudinary.com/resource-network/video/upload/v1632944401/resource-protocol/" +
-  fileName;
+  fileName
 export const getCloudinaryImagePath = (fileName) =>
   "https://res.cloudinary.com/resource-network/image/upload/v1632945917/resource-protocol/" +
-  fileName;
+  fileName
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         </Switch>
       </Router>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

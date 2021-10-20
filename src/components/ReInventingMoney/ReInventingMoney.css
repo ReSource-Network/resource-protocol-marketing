@@ -59,7 +59,7 @@ section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContent
 }
 @media screen and (max-width: 1300px) {
   section#reInventingMoney div#reInventingMoneyContent div.reInventingMoneyContentItemContainer {
-    width: calc( 50vw - ( (2vw * 2) + (64px * 2) ) );
+    width: calc(50vw - ((2vw * 2) + (64px * 2)));
   }
 }
 @media screen and (max-width: 800px) {
@@ -100,7 +100,7 @@ div#fundingGrowthTogetherTextContainer {
 }
 @media screen and (max-width: 1300px) {
   div#fundingGrowthTogetherTextContainer {
-    width: calc( 100vw - ( (5vw * 2) + (64px * 2) ) );
+    width: calc(100vw - ((5vw * 2) + (64px * 2)));
   }
 }
 @media screen and (max-width: 800px) {
@@ -111,7 +111,7 @@ div#fundingGrowthTogetherTextContainer {
 div#fundingGrowthTogetherTextContainer h4 {
   font-size: 1.6em;
   margin-bottom: 8px;
-  color: #7161EF;
+  color: #7161ef;
 }
 div#fundingGrowthTogetherTextContainer p {
   font-size: 1.2em;

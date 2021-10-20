@@ -1,217 +1,209 @@
-
 // SECTION
 
-@mixin protocol-roles-section-position
-{ height: auto
-; width: 100vw
-; display: flex
-; flex-flow: column nowrap
-; @media screen and (max-width: 800px)
-    { flex-flow: column-reverse nowrap
-    }
+@mixin protocol-roles-section-position {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  @media screen and (max-width: 800px) {
+    flex-flow: column-reverse nowrap;
+  }
 }
 
-@mixin protocol-roles-section-size
-{ width: 100vw
+@mixin protocol-roles-section-size {
+  width: 100vw;
 }
-
-
 
 // ANIMATION
 
-@mixin line-of-businesses-position
-{ position: absolute
-; top: calc(100vh - 200px)
-; right: 20vw
-; @media screen and (max-width: 1300px)
-    { top: calc(100vh - 150px)
-    }
-; @media screen and (max-width: 1100px)
-    { top: calc(100vh - 50px)
-    }
-; @media screen and (max-width: 800px)
-    { display: none
-    }
+@mixin line-of-businesses-position {
+  position: absolute;
+  top: calc(100vh - 200px);
+  right: 20vw;
+  @media screen and (max-width: 1300px) {
+    top: calc(100vh - 150px);
+  }
+  @media screen and (max-width: 1100px) {
+    top: calc(100vh - 50px);
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
-@mixin line-of-businesses-size
-{ width: 80px
-; @media screen and (max-width: 1300px)
-    { width: 60px
-    }
-; @media screen and (max-width: 1100px)
-    { width: 40px
-    }
+@mixin line-of-businesses-size {
+  width: 80px;
+  @media screen and (max-width: 1300px) {
+    width: 60px;
+  }
+  @media screen and (max-width: 1100px) {
+    width: 40px;
+  }
 }
 
-@mixin protocol-roles-animation-position
-{ display: block
-; position: absolute
-; top: calc(100vh + 100px)
-; right: -3vw
-; @media screen and (max-width: 800px)
-    { position: relative
-    ; align-self: flex-end
-    ; margin-bottom: 50px
-    }
+@mixin protocol-roles-animation-position {
+  display: block;
+  position: absolute;
+  top: calc(100vh + 100px);
+  right: -3vw;
+  @media screen and (max-width: 800px) {
+    position: relative;
+    align-self: flex-end;
+    margin-bottom: 50px;
+  }
 }
 
-@mixin protocol-roles-animation-size
-{ width: 80vw
-; @media screen and (max-width: 800px)
-    { top: unset
-    ; width: 120vw
-    }
+@mixin protocol-roles-animation-size {
+  width: 80vw;
+  @media screen and (max-width: 800px) {
+    top: unset;
+    width: 120vw;
+  }
 }
 
-@mixin protocol-roles-animation-style
-{ background-blend-mode: lighten
+@mixin protocol-roles-animation-style {
+  background-blend-mode: lighten;
 }
-
 
 // ROLES CARDS
 
-@mixin protocol-roles-cards-container-position
-{ display: flex
-; flex-flow: column nowrap;
-; @media screen and (max-width: 800px)
-    { justify-content: center }
+@mixin protocol-roles-cards-container-position {
+  display: flex;
+  flex-flow: column nowrap;
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
 }
-
 
 // ROLES CARD
 
-@mixin protocol-roles-card-position
-{ margin: 8vw
-; padding: 100px 24px 72px 24px
-; &:first-child
-    { margin-top: 12vw
-    ; @media screen and (max-width: 1300px)
-        { margin-top: 8vh
-        }
+@mixin protocol-roles-card-position {
+  margin: 8vw;
+  padding: 100px 24px 72px 24px;
+  &:first-child {
+    margin-top: 12vw;
+    @media screen and (max-width: 1300px) {
+      margin-top: 8vh;
     }
-; @media screen and (max-width: 1100px)
-    { padding: 80px 24px 48px 24px
-    }
-; @media screen and (max-width: 800px)
-    { margin: 80px auto
-    }
-; @media screen and (max-width: 600px)
-    { margin: 32px 32px 64px 32px
-    }
+  }
+  @media screen and (max-width: 1100px) {
+    padding: 80px 24px 48px 24px;
+  }
+  @media screen and (max-width: 800px) {
+    margin: 80px auto;
+  }
+  @media screen and (max-width: 600px) {
+    margin: 32px 32px 64px 32px;
+  }
 }
 
-@mixin protocol-roles-card-size
-{ width: 365px
-; min-height: 140px
-; height: auto
-; @media screen and (max-width: 1300px)
-    { width: 280px
-    ; min-height: 100px
-    }
-; @media screen and (max-width: 1100px)
-    { width: 200px
-    ; min-height: 60px
-    ; padding: 80px 24px 48px 24px
-    }
-; @media screen and (max-width: 800px)
-    { width: 50%
-    }
-; @media screen and (max-width: 600px)
-    { width: auto
-    }
+@mixin protocol-roles-card-size {
+  width: 365px;
+  min-height: 140px;
+  height: auto;
+  @media screen and (max-width: 1300px) {
+    width: 280px;
+    min-height: 100px;
+  }
+  @media screen and (max-width: 1100px) {
+    width: 200px;
+    min-height: 60px;
+    padding: 80px 24px 48px 24px;
+  }
+  @media screen and (max-width: 800px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 600px) {
+    width: auto;
+  }
 }
 
-@mixin protocol-roles-card-style
-{ background: linear-gradient(135deg, rgba(256, 256, 256, 0.4), rgba(256, 256, 256, 0.2))
-; backdrop-filter: blur(15px);
-; -webkit-backdrop-filter: blur(15px);
-; margin: 8vw
-; border-radius: 32px
-; box-shadow: 0 0 40px rgba(0, 0, 0, 0.15)
+@mixin protocol-roles-card-style {
+  background: linear-gradient(135deg, rgba(256, 256, 256, 0.4), rgba(256, 256, 256, 0.2));
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  margin: 8vw;
+  border-radius: 32px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
 }
-
 
 // ROLES CARD TEXT
 
-@mixin protocol-roles-card-paragraph-style
-{ font-size: 24px
-; font-weight: normal
-; line-height: 32px
-; @media screen and (max-width: 1300px)
-    { font-size: 18px
-    ; line-height: 24px
-    }
+@mixin protocol-roles-card-paragraph-style {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  @media screen and (max-width: 1300px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
-@mixin protocol-roles-card-title-style
-{ font-size: 24px
-; font-weight: 600
-; line-height: 100%
-; text-transform: capitalize
-; @media screen and (max-width: 1300px)
-    { font-size: 18px
-    }
+@mixin protocol-roles-card-title-style {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  text-transform: capitalize;
+  @media screen and (max-width: 1300px) {
+    font-size: 18px;
+  }
 }
-
 
 // ROLES CARD IMG
 
-@mixin protocol-roles-card-img-position
-{ margin: -130px 0 32px 20px
-; display: block
-; text-transform: capitalize
-; @media screen and (max-width: 1100px)
-    { margin: -100px 0 32px 20px
-    }
+@mixin protocol-roles-card-img-position {
+  margin: -130px 0 32px 20px;
+  display: block;
+  text-transform: capitalize;
+  @media screen and (max-width: 1100px) {
+    margin: -100px 0 32px 20px;
+  }
 }
 
-@mixin protocol-roles-card-img-size
-{ width: 150px
-; height: auto
-; @media screen and (max-width: 1300px)
-    { width: 100px
-    }
-; @media screen and (max-width: 1100px)
-    { width: 80px
-    }
+@mixin protocol-roles-card-img-size {
+  width: 150px;
+  height: auto;
+  @media screen and (max-width: 1300px) {
+    width: 100px;
+  }
+  @media screen and (max-width: 1100px) {
+    width: 80px;
+  }
 }
-
 
 // APPLIED STYLES
 
-section#protocolRoles
-{ @include protocol-roles-section-position
-; z-index: 80
+section#protocolRoles {
+  @include protocol-roles-section-position;
+  z-index: 80;
 }
-img#lineOfBusinesses
-{ @include line-of-businesses-position
-; @include line-of-businesses-size
+img#lineOfBusinesses {
+  @include line-of-businesses-position;
+  @include line-of-businesses-size;
 }
-video#animation
-{ @include protocol-roles-animation-position
-; @include protocol-roles-animation-size
-; @include protocol-roles-animation-style
-}
-
-.protocolRolesCards
-{ @include protocol-roles-cards-container-position
+video#animation {
+  @include protocol-roles-animation-position;
+  @include protocol-roles-animation-size;
+  @include protocol-roles-animation-style;
 }
 
-.protocolRolesCard
-{ @include protocol-roles-card-position
-; @include protocol-roles-card-size
-; @include protocol-roles-card-style
-; p
-    { @include protocol-roles-card-paragraph-style
-    }
-; h6
-    { @include protocol-roles-card-title-style
-    ; margin: 8px 0
-    }
-; img.protocolRolesCardImg
-    { @include protocol-roles-card-img-position
-    ; @include protocol-roles-card-img-size
-    }
+.protocolRolesCards {
+  @include protocol-roles-cards-container-position;
 }
 
+.protocolRolesCard {
+  @include protocol-roles-card-position;
+  @include protocol-roles-card-size;
+  @include protocol-roles-card-style;
+  p {
+    @include protocol-roles-card-paragraph-style;
+  }
+  h6 {
+    @include protocol-roles-card-title-style;
+    margin: 8px 0;
+  }
+  img.protocolRolesCardImg {
+    @include protocol-roles-card-img-position;
+    @include protocol-roles-card-img-size;
+  }
+}

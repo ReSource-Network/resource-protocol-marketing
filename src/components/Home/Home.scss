@@ -1,11 +1,10 @@
-$primary: #957FEF;
-$primary-active: #7161EF;
-$primary-variant: #B79CED;
+$primary: #957fef;
+$primary-active: #7161ef;
+$primary-variant: #b79ced;
 
-main section#how-it-works
-    { display: flex
-    ; flex-flow: column nowrap
-    ; margin: 100vh 0 0 0
-    ; height: auto
-    ;
+main section#how-it-works {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 100vh 0 0 0;
+  height: auto;
 }

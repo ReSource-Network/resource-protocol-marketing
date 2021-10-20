@@ -1,17 +1,17 @@
-import React from "react";
-import "./Hero.css";
-import Button from "../Button/Button";
-import { getCloudinaryImagePath } from "../App/App";
-import Typical from "react-typical";
+import React from "react"
+import "./Hero.css"
+import Button from "../Button/Button"
+import { getCloudinaryImagePath } from "../App/App"
+import Typical from "react-typical"
 
 // images
-const creditCardsPngSrcName = "crypto-credit-cards_iabj40.png";
-const creditCardsWebpSrcName = "crypto-credit-cards_smht6f.webp";
+const creditCardsPngSrcName = "crypto-credit-cards_iabj40.png"
+const creditCardsWebpSrcName = "crypto-credit-cards_smht6f.webp"
 
 class Hero extends React.Component {
   constructor(props) {
-    super(props);
-    this.state = {};
+    super(props)
+    this.state = {}
   }
 
   render() {
@@ -19,14 +19,8 @@ class Hero extends React.Component {
       <section id={"hero"}>
         {/* CREDIT CARDS IMAGE */}
         <picture className={"creditCardImg"}>
-          <source
-            srcSet={getCloudinaryImagePath(creditCardsWebpSrcName)}
-            type={"image/webp"}
-          />
-          <source
-            srcSet={getCloudinaryImagePath(creditCardsPngSrcName)}
-            type={"image/png"}
-          />
+          <source srcSet={getCloudinaryImagePath(creditCardsWebpSrcName)} type={"image/webp"} />
+          <source srcSet={getCloudinaryImagePath(creditCardsPngSrcName)} type={"image/png"} />
           <img
             alt={"crypto credit line card with negative balance"}
             src={getCloudinaryImagePath(creditCardsPngSrcName)}
@@ -72,8 +66,8 @@ class Hero extends React.Component {
           </div>
         </header>
       </section>
-    );
+    )
   }
 }
 
-export default Hero;
+export default Hero

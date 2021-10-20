@@ -1,277 +1,264 @@
-$primary: #957FEF;
-$primary-active: #7161EF;
-$primary-variant: #B79CED;
-$brand-gradient: linear-gradient(45deg, #7161ef, #D669FF);
+$primary: #957fef;
+$primary-active: #7161ef;
+$primary-variant: #b79ced;
+$brand-gradient: linear-gradient(45deg, #7161ef, #d669ff);
 
 // SECTION
 
-@mixin fim-section-position
-{ position: relative
-; @media screen and (max-width: 800px)
-    { display: flex
-    ; flex-flow: column nowrap
-    ; justify-content: center
-    ; align-items: center
-    }
+@mixin fim-section-position {
+  position: relative;
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-@mixin fim-section-size
-{ width: calc(100vw - (64px * 2))
-; height: 600px
-; padding: 64px
-; @media screen and (max-width: 800px)
-    { height: 500px
-    }
+@mixin fim-section-size {
+  width: calc(100vw - (64px * 2));
+  height: 600px;
+  padding: 64px;
+  @media screen and (max-width: 800px) {
+    height: 500px;
+  }
 }
-
-
 
 // IMAGE
 
-@mixin fim-img-position
-{ position: absolute
-; left: 30%
-; top: 50%
-; transform: translate(-70%, -50%)
-; -moz-transform: translate(-70%, -50%)
-; -o-transform: translate(-70%, -50%)
-; -webkit-transform: translate(-70%, -50%)
-; @media screen and (max-width: 1100px)
-    { left: 25%
-    ; transform: translate(-75%, -50%)
-    ; -moz-transform: translate(-75%, -50%)
-    ; -o-transform: translate(-75%, -50%)
-    ; -webkit-transform: translate(-75%, -50%)
-    }
+@mixin fim-img-position {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  transform: translate(-70%, -50%);
+  -moz-transform: translate(-70%, -50%);
+  -o-transform: translate(-70%, -50%);
+  -webkit-transform: translate(-70%, -50%);
+  @media screen and (max-width: 1100px) {
+    left: 25%;
+    transform: translate(-75%, -50%);
+    -moz-transform: translate(-75%, -50%);
+    -o-transform: translate(-75%, -50%);
+    -webkit-transform: translate(-75%, -50%);
+  }
 }
 
-@mixin fim-img-size
-{ margin-right: -48px
-; height: 500px
-; @media screen and (max-width: 1100px)
-    { height: 400px
-    }
+@mixin fim-img-size {
+  margin-right: -48px;
+  height: 500px;
+  @media screen and (max-width: 1100px) {
+    height: 400px;
+  }
 }
 
-@mixin fim-img-style
-{ opacity: 0.5
-; @media screen and (max-width: 1100px)
-    { opacity: 0.25
-    }
-; @media screen and (max-width: 800px)
-    { opacity: 0.10
-    }
+@mixin fim-img-style {
+  opacity: 0.5;
+  @media screen and (max-width: 1100px) {
+    opacity: 0.25;
+  }
+  @media screen and (max-width: 800px) {
+    opacity: 0.1;
+  }
 }
-
-
 
 // CONTAINERS
 
-@mixin fim-container-container-position
-{ position: absolute
-; left: 60%
-; top: 50%
-; transform: translate(-40%, -50%);
-; -moz-transform: translate(-40%, -50%);
-; -o-transform: translate(-40%, -50%);
-; -webkit-transform: translate(-40%, -50%);
-; display: flex
-; flex-flow: row nowrap
-; justify-content: center;
-; align-items: center;
-; @media screen and (max-width: 1100px)
-    { left: 50%
-    ; transform: translate(-50%, -50%)
-    ; -moz-transform: translate(-50%, -50%)
-    ; -o-transform: translate(-50%, -50%)
-    ; -webkit-transform: translate(-50%, -50%)
-    }
+@mixin fim-container-container-position {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-40%, -50%);
+  -moz-transform: translate(-40%, -50%);
+  -o-transform: translate(-40%, -50%);
+  -webkit-transform: translate(-40%, -50%);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 1100px) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
 }
 
-@mixin fim-container-container-size
-{ width: auto
-; height: auto
-; padding: 16px
+@mixin fim-container-container-size {
+  width: auto;
+  height: auto;
+  padding: 16px;
 }
 
-@mixin fim-container-container-style
-{ border-radius: 32px
-; border: 1px solid rgba(256, 256, 256, 0.2)
+@mixin fim-container-container-style {
+  border-radius: 32px;
+  border: 1px solid rgba(256, 256, 256, 0.2);
 }
 
-@mixin fim-container-position
-{ display: flex
-; flex-flow: column nowrap
-; align-items: center
-; justify-content: center
+@mixin fim-container-position {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
-@mixin fim-container-size
-{ width: auto
-; height: auto
-; padding: 16px
+@mixin fim-container-size {
+  width: auto;
+  height: auto;
+  padding: 16px;
 }
 
-@mixin fim-container-style
-{ border-radius: 16px
-; border: 1px solid rgba(256, 256, 256, 0.4)
+@mixin fim-container-style {
+  border-radius: 16px;
+  border: 1px solid rgba(256, 256, 256, 0.4);
 }
-
-
 
 // CONTENT
 
-@mixin fim-email-form-position
-{ display: flex
-; flex-flow: row nowrap
-; @media screen and (max-width: 800px)
-    { flex-flow: column nowrap
-    }
+@mixin fim-email-form-position {
+  display: flex;
+  flex-flow: row nowrap;
+  @media screen and (max-width: 800px) {
+    flex-flow: column nowrap;
+  }
 }
 
-@mixin fim-email-form-size
-{ padding: 16px
+@mixin fim-email-form-size {
+  padding: 16px;
 }
-
 
 // TITLE
 
-@mixin fim-form-title-position
-{ margin: 16px 0 32px 0
+@mixin fim-form-title-position {
+  margin: 16px 0 32px 0;
 }
 
-@mixin fim-form-title-size
-{ font-size: 28px
-; @media screen and (max-width: 1100px)
-    { font-size: 1.6em
-    }
-; @media screen and (max-width: 800px)
-    { font-size: 1.4em
-    }
+@mixin fim-form-title-size {
+  font-size: 28px;
+  @media screen and (max-width: 1100px) {
+    font-size: 1.6em;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 1.4em;
+  }
 }
 
-@mixin fim-form-title-style
-{ color: white
-; font-weight: 600
+@mixin fim-form-title-style {
+  color: white;
+  font-weight: 600;
 }
-
-
 
 // EMAIL INPUT
 
-@mixin fim-email-input-position
-{ margin-right: 16px
-; @media screen and (max-width: 800px)
-    { margin: 0 0 16px 0
-    }
+@mixin fim-email-input-position {
+  margin-right: 16px;
+  @media screen and (max-width: 800px) {
+    margin: 0 0 16px 0;
+  }
 }
 
-@mixin fim-email-input-size
-{ padding: 10px 16px
-; min-width: 300px
-; font-size: 18px
-; @media screen and (max-width: 500px)
-    { min-width: 180px
-    ; align-self: stretch
-    ; width: auto
-    }
+@mixin fim-email-input-size {
+  padding: 10px 16px;
+  min-width: 300px;
+  font-size: 18px;
+  @media screen and (max-width: 500px) {
+    min-width: 180px;
+    align-self: stretch;
+    width: auto;
+  }
 }
 
-@mixin fim-email-input-style
-{ border-radius: 16px
-; border: 1px solid rgba(256, 256, 256, 0.6)
-; outline: none
-; background: none
-; color: white
-; transition: 0.25s
-; &::placeholder
-    { color: #d9d9d9
-    }
-; &:focus
-    { border: 1px solid white
-    }
-; &:hover
-    { box-shadow: 0 0 8px rgba(256, 256, 256, 0.25)
-    }
+@mixin fim-email-input-style {
+  border-radius: 16px;
+  border: 1px solid rgba(256, 256, 256, 0.6);
+  outline: none;
+  background: none;
+  color: white;
+  transition: 0.25s;
+  &::placeholder {
+    color: #d9d9d9;
+  }
+  &:focus {
+    border: 1px solid white;
+  }
+  &:hover {
+    box-shadow: 0 0 8px rgba(256, 256, 256, 0.25);
+  }
 }
-
-
 
 // SUBMIT BUTTON
 
-@mixin form-submit-button-position
-{ display: flex
-; flex-flow: row nowrap
-; align-items: center
-; justify-content: center
+@mixin form-submit-button-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
-@mixin form-submit-button-size
-{ padding: 12px 16px
-; width: fit-content
-; font-size: 18px
-; @media screen and (max-width: 800px)
-    { width: auto
-    }
+@mixin form-submit-button-size {
+  padding: 12px 16px;
+  width: fit-content;
+  font-size: 18px;
+  @media screen and (max-width: 800px) {
+    width: auto;
+  }
 }
 
-@mixin form-submit-button-style
-{ border-radius: 16px
-; cursor: pointer
-; font-weight: 700
-; background-color: $primary
-; color: white
-; border: none
-; outline: none
-; &:hover
-    { background-color: $primary-active
-    ; transition: 0.5s
-    }
-; &:active
-    { background-color: $primary-active
-    ; transition: 0s
-    }
+@mixin form-submit-button-style {
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: $primary;
+  color: white;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: $primary-active;
+    transition: 0.5s;
+  }
+  &:active {
+    background-color: $primary-active;
+    transition: 0s;
+  }
 }
 
-
-
-section#futureIsMutual
-{ @include fim-section-position
-; @include fim-section-size
-; img
-    { @include fim-img-position
-    ; @include fim-img-size
-    ; @include fim-img-style
-    ; z-index: 6
+section#futureIsMutual {
+  @include fim-section-position;
+  @include fim-section-size;
+  img {
+    @include fim-img-position;
+    @include fim-img-size;
+    @include fim-img-style;
+    z-index: 6;
+  }
+  div#futureIsMutualContentContainerContainer {
+    @include fim-container-container-position;
+    @include fim-container-container-size;
+    @include fim-container-container-style;
+    z-index: 8;
+  }
+  div#futureIsMutualContentContainer {
+    @include fim-container-position;
+    @include fim-container-size;
+    @include fim-container-style;
+    h4 {
+      @include fim-form-title-position;
+      @include fim-form-title-size;
+      @include fim-form-title-style;
     }
-; div#futureIsMutualContentContainerContainer
-    { @include fim-container-container-position
-    ; @include fim-container-container-size
-    ; @include fim-container-container-style
-    ; z-index: 8
+    form {
+      @include fim-email-form-position;
+      @include fim-email-form-size;
+      input#email {
+        @include fim-email-input-style;
+        @include fim-email-input-position;
+        @include fim-email-input-size;
+      }
+      input#submit {
+        @include form-submit-button-position;
+        @include form-submit-button-size;
+        @include form-submit-button-style;
+      }
     }
-; div#futureIsMutualContentContainer
-    { @include fim-container-position
-    ; @include fim-container-size
-    ; @include fim-container-style
-    ; h4
-        { @include fim-form-title-position
-        ; @include fim-form-title-size
-        ; @include fim-form-title-style
-        }
-    ; form
-        { @include fim-email-form-position
-        ; @include fim-email-form-size
-        ; input#email
-            { @include fim-email-input-style
-            ; @include fim-email-input-position
-            ; @include fim-email-input-size
-            }
-        ; input#submit
-            { @include form-submit-button-position
-            ; @include form-submit-button-size
-            ; @include form-submit-button-style
-            }
-        }
-    }
+  }
 }

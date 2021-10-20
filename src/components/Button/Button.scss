@@ -1,53 +1,54 @@
-$primary: #957FEF;
-$primary-active: #7161EF;
-$primary-variant: #B79CED;
-$brand-gradient: linear-gradient(45deg, #7161ef, #D669FF);
+$primary: #957fef;
+$primary-active: #7161ef;
+$primary-variant: #b79ced;
+$brand-gradient: linear-gradient(45deg, #7161ef, #d669ff);
 
-a.button
-{ display: flex
-; flex-flow: row nowrap
-; align-items: center
-; padding: 12px 16px
-; margin-right: 16px
-; border-radius: 16px
-; width: fit-content
-; cursor: pointer
-; i, svg
-    { width: 18px
-    ; height: 18px
-    ; margin-left: 12px
+a.button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 12px 16px;
+  margin-right: 16px;
+  border-radius: 16px;
+  width: fit-content;
+  cursor: pointer;
+  i,
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+  }
+  &.cta {
+    font-size: 18px;
+    font-weight: 700;
+    div.icon-text-group {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
     }
-; &.cta
-    { font-size: 18px
-    ; font-weight: 700
-    ; div.icon-text-group
-        { display: flex
-        ; flex-flow: row nowrap
-        ; justify-content: flex-start
-        ; align-items: center
-        }
-    ; &.primary
-        { background-color: $primary
-        ; color: white
-        ; fill: white
-        ; &:hover
-            { background-color: $primary-active
-            ; transition: 0.5s
-            }
-        ; &:active
-            { background-color: $primary-active
-            ; transition: 0s
-            }
-        }
-    ; &.default
-        { background-color: transparent
-        ; border: 1px solid rgba(256, 256, 256, 0.2)
-        ; color: white
-        ; &:hover
-            { border: 1px solid rgba(256, 256, 256, 0.4)
-            ; color: white;
-            ; transition: 0.5s
-            }
-        }
+    &.primary {
+      background-color: $primary;
+      color: white;
+      fill: white;
+      &:hover {
+        background-color: $primary-active;
+        transition: 0.5s;
+      }
+      &:active {
+        background-color: $primary-active;
+        transition: 0s;
+      }
     }
+    &.default {
+      background-color: transparent;
+      border: 1px solid rgba(256, 256, 256, 0.2);
+      color: white;
+      &:hover {
+        border: 1px solid rgba(256, 256, 256, 0.4);
+        color: white;
+        transition: 0.5s;
+      }
+    }
+  }
 }

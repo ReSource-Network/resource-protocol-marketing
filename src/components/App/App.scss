@@ -1,23 +1,25 @@
 $bgColor: #000000;
 $textColor: #ffffff;
 
-body
-{ background-color: $bgColor
-; overflow-x: hidden
+body {
+  background-color: $bgColor;
+  overflow-x: hidden;
 }
 
-.parallax
-{ perspective-origin: 100%;
-; perspective: 1px
-; height: 100vh
-; overflow-x: hidden
-; overflow-y: auto
-; -webkit-perspective-origin: 100%;
-; -moz-perspective-origin: 100%;
-; -webkit-perspective: 1px;
-; -moz-perspective: 1px;
+.parallax {
+  perspective-origin: 100%;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective-origin: 100%;
+  -moz-perspective-origin: 100%;
+  -webkit-perspective: 1px;
+  -moz-perspective: 1px;
 }
 
-*, html, body
-{ scroll-behavior: smooth
+*,
+html,
+body {
+  scroll-behavior: smooth;
 }

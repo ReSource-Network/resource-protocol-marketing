@@ -1,123 +1,114 @@
 // NAV
 
-@mixin nav-position
-{ display: flex
-; flex-flow: row nowrap
-; justify-content: space-between
-; align-items: flex-start;
-; margin: 0
-; position: absolute
-; top: 0
-; left: 0
-; right: 0
+@mixin nav-position {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
-@mixin nav-size
-{ padding: 24px 24px 24px 24px
-; width: calc(100vw - 48px)
-; height: auto
+@mixin nav-size {
+  padding: 24px 24px 24px 24px;
+  width: calc(100vw - 48px);
+  height: auto;
 }
-
-
 
 // LOGO IMG
 
-@mixin nav-logo-img-position
-{ width: auto
-; margin: 10px
+@mixin nav-logo-img-position {
+  width: auto;
+  margin: 10px;
 }
 
-@mixin nav-logo-img-size
-{ height: 56px
-; @media screen and (max-width: 600px)
-    { height: 40px
-    }
-; @media screen and (max-width: 400px)
-    { height: 32px
-    }
+@mixin nav-logo-img-size {
+  height: 56px;
+  @media screen and (max-width: 600px) {
+    height: 40px;
+  }
+  @media screen and (max-width: 400px) {
+    height: 32px;
+  }
 }
-
-
 
 // LINKS LIST
 
-@mixin nav-links-list-position
-{ flex-flow: row nowrap
-; justify-content: space-between
-; @media screen and (max-width: 310px)
-    { flex-flow: column nowrap
-    ; justify-content: flex-start;
-    ; align-items: center
-    }
+@mixin nav-links-list-position {
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  @media screen and (max-width: 310px) {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
-@mixin nav-links-list-size
-{ width: auto
-; @media screen and (max-width: 310px)
-    { width: 50px
-    }
+@mixin nav-links-list-size {
+  width: auto;
+  @media screen and (max-width: 310px) {
+    width: 50px;
+  }
 }
-
-
 
 // LINK
 
-@mixin nav-link-position
-{ margin: 8px
-; @media screen and (max-width: 600px)
-    { margin: 4px
-    }
-; @media screen and (max-width: 400px)
-    { font-size: 1em
-    ; padding: 4px 8px
-    }
+@mixin nav-link-position {
+  margin: 8px;
+  @media screen and (max-width: 600px) {
+    margin: 4px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
 }
 
-@mixin nav-link-size
-{ padding: 10px 12px
-; font-size: 1.2em
-; @media screen and (max-width: 400px)
-    { font-size: 1em
-    ; padding: 4px 8px
-    }
-; @media screen and (max-width: 310px)
-    { width: 1.2em
-    }
+@mixin nav-link-size {
+  padding: 10px 12px;
+  font-size: 1.2em;
+  @media screen and (max-width: 400px) {
+    font-size: 1em;
+    padding: 4px 8px;
+  }
+  @media screen and (max-width: 310px) {
+    width: 1.2em;
+  }
 }
 
-@mixin nav-link-style
-{ color: white
-; border-radius: 16px
-; font-family: 'Righteous', 'Space Mono', 'Poppins', cursive;
-; font-weight: 400
-; transition: 0.5s
-; &:hover
-    { background-color: rgba(256, 256, 256, 0.2)
-    }
+@mixin nav-link-style {
+  color: white;
+  border-radius: 16px;
+  font-family: "Righteous", "Space Mono", "Poppins", cursive;
+  font-weight: 400;
+  transition: 0.5s;
+  &:hover {
+    background-color: rgba(256, 256, 256, 0.2);
+  }
 }
-
-
 
 // APPLIED STYLES
 
-nav#nav
-{ @include nav-position
-; @include nav-size
-; z-index: 999
+nav#nav {
+  @include nav-position;
+  @include nav-size;
+  z-index: 999;
 }
 
-img#logo
-{ @include nav-logo-img-position
-; @include nav-logo-img-size
+img#logo {
+  @include nav-logo-img-position;
+  @include nav-logo-img-size;
 }
 
-div#nav-link-list
-{ @include nav-links-list-position
-; @include nav-links-list-size
-; svg
-    { @include nav-link-position
-    ; @include nav-link-size
-    ; @include nav-link-style
-    }
+div#nav-link-list {
+  @include nav-links-list-position;
+  @include nav-links-list-size;
+  svg {
+    @include nav-link-position;
+    @include nav-link-size;
+    @include nav-link-style;
+  }
 }
-

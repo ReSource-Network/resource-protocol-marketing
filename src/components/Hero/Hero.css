@@ -12,7 +12,8 @@ section#hero {
     justify-content: flex-end;
   }
 }
-section#hero picture.creditCardImg, section#hero img.creditCardImg {
+section#hero picture.creditCardImg,
+section#hero img.creditCardImg {
   position: absolute;
   top: 45%;
   transform: translateY(-55%);
@@ -26,7 +27,8 @@ section#hero picture.creditCardImg, section#hero img.creditCardImg {
   max-width: 800px;
 }
 @media screen and (max-width: 1500px) {
-  section#hero picture.creditCardImg, section#hero img.creditCardImg {
+  section#hero picture.creditCardImg,
+  section#hero img.creditCardImg {
     top: 40%;
     transform: translateY(-60%);
     -moz-transform: translateY(-60%);
@@ -35,7 +37,8 @@ section#hero picture.creditCardImg, section#hero img.creditCardImg {
   }
 }
 @media screen and (max-width: 500px) {
-  section#hero picture.creditCardImg, section#hero img.creditCardImg {
+  section#hero picture.creditCardImg,
+  section#hero img.creditCardImg {
     top: 150px;
     transform: unset;
     -moz-transform: unset;
@@ -44,18 +47,21 @@ section#hero picture.creditCardImg, section#hero img.creditCardImg {
   }
 }
 @media screen and (max-width: 1500px) {
-  section#hero picture.creditCardImg, section#hero img.creditCardImg {
+  section#hero picture.creditCardImg,
+  section#hero img.creditCardImg {
     width: 700px;
     max-width: 80vw;
   }
 }
 @media screen and (max-width: 800px) {
-  section#hero picture.creditCardImg, section#hero img.creditCardImg {
+  section#hero picture.creditCardImg,
+  section#hero img.creditCardImg {
     min-width: unset;
   }
 }
 @media screen and (max-height: 1000px) {
-  section#hero picture.creditCardImg, section#hero img.creditCardImg {
+  section#hero picture.creditCardImg,
+  section#hero img.creditCardImg {
     opacity: 0.66;
   }
 }

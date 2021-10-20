@@ -15,7 +15,9 @@ body {
   -moz-perspective: 1px;
 }
 
-*, html, body {
+*,
+html,
+body {
   scroll-behavior: smooth;
 }
 

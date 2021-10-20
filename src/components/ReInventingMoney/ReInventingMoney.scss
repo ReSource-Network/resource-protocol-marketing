@@ -1,228 +1,210 @@
-
 // BRAND
 
-$primary: #957FEF;
-$primary-active: #7161EF;
-
-
+$primary: #957fef;
+$primary-active: #7161ef;
 
 // SECTION
 
-@mixin reinventing-money-section-position
-{ display: flex
-; flex-flow: column nowrap
-; align-items: flex-start
-; justify-content: flex-start
-; margin-top: -15vh
+@mixin reinventing-money-section-position {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: -15vh;
 }
 
-@mixin reinventing-money-section-size
-{ width: 100vw
-; height: auto
+@mixin reinventing-money-section-size {
+  width: 100vw;
+  height: auto;
 }
-
-
 
 // PADDING
 
-@mixin reinventing-money-padding-position
-{ &:last-child
-    { transform: scaleX(-1) scaleY(-1)
-    ; -moz-transform: scaleX(-1) scaleY(-1)
-    ; -o-transform: scaleX(-1) scaleY(-1)
-    ; -webkit-transform: scaleX(-1) scaleY(-1)
-    }
+@mixin reinventing-money-padding-position {
+  &:last-child {
+    transform: scaleX(-1) scaleY(-1);
+    -moz-transform: scaleX(-1) scaleY(-1);
+    -o-transform: scaleX(-1) scaleY(-1);
+    -webkit-transform: scaleX(-1) scaleY(-1);
+  }
 }
 
-@mixin reinventing-money-padding-size
-{ width: 100vw
-; height: auto
+@mixin reinventing-money-padding-size {
+  width: 100vw;
+  height: auto;
 }
-
-
 
 // CONTENT CONTAINER
 
-@mixin reinventing-money-content-container-position
-{ display: flex
-; flex-flow: row nowrap
-; align-items: flex-start;
-; justify-content: center
-; @media screen and (max-width: 2100px)
-    { flex-flow: row wrap
-    }
+@mixin reinventing-money-content-container-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  @media screen and (max-width: 2100px) {
+    flex-flow: row wrap;
+  }
 }
 
-@mixin reinventing-money-content-container-size
-{ width: 80vw
-; padding: 5vh 10vw
-; @media screen and (max-width: 1500px)
-    { padding: 5vw
-    ; width: 90vw
-    }
+@mixin reinventing-money-content-container-size {
+  width: 80vw;
+  padding: 5vh 10vw;
+  @media screen and (max-width: 1500px) {
+    padding: 5vw;
+    width: 90vw;
+  }
 }
 
-@mixin reinventing-money-content-container-style
-{ background-color: rgba(256, 256, 256, 0.9)
+@mixin reinventing-money-content-container-style {
+  background-color: rgba(256, 256, 256, 0.9);
 }
-
-
 
 // REINVENTING MONEY ITEM
 
-@mixin reinventing-money-item-position
-{ display: flex
-; flex-flow: column nowrap
-; justify-content: flex-start
-; align-items: flex-start
-; margin: 64px
-; @media screen and (max-width: 1300px)
-    { margin: 48px
-    }
-; @media screen and (max-width: 800px)
-    { margin: 48px 0
-    }
+@mixin reinventing-money-item-position {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 64px;
+  @media screen and (max-width: 1300px) {
+    margin: 48px;
+  }
+  @media screen and (max-width: 800px) {
+    margin: 48px 0;
+  }
 }
 
-@mixin reinventing-money-item-size
-{ width: 450px
-; height: auto
-; @media screen and (max-width: 1300px)
-    { width: calc( 50vw - ( (2vw * 2) + (64px * 2) ) )
-    }
-; @media screen and (max-width: 800px)
-    { width: 80vw
-    }
+@mixin reinventing-money-item-size {
+  width: 450px;
+  height: auto;
+  @media screen and (max-width: 1300px) {
+    width: calc(50vw - ((2vw * 2) + (64px * 2)));
+  }
+  @media screen and (max-width: 800px) {
+    width: 80vw;
+  }
 }
-
-
 
 // REINVENTING MONEY ITEM IMG
 
-@mixin reinventing-money-item-img-size
-{ width: 150px
+@mixin reinventing-money-item-img-size {
+  width: 150px;
 }
-
 
 // REINVENTING MONEY ITEM TITLE
 
-@mixin reinventing-money-item-title-position
-{ font-size: 1.2em
-; margin: 16px 0 8px 0
+@mixin reinventing-money-item-title-position {
+  font-size: 1.2em;
+  margin: 16px 0 8px 0;
 }
 
-@mixin reinventing-money-item-title-size
-{ font-size: 1.2em
-; margin: 16px 0 8px 0
+@mixin reinventing-money-item-title-size {
+  font-size: 1.2em;
+  margin: 16px 0 8px 0;
 }
 
-@mixin reinventing-money-item-title-style
-{ color: black
-; font-weight: 600
+@mixin reinventing-money-item-title-style {
+  color: black;
+  font-weight: 600;
 }
-
-
 
 // REINVENTING MONEY ITEM TEXT
 
-@mixin reinventing-money-item-text-position
-{ position: relative
+@mixin reinventing-money-item-text-position {
+  position: relative;
 }
 
-@mixin reinventing-money-item-text-size
-{ font-size: 1em
+@mixin reinventing-money-item-text-size {
+  font-size: 1em;
 }
 
-@mixin reinventing-money-item-text-style
-{ color: black
-; font-weight: 400
+@mixin reinventing-money-item-text-style {
+  color: black;
+  font-weight: 400;
 }
-
 
 // GROW TOGETHER CONTAINER
 
-@mixin grow-together-container-position
-{ display: flex
-; flex-flow: row nowrap
-; align-items: center
-; justify-content: center
+@mixin grow-together-container-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
-@mixin grow-together-container-size
-{ width: 100vw
+@mixin grow-together-container-size {
+  width: 100vw;
 }
 
-@mixin grow-together-container-style
-{ background-color: rgba(256, 256, 256, 0.9)
+@mixin grow-together-container-style {
+  background-color: rgba(256, 256, 256, 0.9);
 }
-
 
 // GROW TOGETHER TEXT CONTAINER
 
-
-@mixin grow-together-text-container-position
-{ margin-bottom: 64px
+@mixin grow-together-text-container-position {
+  margin-bottom: 64px;
 }
 
-@mixin grow-together-text-container-size
-{ width: calc(900px + (64px * 2))
-; @media screen and (max-width: 1300px)
-    { width: calc( 100vw - ( (5vw * 2) + (64px * 2) ) )
-    }
-; @media screen and (max-width: 800px)
-    { width: 80vw
-    }
+@mixin grow-together-text-container-size {
+  width: calc(900px + (64px * 2));
+  @media screen and (max-width: 1300px) {
+    width: calc(100vw - ((5vw * 2) + (64px * 2)));
+  }
+  @media screen and (max-width: 800px) {
+    width: 80vw;
+  }
 }
 
 // APPLIED STYLES
 
-section#reInventingMoney
-{ @include reinventing-money-section-position
-; @include reinventing-money-section-size
-; z-index: 9
-; img.containerPadding
-    { @include reinventing-money-padding-position
-    ; @include reinventing-money-padding-size
+section#reInventingMoney {
+  @include reinventing-money-section-position;
+  @include reinventing-money-section-size;
+  z-index: 9;
+  img.containerPadding {
+    @include reinventing-money-padding-position;
+    @include reinventing-money-padding-size;
+  }
+  div#reInventingMoneyContent {
+    @include reinventing-money-content-container-position;
+    @include reinventing-money-content-container-size;
+    @include reinventing-money-content-container-style;
+    div.reInventingMoneyContentItemContainer {
+      @include reinventing-money-item-position;
+      @include reinventing-money-item-size;
+      img {
+        @include reinventing-money-item-img-size;
+      }
+      h6 {
+        @include reinventing-money-item-title-position;
+        @include reinventing-money-item-title-size;
+        @include reinventing-money-item-title-style;
+      }
+      p {
+        @include reinventing-money-item-text-position;
+        @include reinventing-money-item-text-size;
+        @include reinventing-money-item-text-style;
+      }
     }
-; div#reInventingMoneyContent
-    { @include reinventing-money-content-container-position
-    ; @include reinventing-money-content-container-size
-    ; @include reinventing-money-content-container-style
-    ; div.reInventingMoneyContentItemContainer
-        { @include reinventing-money-item-position
-        ; @include reinventing-money-item-size
-        ; img
-            { @include reinventing-money-item-img-size
-            }
-        ; h6
-            { @include reinventing-money-item-title-position
-            ; @include reinventing-money-item-title-size
-            ; @include reinventing-money-item-title-style
-            }
-        ; p
-            { @include reinventing-money-item-text-position
-            ; @include reinventing-money-item-text-size
-            ; @include reinventing-money-item-text-style
-            }
-        }
-    }
+  }
 }
 
-; div#fundingGrowthTogetherContainer
-    { @include grow-together-container-position
-    ; @include grow-together-container-size
-    ; @include grow-together-container-style
-    }
-; div#fundingGrowthTogetherTextContainer
-    { @include grow-together-text-container-position
-    ; @include grow-together-text-container-size
-    ; h4
-        { font-size: 1.6em
-        ; margin-bottom: 8px
-        ; color: $primary-active
-        }
-    ; p
-        { font-size: 1.2em
-        }
-    }
-
+div#fundingGrowthTogetherContainer {
+  @include grow-together-container-position;
+  @include grow-together-container-size;
+  @include grow-together-container-style;
+}
+div#fundingGrowthTogetherTextContainer {
+  @include grow-together-text-container-position;
+  @include grow-together-text-container-size;
+  h4 {
+    font-size: 1.6em;
+    margin-bottom: 8px;
+    color: $primary-active;
+  }
+  p {
+    font-size: 1.2em;
+  }
+}
