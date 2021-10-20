@@ -76,7 +76,7 @@ class SocialLinks extends React.Component {
       >
         <FontAwesomeIcon icon={social.icon} />
         <div className={"socialItemTextContainer"}>
-          <h6 ignore>{social.titleText}</h6>
+          <h6 notranslate>{social.titleText}</h6>
           <p>{social.descriptionText}</p>
         </div>
       </a>
