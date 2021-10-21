@@ -25,7 +25,7 @@ const discord = {
   icon: faDiscord,
 }
 const twitter = {
-  href: "https://twitter.com/resourcenetco",
+  href: "https://twitter.com/resourcemutual",
   titleText: "twitter",
   descriptionText: "News and product updates",
   icon: faTwitter,
@@ -74,12 +74,15 @@ class SocialLinks extends React.Component {
         target={"_blank"}
         rel={"noreferrer"}
       >
-        <FontAwesomeIcon icon={social.icon} />
-        <div className={"socialItemTextContainer"}>
-          <h6 notranslate>
-            <span ignore>{social.titleText}</span>
-          </h6>
-          <p>{social.descriptionText}</p>
+        <div>
+          <div className={"socialFlexContainer"}>
+            <FontAwesomeIcon icon={social.icon} />
+
+            <h6 notranslate>
+              <span ignore>{social.titleText}</span>
+            </h6>
+            <p>{social.descriptionText}</p>
+          </div>
         </div>
       </a>
     ))
