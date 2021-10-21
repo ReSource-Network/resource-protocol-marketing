@@ -74,15 +74,10 @@ class SocialLinks extends React.Component {
         target={"_blank"}
         rel={"noreferrer"}
       >
-        <div>
-          <div className={"socialFlexContainer"}>
-            <FontAwesomeIcon icon={social.icon} />
-
-            <h6 notranslate>
-              <span ignore>{social.titleText}</span>
-            </h6>
-            <p>{social.descriptionText}</p>
-          </div>
+        <FontAwesomeIcon icon={social.icon} />
+        <div className={"socialItemTextContainer"}>
+          <h6 ignore>{social.titleText}</h6>
+          <p>{social.descriptionText}</p>
         </div>
       </a>
     ))
