@@ -15,7 +15,11 @@ const telegram = {
   buttonText: "telegram",
   icon: faTelegram,
 }
-const discord = { href: "https://discord.gg/UuTCRuuZMP", buttonText: "discord", icon: faDiscord }
+const discord = {
+  href: "https://discord.gg/UuTCRuuZMP",
+  buttonText: "discord",
+  icon: faDiscord
+}
 const contact = {
   href: "mailto:contact@resourcenetwork.co",
   buttonText: "contact",
