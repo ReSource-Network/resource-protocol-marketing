@@ -10,6 +10,7 @@ import SocialLinks from "../SocialLinks/SocialLinks"
 import Partners from "../Partners/Partners"
 import FutureIsMutual from "../FutureIsMutual/FutureIsMutual"
 import Footer from "../Footer/Footer"
+import Stakeholders from "../Stakeholders/Stakeholders";
 
 class Home extends React.Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class Home extends React.Component {
         <ReInventingMoney />
         <SocialLinks />
         <Partners />
+        <Stakeholders />
         <FutureIsMutual />
         <Footer />
       </main>

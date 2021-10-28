@@ -1,4 +1,4 @@
-section#partners {
+section#stakeholders {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -8,19 +8,19 @@ section#partners {
   padding: 32px 64px 64px 64px;
 }
 @media screen and (max-width: 550px) {
-  section#partners {
+  section#stakeholders {
     width: calc(100vw - (16px * 2));
     padding: 16px;
   }
 }
-section#partners h4 {
-  margin-bottom: 32px;
+section#stakeholders h4 {
+  margin-bottom: 64px;
   font-size: 1.6em;
   color: white;
   font-weight: 600;
   text-align: center;
 }
-section#partners div#partnersItemsContainer {
+section#stakeholders div#stakeholdersItemsContainer {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -28,12 +28,12 @@ section#partners div#partnersItemsContainer {
   width: calc(80% + (8px * 4));
 }
 @media screen and (max-width: 550px) {
-  section#partners div#partnersItemsContainer {
+  section#stakeholders div#stakeholdersItemsContainer {
     width: calc(80% + (16px * 2));
     padding: 16px;
   }
 }
-section#partners div#partnersItemsContainer a.partnerItem {
+section#stakeholders div#stakeholdersItemsContainer a.stakeholderItem {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -46,21 +46,21 @@ section#partners div#partnersItemsContainer a.partnerItem {
   border-radius: 16px;
 }
 @media screen and (max-width: 1200px) {
-  section#partners div#partnersItemsContainer a.partnerItem {
+  section#stakeholders div#stakeholdersItemsContainer a.stakeholderItem {
     width: auto;
   }
 }
 @media screen and (max-width: 550px) {
-  section#partners div#partnersItemsContainer a.partnerItem {
+  section#stakeholders div#stakeholdersItemsContainer a.stakeholderItem {
     width: auto;
     align-self: stretch;
   }
 }
-section#partners div#partnersItemsContainer a.partnerItem:hover {
+section#stakeholders div#stakeholdersItemsContainer a.stakeholderItem:hover {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-section#partners div#partnersItemsContainer picture,
-section#partners div#partnersItemsContainer img {
+section#stakeholders div#stakeholdersItemsContainer picture,
+section#stakeholders div#stakeholdersItemsContainer img {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -69,4 +69,4 @@ section#partners div#partnersItemsContainer img {
   height: 48px;
 }
 
-/*# sourceMappingURL=Partners.css.map */
+/*# sourceMappingURL=Stakeholders.css.map */

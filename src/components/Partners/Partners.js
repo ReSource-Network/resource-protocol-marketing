@@ -29,8 +29,14 @@ const irta = {
   webpSrcName: "irta-logo_o1mtsz.webp",
   altText: "irta logo",
 }
+const doaMaker = {
+  href: "https://daomaker.com/",
+  pngSrcName: "doa-maker-logo_e2itef.png",
+  webpSrcName: "doa-maker-logo_bno9wi.webp",
+  altText: "doa maker logo",
+}
 
-const partners = [celo, teller, blockchainAtBerkeley, irta]
+const partners = [celo, teller, doaMaker, blockchainAtBerkeley, irta]
 
 class Partners extends React.Component {
   constructor(props) {
@@ -54,10 +60,6 @@ class Partners extends React.Component {
           <source srcSet={getCloudinaryImagePath(partner.pngSrcName)} type={"image/png"} />
           <img src={getCloudinaryImagePath(partner.pngSrcName)} alt={"partner.altText"} />
         </picture>
-        {/*<img*/}
-        {/*    src={getCloudinaryImagePath(partner.imgSrcName)}*/}
-        {/*    alt={partner.altText}*/}
-        {/*/>*/}
       </a>
     ))
   }

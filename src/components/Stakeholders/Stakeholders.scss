@@ -1,13 +1,13 @@
 // SECTION
 
-@mixin partners-section-position {
+@mixin stakeholders-section-position {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
 }
 
-@mixin partners-section-size {
+@mixin stakeholders-section-size {
   width: calc(100vw - (64px * 2));
   height: auto;
   padding: 32px 64px 64px 64px;
@@ -19,23 +19,23 @@
 
 // SECTION TITLE
 
-@mixin partners-section-title-position {
-  margin-bottom: 32px;
+@mixin stakeholders-section-title-position {
+  margin-bottom: 64px;
 }
 
-@mixin partners-section-title-size {
+@mixin stakeholders-section-title-size {
   font-size: 1.6em;
 }
 
-@mixin partners-section-title-style {
+@mixin stakeholders-section-title-style {
   color: white;
   font-weight: 600;
   text-align: center;
 }
 
-// PARTNER ITEMS CONTAINER
+// STAKEHOLDER ITEMS CONTAINER
 
-@mixin partners-items-container-position {
+@mixin stakeholders-items-container-position {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -45,7 +45,7 @@
   }
 }
 
-@mixin partners-items-container-size {
+@mixin stakeholders-items-container-size {
   width: calc(80% + (8px * 4));
   @media screen and (max-width: 550px) {
     width: calc(80% + (16px * 2));
@@ -53,9 +53,9 @@
   }
 }
 
-// PARTNER ITEM
+// STAKEHOLDER ITEM
 
-@mixin partner-item-position {
+@mixin stakeholder-item-position {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -63,7 +63,7 @@
   margin: 8px;
 }
 
-@mixin partner-item-size {
+@mixin stakeholder-item-size {
   width: auto;
   height: auto;
   padding: 32px;
@@ -76,7 +76,7 @@
   }
 }
 
-@mixin partner-item-style {
+@mixin stakeholder-item-style {
   border: 1px solid rgba(256, 256, 256, 0.2);
   border-radius: 16px;
   &:hover {
@@ -84,40 +84,40 @@
   }
 }
 
-// PARTNER IMG
+// stakeholder IMG
 
-@mixin partner-img-position {
+@mixin stakeholder-img-position {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
 }
 
-@mixin partner-img-size {
+@mixin stakeholder-img-size {
   width: auto;
   height: 48px;
 }
 
-section#partners {
-  @include partners-section-position;
-  @include partners-section-size;
+section#stakeholders {
+  @include stakeholders-section-position;
+  @include stakeholders-section-size;
   h4 {
-    @include partners-section-title-position;
-    @include partners-section-title-size;
-    @include partners-section-title-style;
+    @include stakeholders-section-title-position;
+    @include stakeholders-section-title-size;
+    @include stakeholders-section-title-style;
   }
-  div#partnersItemsContainer {
-    @include partners-items-container-position;
-    @include partners-items-container-size;
-    a.partnerItem {
-      @include partner-item-position;
-      @include partner-item-size;
-      @include partner-item-style;
+  div#stakeholdersItemsContainer {
+    @include stakeholders-items-container-position;
+    @include stakeholders-items-container-size;
+    a.stakeholderItem {
+      @include stakeholder-item-position;
+      @include stakeholder-item-size;
+      @include stakeholder-item-style;
     }
     picture,
     img {
-      @include partner-img-position;
-      @include partner-img-size;
+      @include stakeholder-img-position;
+      @include stakeholder-img-size;
     }
   }
 }
