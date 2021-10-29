@@ -40,9 +40,6 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 1200px) {
-    //flex-flow: row wrap;
-  }
 }
 
 @mixin stakeholders-items-container-size {
@@ -84,7 +81,7 @@
   }
 }
 
-// stakeholder IMG
+// STAKEHOLDER IMG
 
 @mixin stakeholder-img-position {
   display: flex;

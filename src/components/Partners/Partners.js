@@ -58,7 +58,7 @@ class Partners extends React.Component {
         <picture>
           <source srcSet={getCloudinaryImagePath(partner.webpSrcName)} type={"image/webp"} />
           <source srcSet={getCloudinaryImagePath(partner.pngSrcName)} type={"image/png"} />
-          <img src={getCloudinaryImagePath(partner.pngSrcName)} alt={"partner.altText"} />
+          <img src={getCloudinaryImagePath(partner.pngSrcName)} alt={partner.altText} />
         </picture>
       </a>
     ))

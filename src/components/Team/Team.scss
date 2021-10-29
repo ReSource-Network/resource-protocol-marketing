@@ -1,0 +1,132 @@
+// SECTION
+
+@mixin team-section-position {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin team-section-size {
+  width: calc(100vw - (64px * 2));
+  height: auto;
+  padding: 32px 64px 64px 64px;
+  @media screen and (max-width: 550px) {
+    width: calc(100vw - (16px * 2));
+    padding: 16px;
+  }
+}
+
+// SECTION TITLE
+
+@mixin team-section-title-position {
+  margin-bottom: 32px;
+}
+
+@mixin team-section-title-size {
+  font-size: 1.6em;
+}
+
+@mixin team-section-title-style {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+// TEAM ITEMS CONTAINER
+
+@mixin team-items-container-position {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin team-items-container-size {
+  width: calc(80% + (8px * 4));
+  @media screen and (max-width: 550px) {
+    width: calc(80% + (16px * 2));
+    padding: 16px;
+  }
+}
+
+// TEAM ITEM
+
+@mixin team-item-position {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 8px;
+}
+
+@mixin team-item-size {
+  width: 150px;
+  height: 230px;
+  padding: 24px;
+  @media screen and (max-width: 550px) {
+    align-self: stretch;
+  }
+}
+
+@mixin team-item-style {
+  &:hover {
+    img, picture {
+      border: 1px solid rgba(256, 256, 256, 0.4);
+    }
+  }
+}
+
+// TEAM IMG
+
+@mixin team-img-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin team-img-size {
+  width: 150px;
+  height: 150px;
+}
+
+@mixin team-img-style {
+  border-radius: 100px;
+  border: 1px solid rgba(256, 256, 256, 0.2);
+  &:hover {
+    border: 1px solid rgba(256, 256, 256, 0.4);
+  }
+}
+
+section#team {
+  @include team-section-position;
+  @include team-section-size;
+  h4 {
+    @include team-section-title-position;
+    @include team-section-title-size;
+    @include team-section-title-style;
+  }
+  div#teamItemsContainer {
+    @include team-items-container-position;
+    @include team-items-container-size;
+    a.teamItem {
+      @include team-item-position;
+      @include team-item-size;
+      @include team-item-style;
+      h6, p {
+        color: black;
+        text-align: center;
+      }
+      h6 {
+        padding-top: 12px;
+      }
+    }
+    picture,
+    img {
+      @include team-img-position;
+      @include team-img-size;
+      @include team-img-style;
+    }
+  }
+}

@@ -78,7 +78,7 @@ class Stakeholders extends React.Component {
         <picture>
           <source srcSet={getCloudinaryImagePath(stakeholder.webpSrcName)} type={"image/webp"} />
           <source srcSet={getCloudinaryImagePath(stakeholder.pngSrcName)} type={"image/png"} />
-          <img src={getCloudinaryImagePath(stakeholder.pngSrcName)} alt={"stakeholder.altText"} />
+          <img src={getCloudinaryImagePath(stakeholder.pngSrcName)} alt={stakeholder.altText} />
         </picture>
       </a>
     ))

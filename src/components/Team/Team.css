@@ -1,0 +1,77 @@
+section#team {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - (64px * 2));
+  height: auto;
+  padding: 32px 64px 64px 64px;
+}
+@media screen and (max-width: 550px) {
+  section#team {
+    width: calc(100vw - (16px * 2));
+    padding: 16px;
+  }
+}
+section#team h4 {
+  margin-bottom: 32px;
+  font-size: 1.6em;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+section#team div#teamItemsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: calc(80% + (8px * 4));
+}
+@media screen and (max-width: 550px) {
+  section#team div#teamItemsContainer {
+    width: calc(80% + (16px * 2));
+    padding: 16px;
+  }
+}
+section#team div#teamItemsContainer a.teamItem {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 8px;
+  width: 150px;
+  height: 230px;
+  padding: 24px;
+}
+@media screen and (max-width: 550px) {
+  section#team div#teamItemsContainer a.teamItem {
+    align-self: stretch;
+  }
+}
+section#team div#teamItemsContainer a.teamItem:hover img, section#team div#teamItemsContainer a.teamItem:hover picture {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+section#team div#teamItemsContainer a.teamItem h6, section#team div#teamItemsContainer a.teamItem p {
+  color: black;
+  text-align: center;
+}
+section#team div#teamItemsContainer a.teamItem h6 {
+  padding-top: 12px;
+}
+section#team div#teamItemsContainer picture,
+section#team div#teamItemsContainer img {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+section#team div#teamItemsContainer picture:hover,
+section#team div#teamItemsContainer img:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/*# sourceMappingURL=Team.css.map */

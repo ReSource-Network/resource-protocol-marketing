@@ -11,6 +11,7 @@ import Partners from "../Partners/Partners"
 import FutureIsMutual from "../FutureIsMutual/FutureIsMutual"
 import Footer from "../Footer/Footer"
 import Stakeholders from "../Stakeholders/Stakeholders";
+import Team from "../Team/Team";
 
 class Home extends React.Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class Home extends React.Component {
         <StakeInRealEconomy />
         <ReInventingMoney />
         <SocialLinks />
+        <Team />
         <Partners />
         <Stakeholders />
         <FutureIsMutual />

@@ -45,14 +45,8 @@ section#partners div#partnersItemsContainer a.partnerItem {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 }
-@media screen and (max-width: 1200px) {
-  section#partners div#partnersItemsContainer a.partnerItem {
-    width: auto;
-  }
-}
 @media screen and (max-width: 550px) {
   section#partners div#partnersItemsContainer a.partnerItem {
-    width: auto;
     align-self: stretch;
   }
 }
