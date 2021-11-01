@@ -29,12 +29,12 @@ const exNetworkCapital = {
   webpSrcName: "stakeholders/exnetwrok-capital_jqzljc.webp",
   altText: "ex network capital logo",
 }
-const floemCapital = {
-  href: "https://www.floem.capital",
-  pngSrcName: "stakeholders/floem-capital_kc9njp.png",
-  webpSrcName: "stakeholders/floem-capital_kdv9ka.webp",
-  altText: "floem capital logo",
-}
+// const floemCapital = {
+//   href: "https://www.floem.capital",
+//   pngSrcName: "stakeholders/floem-capital_kc9njp.png",
+//   webpSrcName: "stakeholders/floem-capital_kdv9ka.webp",
+//   altText: "floem capital logo",
+// }
 const floriVentures = {
   href: "https://www.floriventures.com",
   pngSrcName: "stakeholders/flori-ventures-black_hhccxx.png",
@@ -47,15 +47,28 @@ const ngcVentures = {
   webpSrcName: "stakeholders/ngc_rt9ib1.webp",
   altText: "davoa capital logo",
 }
+const eutopiaVentures = {
+  href: "https://ngc.fund/home",
+  pngSrcName: "stakeholders/eutopia-vc-logo_apaxlc.png",
+  webpSrcName: "stakeholders/eutopia-vc-logo_wqbypp.webp",
+  altText: "Eutopia Ventures logo",
+}
+const dsrvLabs = {
+  href: "https://www.dsrvlabs.com/",
+  pngSrcName: "stakeholders/dsrv-logo_veu2n2.png",
+  webpSrcName: "stakeholders/dsrv-logo_ogw8pl.webp",
+  altText: "DSRV Labs logo",
+}
 
 const stakeholders =
     [ futurePerfectVentures
     , followTheSeed
     , davoaCapital
     , exNetworkCapital
-    , floemCapital
     , floriVentures
     , ngcVentures
+    , eutopiaVentures
+    , dsrvLabs
     ]
 
 class Stakeholders extends React.Component {

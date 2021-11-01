@@ -70,6 +70,7 @@
 }
 
 @mixin team-item-style {
+  cursor: pointer;
   &:hover {
     img, picture {
       border: 1px solid rgba(256, 256, 256, 0.4);

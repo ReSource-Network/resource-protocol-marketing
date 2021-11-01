@@ -42,6 +42,7 @@ section#team div#teamItemsContainer a.teamItem {
   width: 150px;
   height: 230px;
   padding: 24px;
+  cursor: pointer;
 }
 @media screen and (max-width: 550px) {
   section#team div#teamItemsContainer a.teamItem {

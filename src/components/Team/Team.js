@@ -125,6 +125,14 @@ const nathan = {
   webpSrcName: "team/_NATHAN_jm45f2.webp",
   altText: "nathan phillips headshot",
 }
+const alison = {
+  href: "https://www.linkedin.com/in/alisonleasher/",
+  name: "Alison Sher",
+  title: "Relationship Manager",
+  pngSrcName: "team/alison_ned4kz.png",
+  webpSrcName: "team/alison_iasuxb.webp",
+  altText: "alison sher headshot"
+}
 
 const team =
     [ david
@@ -142,6 +150,7 @@ const team =
     , nir
     , rachel
     , nathan
+    , alison
     ]
 
 class Team extends React.Component {
