@@ -19,7 +19,8 @@ function App() {
         <Nav />
         <div id={"parallax-overlay"} />
         <Switch>
-          <Route path={"/"} component={Home} />
+            <Route path={"/"} component={Home} />
+            {/*<Route path={"/TGE"} component={} />*/}
         </Switch>
       </Router>
     </div>

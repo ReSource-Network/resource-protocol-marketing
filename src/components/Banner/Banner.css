@@ -1,0 +1,42 @@
+#banner-container {
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100vw;
+  height: auto;
+  top: 0;
+  z-index: 101;
+}
+
+#banner {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 16px 32px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#banner a {
+  padding: 8px 16px;
+  background-color: #957fef;
+  color: white;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+#banner a:hover {
+  background-color: #7161ef;
+}
+#banner #banner-text {
+  display: flex;
+  flex-flow: row nowrap;
+  width: auto;
+}
+#banner #banner-text p {
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=Banner.css.map */

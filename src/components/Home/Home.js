@@ -13,6 +13,7 @@ import Footer from "../Footer/Footer"
 import Stakeholders from "../Stakeholders/Stakeholders";
 import Team from "../Team/Team";
 import Audits from "../Audits/Audits";
+import Banner from "../Banner/Banner";
 
 class Home extends React.Component {
   constructor(props) {
@@ -25,25 +26,29 @@ class Home extends React.Component {
 
   renderMain() {
     return (
-      <main
-        id={"main"}
-        className={"parallax"}
-        style={{ height: `${this.height + "px"}`, color: "black" }}
-      >
-        <Hero />
-        <Background />
-        <ProtocolRoles />
-        <HowItWorks />
-        <StakeInRealEconomy />
-        <ReInventingMoney />
-        <SocialLinks />
-        <Team />
-        <Partners />
-        <Stakeholders />
-        <Audits />
-        <FutureIsMutual />
-        <Footer />
-      </main>
+        <div>
+          <Banner />
+          <main
+              id={"main"}
+              className={"parallax"}
+              style={{ height: `${this.height + "px"}`, color: "black" }}
+          >
+            {/*<Banner />*/}
+            <Hero />
+            <Background />
+            <ProtocolRoles />
+            <HowItWorks />
+            <StakeInRealEconomy />
+            <ReInventingMoney />
+            <SocialLinks />
+            <Team />
+            <Partners />
+            <Stakeholders />
+            <Audits />
+            <FutureIsMutual />
+            <Footer />
+          </main>
+        </div>
     )
   }
 
