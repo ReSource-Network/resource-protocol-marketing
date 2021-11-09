@@ -1,0 +1,116 @@
+// SECTION
+
+@mixin audits-section-position {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin audits-section-size {
+  width: calc(100vw - (64px * 2));
+  height: auto;
+  padding: 32px 64px 64px 64px;
+  @media screen and (max-width: 550px) {
+    width: calc(100vw - (16px * 2));
+    padding: 16px;
+  }
+}
+
+// SECTION TITLE
+
+@mixin audits-section-title-position {
+  margin-bottom: 32px;
+}
+
+@mixin audits-section-title-size {
+  font-size: 1.6em;
+}
+
+@mixin audits-section-title-style {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+// audit ITEMS CONTAINER
+
+@mixin audits-items-container-position {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin audits-items-container-size {
+  width: calc(80% + (8px * 4));
+  @media screen and (max-width: 550px) {
+    width: calc(80% + (16px * 2));
+    padding: 16px;
+  }
+}
+
+// audit ITEM
+
+@mixin audit-item-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+}
+
+@mixin audit-item-size {
+  width: auto;
+  height: auto;
+  padding: 32px;
+  @media screen and (max-width: 550px) {
+    align-self: stretch;
+  }
+}
+
+@mixin audit-item-style {
+  border: 1px solid rgba(256, 256, 256, 0.2);
+  border-radius: 16px;
+  &:hover {
+    border: 1px solid rgba(256, 256, 256, 0.4);
+  }
+}
+
+// audit IMG
+
+@mixin audit-img-position {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin audit-img-size {
+  width: auto;
+  height: 48px;
+}
+
+section#audits {
+  @include audits-section-position;
+  @include audits-section-size;
+  h4 {
+    @include audits-section-title-position;
+    @include audits-section-title-size;
+    @include audits-section-title-style;
+  }
+  div#auditsItemsContainer {
+    @include audits-items-container-position;
+    @include audits-items-container-size;
+    a.auditItem {
+      @include audit-item-position;
+      @include audit-item-size;
+      @include audit-item-style;
+    }
+    picture,
+    img {
+      @include audit-img-position;
+      @include audit-img-size;
+    }
+  }
+}
