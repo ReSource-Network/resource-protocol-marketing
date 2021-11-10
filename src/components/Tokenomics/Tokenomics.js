@@ -4,13 +4,13 @@ import {getCloudinaryImagePath} from "../App/App";
 
 // data
 const allocation = {
-    pngSrcName: "allocations-fix_tg7nbi.png",
-    webpSrcName: "allocations-fix_hpgakm.webp",
+    pngSrcName: "allocations-fix_agjpui.png",
+    webpSrcName: "allocations-fix_hiunwn.webp",
     altText: "allocation image"
 }
 const distribution = {
-    pngSrcName: "distribution-fix_wemoy2.png",
-    webpSrcName: "distribution-fix_ffgi4y.webp",
+    pngSrcName: "distribution-fix_mla8wd.png",
+    webpSrcName: "distribution-fix_v66kzj.webp",
     altText: "distribution image"
 }
 
