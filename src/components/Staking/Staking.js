@@ -46,7 +46,7 @@ class Staking extends React.Component {
         return (
             <section id={'dexes'}>
                 <h4> {"Staking & Incentives"} </h4>
-                <p> {"November 17th"} </p>
+                <p> {"November 19th"} </p>
                 <div id={"dexesItemsContainer"}>{this.renderTGEImages()}</div>
             </section>
         )

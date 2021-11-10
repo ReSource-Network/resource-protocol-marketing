@@ -1,0 +1,70 @@
+section#cex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - (64px * 2));
+  height: auto;
+  padding: 32px 64px 64px 64px;
+}
+@media screen and (max-width: 550px) {
+  section#cex {
+    width: calc(100vw - (16px * 2));
+    padding: 16px;
+  }
+}
+section#cex h4 {
+  margin-bottom: 0;
+  font-size: 1.6em;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+section#cex p {
+  color: white;
+  margin-bottom: 32px;
+}
+section#cex div#cexItemsContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: calc(80% + (8px * 4));
+}
+@media screen and (max-width: 550px) {
+  section#cex div#cexItemsContainer {
+    width: calc(80% + (16px * 2));
+    padding: 16px;
+  }
+}
+section#cex div#cexItemsContainer a.cexItem {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+  width: auto;
+  height: auto;
+  padding: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+@media screen and (max-width: 550px) {
+  section#cex div#cexItemsContainer a.cexItem {
+    align-self: stretch;
+  }
+}
+section#cex div#cexItemsContainer a.cexItem:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+section#cex div#cexItemsContainer picture,
+section#cex div#cexItemsContainer img {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 48px;
+}
+
+/*# sourceMappingURL=CEX.css.map */

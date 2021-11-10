@@ -1,0 +1,120 @@
+// SECTION
+
+@mixin cex-section-position {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin cex-section-size {
+    width: calc(100vw - (64px * 2));
+    height: auto;
+    padding: 32px 64px 64px 64px;
+    @media screen and (max-width: 550px) {
+        width: calc(100vw - (16px * 2));
+        padding: 16px;
+    }
+}
+
+// SECTION TITLE
+
+@mixin cex-section-title-position {
+    margin-bottom: 0;
+}
+
+@mixin cex-section-title-size {
+    font-size: 1.6em;
+}
+
+@mixin cex-section-title-style {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+// audit ITEMS CONTAINER
+
+@mixin cex-items-container-position {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin cex-items-container-size {
+    width: calc(80% + (8px * 4));
+    @media screen and (max-width: 550px) {
+        width: calc(80% + (16px * 2));
+        padding: 16px;
+    }
+}
+
+// audit ITEM
+
+@mixin cex-item-position {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+@mixin cex-item-size {
+    width: auto;
+    height: auto;
+    padding: 32px;
+    @media screen and (max-width: 550px) {
+        align-self: stretch;
+    }
+}
+
+@mixin cex-item-style {
+    border: 1px solid rgba(256, 256, 256, 0.2);
+    border-radius: 16px;
+    &:hover {
+        border: 1px solid rgba(256, 256, 256, 0.4);
+    }
+}
+
+// audit IMG
+
+@mixin cex-img-position {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin cex-img-size {
+    width: auto;
+    height: 48px;
+}
+
+section#cex {
+    @include cex-section-position;
+    @include cex-section-size;
+    h4 {
+        @include cex-section-title-position;
+        @include cex-section-title-size;
+        @include cex-section-title-style;
+    }
+    p {
+        color: white;
+        margin-bottom: 32px;
+    }
+    div#cexItemsContainer {
+        @include cex-items-container-position;
+        @include cex-items-container-size;
+        a.cexItem {
+            @include cex-item-position;
+            @include cex-item-size;
+            @include cex-item-style;
+        }
+        picture,
+        img {
+            @include cex-img-position;
+            @include cex-img-size;
+        }
+    }
+}

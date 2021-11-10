@@ -9,17 +9,11 @@ const daomaker = {
     webpSrcName: "doa-maker-logo_bno9wi.webp",
     altText: "daomaker logo",
 }
-const gateio = {
-    href: "https://gate.io/",
-    pngSrcName: "gateio_x4vsvy_azw11u.png",
-    webpSrcName: "gateio_x4vsvy_g3xpb1.webp",
-    altText: "gate.io logo",
-}
 const infinitypad = {
     href: "https://infinitypad.com/",
-    pngSrcName: "infinitypad_ujxbeb.png",
-    webpSrcName: "infinitypad_ujxbeb.png",
-    altText: "infinitypad_ujxbeb.png"
+    pngSrcName: "infinitypad_yk1njl.png",
+    webpSrcName: "infinitypad_ujxbeb.webp",
+    altText: "infinitypad logo"
 }
 const anypad = {
     href: "https://www.anypad.io/",
@@ -28,7 +22,7 @@ const anypad = {
     altText: "anypad logo"
 }
 
-const tgePads = [daomaker, gateio, infinitypad, anypad]
+const tgePads = [daomaker, infinitypad, anypad]
 
 class TGE extends React.Component {
     constructor(props) {

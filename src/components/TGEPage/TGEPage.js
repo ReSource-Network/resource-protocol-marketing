@@ -4,6 +4,7 @@ import {getCloudinaryImagePath} from "../App/App";
 import TGE from "../TGE/TGE";
 import Staking from "../Staking/Staking";
 import Tokenomics from "../Tokenomics/Tokenomics";
+import CEX from "../CEX/CEX";
 
 class TGEPage extends React.Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class TGEPage extends React.Component {
                 <h1> {"SOURCE TGE"} </h1>
                 <h2> {"The Fuel of the ReSource Economy"} </h2>
                 <TGE />
+                <CEX />
                 <Staking />
                 <Tokenomics />
             </div>
