@@ -14,6 +14,7 @@ import Stakeholders from "../Stakeholders/Stakeholders";
 import Team from "../Team/Team";
 import Audits from "../Audits/Audits";
 import Banner from "../Banner/Banner";
+import Nav from "../Nav/Nav";
 
 class Home extends React.Component {
   constructor(props) {
@@ -28,12 +29,12 @@ class Home extends React.Component {
     return (
         <div>
           <Banner />
+          <Nav />
           <main
               id={"main"}
               className={"parallax"}
               style={{ height: `${this.height + "px"}`, color: "black" }}
           >
-            {/*<Banner />*/}
             <Hero />
             <Background />
             <ProtocolRoles />

@@ -1,0 +1,120 @@
+// SECTION
+
+@mixin tge-section-position {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin tge-section-size {
+    width: calc(100vw - (64px * 2));
+    height: auto;
+    padding: 32px 64px 64px 64px;
+    @media screen and (max-width: 550px) {
+        width: calc(100vw - (16px * 2));
+        padding: 16px;
+    }
+}
+
+// SECTION TITLE
+
+@mixin tge-section-title-position {
+    margin-bottom: 0;
+}
+
+@mixin tge-section-title-size {
+    font-size: 1.6em;
+}
+
+@mixin tge-section-title-style {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
+
+// audit ITEMS CONTAINER
+
+@mixin tge-items-container-position {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin tge-items-container-size {
+    width: calc(80% + (8px * 4));
+    @media screen and (max-width: 550px) {
+        width: calc(80% + (16px * 2));
+        padding: 16px;
+    }
+}
+
+// audit ITEM
+
+@mixin tge-item-position {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+@mixin tge-item-size {
+    width: auto;
+    height: auto;
+    padding: 32px;
+    @media screen and (max-width: 550px) {
+        align-self: stretch;
+    }
+}
+
+@mixin tge-item-style {
+    border: 1px solid rgba(256, 256, 256, 0.2);
+    border-radius: 16px;
+    &:hover {
+        border: 1px solid rgba(256, 256, 256, 0.4);
+    }
+}
+
+// audit IMG
+
+@mixin tge-img-position {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin tge-img-size {
+    width: auto;
+    height: 48px;
+}
+
+section#tge {
+    @include tge-section-position;
+    @include tge-section-size;
+    h4 {
+        @include tge-section-title-position;
+        @include tge-section-title-size;
+        @include tge-section-title-style;
+    }
+    p {
+        color: white;
+        margin-bottom: 32px;
+    }
+    div#tgeItemsContainer {
+        @include tge-items-container-position;
+        @include tge-items-container-size;
+        a.tgeItem {
+            @include tge-item-position;
+            @include tge-item-size;
+            @include tge-item-style;
+        }
+        picture,
+        img {
+            @include tge-img-position;
+            @include tge-img-size;
+        }
+    }
+}

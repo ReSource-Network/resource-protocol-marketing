@@ -1,6 +1,5 @@
 import React from "react"
 import "./Banner.css"
-import Button from "../Button/Button";
 import {Link} from "react-router-dom";
 
 
@@ -15,7 +14,7 @@ class Banner extends React.Component {
             <section id={"banner-container"}>
                 <div id={"banner"}>
                     <div id={"banner-text"}>
-                        <h4> {"SOURCE TOKEN TGE"} </h4>
+                        <h4> {"SOURCE"} </h4>
                         <p> {"- The Fuel of the ReSource Economy"} </p>
                     </div>
                     <Link to={'/TGE'}>
