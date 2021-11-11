@@ -16,7 +16,7 @@ const infinitypad = {
     altText: "infinitypad logo"
 }
 const anypad = {
-    href: "https://www.anypad.io/",
+    href: "https://app.anypad.io/#/",
     pngSrcName: "anypad_mqlekf.png",
     webpSrcName: "anypad_rfh5sr.webp",
     altText: "anypad logo"
