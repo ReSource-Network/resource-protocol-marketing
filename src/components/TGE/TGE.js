@@ -8,43 +8,68 @@ const daomaker = {
     pngSrcName: "doa-maker-logo_e2itef.png",
     webpSrcName: "doa-maker-logo_bno9wi.webp",
     altText: "daomaker logo",
+    price: "$0.45",
+    allocation: "2,722,222",
+    requirements: "KYC, no US-person, Stake DAO tokens"
 }
 const infinitypad = {
-    href: "https://infinitypad.com/",
+    href: "https://infinitypad.com/company/resource-finance-ipad/",
     pngSrcName: "infinitypad_yk1njl.png",
     webpSrcName: "infinitypad_ujxbeb.webp",
-    altText: "infinitypad logo"
+    altText: "infinitypad logo",
+    price: "$0.45",
+    allocation: "222,222",
+    requirements: "KYC, no US-person, Stake DAO tokens"
 }
 const anypad = {
     href: "https://app.anypad.io/#/",
     pngSrcName: "anypad_mqlekf.png",
     webpSrcName: "anypad_rfh5sr.webp",
-    altText: "anypad logo"
+    altText: "anypad logo",
+    price: "$0.45",
+    allocation: "222,222",
+    requirements: "KYC, no US-person"
+}
+const gateio = {
+    href: "https://gate.io/",
+    pngSrcName: "gateio_x4vsvy_azw11u.png",
+    webpSrcName: "gateio_x4vsvy_g3xpb1.webp",
+    altText: "gate.io logo",
+    price: "$0.45",
+    allocation: "166,666",
+    requirements: "KYC, no US-person"
 }
 
-const tgePads = [daomaker, infinitypad, anypad]
+const tgePads = [daomaker, infinitypad, anypad, gateio]
 
 class TGE extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
+
+        this.renderTGETableRows = this.renderTGETableRows.bind(this)
     }
 
-    renderTGEImages() {
+    renderTGETableRows() {
         return tgePads.map((pad) => (
-            <a
-                key={pad.altText}
-                className={"tgeItem"}
-                href={pad.href}
-                target={"_blank"}
-                rel={"noreferrer"}
-            >
-                <picture>
-                    <source srcSet={getCloudinaryImagePath(pad.webpSrcName)} type={"image/webp"} />
-                    <source srcSet={getCloudinaryImagePath(pad.pngSrcName)} type={"image/png"} />
-                    <img src={getCloudinaryImagePath(pad.pngSrcName)} alt={pad.altText} />
-                </picture>
-            </a>
+            <div className={'tge-table-row'}>
+                <a
+                    key={pad.altText}
+                    className={"launchpad-logo"}
+                    href={pad.href}
+                    target={"_blank"}
+                    rel={"noreferrer"}
+                >
+                    <picture>
+                        <source srcSet={getCloudinaryImagePath(pad.webpSrcName)} type={"image/webp"} />
+                        <source srcSet={getCloudinaryImagePath(pad.pngSrcName)} type={"image/png"} />
+                        <img src={getCloudinaryImagePath(pad.pngSrcName)} alt={pad.altText} />
+                    </picture>
+                </a>
+                <p>{pad.price}</p>
+                <p>{pad.allocation}</p>
+                <p>{pad.requirements}</p>
+            </div>
         ))
     }
 
@@ -53,7 +78,15 @@ class TGE extends React.Component {
             <section id={'tge'}>
                 <h4> {"TGE Links & Information"} </h4>
                 <p> {"November 17th"} </p>
-                <div id={"tgeItemsContainer"}>{this.renderTGEImages()}</div>
+                <div id={'tge-table'}>
+                    <div id={'tge-table-header'}>
+                        <p>Venue</p>
+                        <p>Price on LaunchPad</p>
+                        <p>Allocation (SOURCE)</p>
+                        <p>Requirements</p>
+                    </div>
+                    {this.renderTGETableRows()}
+                </div>
             </section>
         )
     }

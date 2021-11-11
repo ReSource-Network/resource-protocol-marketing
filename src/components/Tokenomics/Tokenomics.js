@@ -4,13 +4,13 @@ import {getCloudinaryImagePath} from "../App/App";
 
 // data
 const allocation = {
-    pngSrcName: "allocations-fix_agjpui.png",
-    webpSrcName: "allocations-fix_hiunwn.webp",
+    jpgSrcName: "allocations_oigoz2.png",
+    webpSrcName: "allocations_kornsk.webp",
     altText: "allocation image"
 }
 const distribution = {
-    pngSrcName: "distribution-fix_mla8wd.png",
-    webpSrcName: "distribution-fix_v66kzj.webp",
+    jpgSrcName: "distribution_lklu40.jpg",
+    webpSrcName: "distribution_v86pqa.webp",
     altText: "distribution image"
 }
 
@@ -33,7 +33,7 @@ class Tokenomics extends React.Component {
             >
                 <picture>
                     <source srcSet={getCloudinaryImagePath(tokenomic.webpSrcName)} type={"image/webp"} />
-                    <source srcSet={getCloudinaryImagePath(tokenomic.pngSrcName)} type={"image/png"} />
+                    <source srcSet={getCloudinaryImagePath(tokenomic.jpgSrcName)} type={"image/jpg"} />
                     <img src={getCloudinaryImagePath(tokenomic.pngSrcName)} alt={tokenomic.altText} />
                 </picture>
             </div>

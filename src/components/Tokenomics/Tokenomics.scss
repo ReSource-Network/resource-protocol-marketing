@@ -104,6 +104,7 @@ section#tokenomics {
         }
         picture,
         img {
+            border-radius: 16px;
             @include tokenomics-img-position;
             @include tokenomics-img-size;
         }

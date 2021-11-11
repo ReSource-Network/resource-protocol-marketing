@@ -1,13 +1,13 @@
 // SECTION
 
-@mixin tge-section-position {
+@mixin dex-section-position {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
-@mixin tge-section-size {
+@mixin dex-section-size {
     width: calc(100vw - (64px * 2));
     height: auto;
     padding: 32px 64px 64px 64px;
@@ -19,15 +19,15 @@
 
 // SECTION TITLE
 
-@mixin tge-section-title-position {
+@mixin dex-section-title-position {
     margin-bottom: 0;
 }
 
-@mixin tge-section-title-size {
+@mixin dex-section-title-size {
     font-size: 1.6em;
 }
 
-@mixin tge-section-title-style {
+@mixin dex-section-title-style {
     color: white;
     font-weight: 600;
     text-align: center;
@@ -35,14 +35,14 @@
 
 // audit ITEMS CONTAINER
 
-@mixin tge-items-container-position {
+@mixin dex-items-container-position {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
 
-@mixin tge-items-container-size {
+@mixin dex-items-container-size {
     width: calc(80% + (8px * 4));
     @media screen and (max-width: 550px) {
         width: calc(80% + (16px * 2));
@@ -52,7 +52,7 @@
 
 // audit ITEM
 
-@mixin tge-item-position {
+@mixin dex-item-position {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -60,7 +60,7 @@
     margin: 8px;
 }
 
-@mixin tge-item-size {
+@mixin dex-item-size {
     width: auto;
     height: auto;
     padding: 32px;
@@ -69,7 +69,7 @@
     }
 }
 
-@mixin tge-item-style {
+@mixin dex-item-style {
     border: 1px solid rgba(256, 256, 256, 0.2);
     border-radius: 16px;
     &:hover {
@@ -79,48 +79,45 @@
 
 // audit IMG
 
-@mixin tge-img-position {
+@mixin dex-img-position {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
 }
 
-@mixin tge-img-size {
+@mixin dex-img-size {
     width: auto;
     height: 48px;
 }
 
-section#tge {
-    @include tge-section-position;
-    @include tge-section-size;
+section#dex {
+    @include dex-section-position;
+    @include dex-section-size;
     h4 {
-        @include tge-section-title-position;
-        @include tge-section-title-size;
-        @include tge-section-title-style;
+        @include dex-section-title-position;
+        @include dex-section-title-size;
+        @include dex-section-title-style;
     }
     p {
         color: white;
         margin-bottom: 32px;
-        &:first-child {
-            width: 148px;
-        }
     }
-    div#tge-table {
+    div#dex-table {
         display: flex;
         flex-flow: column nowrap;
         background-color: rgba(0, 0, 0, 0.1);
         border-radius: 32px;
         padding: 32px 32px 16px 32px;
 
-        div#tge-table-header {
+        div#dex-table-header {
             display: flex;
             flex-flow: row nowrap;
             margin-bottom: 16px;
 
             p {
                 text-align: right;
-                width: 100px;
+                width: 150px;
                 padding-right: 16px;
                 margin-bottom: 0;
                 &:first-child {
@@ -128,20 +125,19 @@ section#tge {
                     width: 148px;
                 }
                 &:last-child {
-                    width: 160px;
                     padding-right: 0;
                 }
             }
         }
 
-        div.tge-table-row {
+        div.dex-table-row {
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             margin-bottom: 16px;
 
-            a.launchpad-logo {
+            a.dex-logo {
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
@@ -161,12 +157,11 @@ section#tge {
             }
 
             p {
-                width: 100px;
                 text-align: right;
                 padding-right: 16px;
+                width: 150px;
                 margin-bottom: 0;
                 &:last-child {
-                    width: 160px;
                     padding-right: unset;
                 }
             }

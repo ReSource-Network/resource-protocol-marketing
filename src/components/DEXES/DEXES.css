@@ -1,4 +1,4 @@
-section#tge {
+section#dex {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -8,59 +8,55 @@ section#tge {
   padding: 32px 64px 64px 64px;
 }
 @media screen and (max-width: 550px) {
-  section#tge {
+  section#dex {
     width: calc(100vw - (16px * 2));
     padding: 16px;
   }
 }
-section#tge h4 {
+section#dex h4 {
   margin-bottom: 0;
   font-size: 1.6em;
   color: white;
   font-weight: 600;
   text-align: center;
 }
-section#tge p {
+section#dex p {
   color: white;
   margin-bottom: 32px;
 }
-section#tge p:first-child {
-  width: 148px;
-}
-section#tge div#tge-table {
+section#dex div#dex-table {
   display: flex;
   flex-flow: column nowrap;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 32px;
   padding: 32px 32px 16px 32px;
 }
-section#tge div#tge-table div#tge-table-header {
+section#dex div#dex-table div#dex-table-header {
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 16px;
 }
-section#tge div#tge-table div#tge-table-header p {
+section#dex div#dex-table div#dex-table-header p {
   text-align: right;
-  width: 100px;
+  width: 150px;
   padding-right: 16px;
   margin-bottom: 0;
 }
-section#tge div#tge-table div#tge-table-header p:first-child {
+section#dex div#dex-table div#dex-table-header p:first-child {
   text-align: left;
   width: 148px;
 }
-section#tge div#tge-table div#tge-table-header p:last-child {
-  width: 160px;
+section#dex div#dex-table div#dex-table-header p:last-child {
   padding-right: 0;
 }
-section#tge div#tge-table div.tge-table-row {
+section#dex div#dex-table div.dex-table-row {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 }
-section#tge div#tge-table div.tge-table-row a.launchpad-logo {
+section#dex div#dex-table div.dex-table-row a.dex-logo {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -70,23 +66,22 @@ section#tge div#tge-table div.tge-table-row a.launchpad-logo {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 }
-section#tge div#tge-table div.tge-table-row a.launchpad-logo:hover {
+section#dex div#dex-table div.dex-table-row a.dex-logo:hover {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-section#tge div#tge-table div.tge-table-row a.launchpad-logo picture,
-section#tge div#tge-table div.tge-table-row a.launchpad-logo img {
+section#dex div#dex-table div.dex-table-row a.dex-logo picture,
+section#dex div#dex-table div.dex-table-row a.dex-logo img {
   max-height: 40px;
   max-width: 124px;
 }
-section#tge div#tge-table div.tge-table-row p {
-  width: 100px;
+section#dex div#dex-table div.dex-table-row p {
   text-align: right;
   padding-right: 16px;
+  width: 150px;
   margin-bottom: 0;
 }
-section#tge div#tge-table div.tge-table-row p:last-child {
-  width: 160px;
+section#dex div#dex-table div.dex-table-row p:last-child {
   padding-right: unset;
 }
 
-/*# sourceMappingURL=TGE.css.map */
+/*# sourceMappingURL=DEXES.css.map */

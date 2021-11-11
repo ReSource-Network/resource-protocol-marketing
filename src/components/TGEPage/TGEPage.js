@@ -1,10 +1,10 @@
 import React from "react"
 import "./TGEPage.css"
-import {getCloudinaryImagePath} from "../App/App";
 import TGE from "../TGE/TGE";
-import Staking from "../Staking/Staking";
 import Tokenomics from "../Tokenomics/Tokenomics";
-import CEX from "../CEX/CEX";
+import SOURCEImg from "./SOURCE.svg"
+import DEXES from "../DEXES/DEXES";
+import SourceUtility from "../SourceUtility/SourceUtility";
 
 class TGEPage extends React.Component {
     constructor(props) {
@@ -15,11 +15,15 @@ class TGEPage extends React.Component {
     render() {
         return (
             <div id={'tgePage'}>
-                <h1> {"SOURCE TGE"} </h1>
-                <h2> {"The Fuel of the ReSource Economy"} </h2>
+                <header>
+                    <img src={SOURCEImg} alt="SOURCE token"/>
+                    <h1> {"SOURCE"} </h1>
+                    <p>(ERC20, Celo)</p>
+                    <h2> {"The Fuel of the ReSource Economy"} </h2>
+                </header>
                 <TGE />
-                <CEX />
-                <Staking />
+                <DEXES />
+                <SourceUtility />
                 <Tokenomics />
             </div>
         )
