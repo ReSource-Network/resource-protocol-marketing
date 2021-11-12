@@ -8,16 +8,16 @@ const uniswap = {
     pngSrcName: "uniswap_hsyxjf.png",
     webpSrcName: "uniswap_zvlhod.webp",
     altText: "uniswap logo",
-    price: "free floating",
-    allocation: "1,333,333"
+    price: "Free Floating",
+    allocation: "TBD"
 }
 const ubeswap = {
     href: "https://ubeswap.org/",
     pngSrcName: "ubeswap_cqcrvk.png",
     webpSrcName: "ubeswap_tdvjp1.webp",
     altText: "ubeswap logo",
-    price: "free floating",
-    allocation: "555,555"
+    price: "Free Floating",
+    allocation: "TBD"
 }
 
 const dexes = [uniswap, ubeswap]

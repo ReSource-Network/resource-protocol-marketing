@@ -28,7 +28,7 @@ const anypad = {
     altText: "anypad logo",
     price: "$0.45",
     allocation: "222,222",
-    requirements: "KYC, no US-person"
+    requirements: "KYC, non US-person"
 }
 const gateio = {
     href: "https://gate.io/",
@@ -37,7 +37,7 @@ const gateio = {
     altText: "gate.io logo",
     price: "$0.45",
     allocation: "166,666",
-    requirements: "KYC, no US-person"
+    requirements: "KYC, non US-person"
 }
 
 const tgePads = [daomaker, infinitypad, anypad, gateio]
