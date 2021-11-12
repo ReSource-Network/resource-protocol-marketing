@@ -107,7 +107,7 @@ section#tge div#tge-table div.tge-table-row a.launchpad-logo img {
 }
 @media screen and (max-width: 720px) {
   section#tge div#tge-table div.tge-table-row a.launchpad-logo picture,
-section#tge div#tge-table div.tge-table-row a.launchpad-logo img {
+  section#tge div#tge-table div.tge-table-row a.launchpad-logo img {
     max-width: 40px;
     max-height: 32px;
   }

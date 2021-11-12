@@ -10,11 +10,11 @@ import SocialLinks from "../SocialLinks/SocialLinks"
 import Partners from "../Partners/Partners"
 import FutureIsMutual from "../FutureIsMutual/FutureIsMutual"
 import Footer from "../Footer/Footer"
-import Stakeholders from "../Stakeholders/Stakeholders";
-import Team from "../Team/Team";
-import Audits from "../Audits/Audits";
-import Banner from "../Banner/Banner";
-import Nav from "../Nav/Nav";
+import Stakeholders from "../Stakeholders/Stakeholders"
+import Team from "../Team/Team"
+import Audits from "../Audits/Audits"
+import Banner from "../Banner/Banner"
+import Nav from "../Nav/Nav"
 
 class Home extends React.Component {
   constructor(props) {
@@ -27,29 +27,29 @@ class Home extends React.Component {
 
   renderMain() {
     return (
-        <div>
-          <Banner />
-          <Nav />
-          <main
-              id={"main"}
-              className={"parallax"}
-              style={{ height: `${this.height + "px"}`, color: "black" }}
-          >
-            <Hero />
-            <Background />
-            <ProtocolRoles />
-            <HowItWorks />
-            <StakeInRealEconomy />
-            <ReInventingMoney />
-            <SocialLinks />
-            <Team />
-            <Partners />
-            <Stakeholders />
-            <Audits />
-            <FutureIsMutual />
-            <Footer />
-          </main>
-        </div>
+      <div>
+        <Banner />
+        <Nav />
+        <main
+          id={"main"}
+          className={"parallax"}
+          style={{ height: `${this.height + "px"}`, color: "black" }}
+        >
+          <Hero />
+          <Background />
+          <ProtocolRoles />
+          <HowItWorks />
+          <StakeInRealEconomy />
+          <ReInventingMoney />
+          <SocialLinks />
+          <Team />
+          <Partners />
+          <Stakeholders />
+          <Audits />
+          <FutureIsMutual />
+          <Footer />
+        </main>
+      </div>
     )
   }
 

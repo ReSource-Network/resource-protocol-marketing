@@ -60,16 +60,16 @@ const dsrvLabs = {
   altText: "DSRV Labs logo",
 }
 
-const stakeholders =
-    [ futurePerfectVentures
-    , followTheSeed
-    , davoaCapital
-    , exNetworkCapital
-    , floriVentures
-    , ngcVentures
-    , eutopiaVentures
-    , dsrvLabs
-    ]
+const stakeholders = [
+  futurePerfectVentures,
+  followTheSeed,
+  davoaCapital,
+  exNetworkCapital,
+  floriVentures,
+  ngcVentures,
+  eutopiaVentures,
+  dsrvLabs,
+]
 
 class Stakeholders extends React.Component {
   constructor(props) {

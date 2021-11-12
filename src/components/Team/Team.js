@@ -131,27 +131,27 @@ const alison = {
   title: "Relationship Manager",
   pngSrcName: "team/alison_ned4kz.png",
   webpSrcName: "team/alison_iasuxb.webp",
-  altText: "alison sher headshot"
+  altText: "alison sher headshot",
 }
 
-const team =
-    [ david
-    , ashley
-    , duke
-    , ofir
-    , sayer
-    , joaquin
-    , bridger
-    , geoff
-    , anna
-    , joe
-    , julian
-    , nate
-    , nir
-    , rachel
-    , nathan
-    , alison
-    ]
+const team = [
+  david,
+  ashley,
+  duke,
+  ofir,
+  sayer,
+  joaquin,
+  bridger,
+  geoff,
+  anna,
+  joe,
+  julian,
+  nate,
+  nir,
+  rachel,
+  nathan,
+  alison,
+]
 
 class Team extends React.Component {
   constructor(props) {

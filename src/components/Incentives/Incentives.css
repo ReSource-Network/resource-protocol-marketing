@@ -111,7 +111,7 @@ section#incentives div#incentives-table div.incentives-table-row a.incentives-lo
 }
 @media screen and (max-width: 720px) {
   section#incentives div#incentives-table div.incentives-table-row a.incentives-logo picture,
-section#incentives div#incentives-table div.incentives-table-row a.incentives-logo img {
+  section#incentives div#incentives-table div.incentives-table-row a.incentives-logo img {
     max-width: 40px;
     max-height: 32px;
   }
@@ -142,7 +142,8 @@ section#incentives div#incentives-table div.incentives-table-row div.incentives-
     width: 80px;
   }
 }
-section#incentives div#incentives-table div.incentives-table-row div.incentives-reward picture, section#incentives div#incentives-table div.incentives-table-row div.incentives-reward img {
+section#incentives div#incentives-table div.incentives-table-row div.incentives-reward picture,
+section#incentives div#incentives-table div.incentives-table-row div.incentives-reward img {
   width: 24px;
   height: 24px;
   border-radius: 40px;

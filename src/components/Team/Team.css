@@ -49,10 +49,12 @@ section#team div#teamItemsContainer a.teamItem {
     align-self: stretch;
   }
 }
-section#team div#teamItemsContainer a.teamItem:hover img, section#team div#teamItemsContainer a.teamItem:hover picture {
+section#team div#teamItemsContainer a.teamItem:hover img,
+section#team div#teamItemsContainer a.teamItem:hover picture {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
-section#team div#teamItemsContainer a.teamItem h6, section#team div#teamItemsContainer a.teamItem p {
+section#team div#teamItemsContainer a.teamItem h6,
+section#team div#teamItemsContainer a.teamItem p {
   color: black;
   text-align: center;
 }

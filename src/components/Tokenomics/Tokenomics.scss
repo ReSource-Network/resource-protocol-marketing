@@ -1,112 +1,112 @@
 // SECTION
 
 @mixin tokenomics-section-position {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin tokenomics-section-size {
-    width: calc(100vw - (64px * 2));
-    height: auto;
-    padding: 32px 64px 64px 64px;
-    @media screen and (max-width: 550px) {
-        width: calc(100vw - (16px * 2));
-        padding: 16px;
-    }
+  width: calc(100vw - (64px * 2));
+  height: auto;
+  padding: 32px 64px 64px 64px;
+  @media screen and (max-width: 550px) {
+    width: calc(100vw - (16px * 2));
+    padding: 16px;
+  }
 }
 
 // SECTION TITLE
 
 @mixin tokenomics-section-title-position {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 @mixin tokenomics-section-title-size {
-    font-size: 1.6em;
+  font-size: 1.6em;
 }
 
 @mixin tokenomics-section-title-style {
-    color: white;
-    font-weight: 600;
-    text-align: center;
+  color: white;
+  font-weight: 600;
+  text-align: center;
 }
 
 // audit ITEMS CONTAINER
 
 @mixin tokenomics-items-container-position {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin tokenomics-items-container-size {
-    width: calc(90% + (8px * 4));
-    @media screen and (max-width: 550px) {
-        width: calc(80% + (16px * 2));
-        padding: 16px;
-    }
+  width: calc(90% + (8px * 4));
+  @media screen and (max-width: 550px) {
+    width: calc(80% + (16px * 2));
+    padding: 16px;
+  }
 }
 
 // audit ITEM
 
 @mixin tokenomics-item-position {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    margin: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
 }
 
 @mixin tokenomics-item-size {
-    width: auto;
-    height: auto;
-    padding: 0;
-    @media screen and (max-width: 550px) {
-        align-self: stretch;
-    }
+  width: auto;
+  height: auto;
+  padding: 0;
+  @media screen and (max-width: 550px) {
+    align-self: stretch;
+  }
 }
 
 // audit IMG
 
 @mixin tokenomics-img-position {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
 }
 
 @mixin tokenomics-img-size {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 section#tokenomics {
-    @include tokenomics-section-position;
-    @include tokenomics-section-size;
-    h4 {
-        @include tokenomics-section-title-position;
-        @include tokenomics-section-title-size;
-        @include tokenomics-section-title-style;
+  @include tokenomics-section-position;
+  @include tokenomics-section-size;
+  h4 {
+    @include tokenomics-section-title-position;
+    @include tokenomics-section-title-size;
+    @include tokenomics-section-title-style;
+  }
+  p {
+    color: white;
+    margin-bottom: 32px;
+  }
+  div#tokenomicsItemsContainer {
+    @include tokenomics-items-container-position;
+    @include tokenomics-items-container-size;
+    div.tokenomicsItem {
+      @include tokenomics-item-position;
+      @include tokenomics-item-size;
     }
-    p {
-        color: white;
-        margin-bottom: 32px;
+    picture,
+    img {
+      border-radius: 16px;
+      @include tokenomics-img-position;
+      @include tokenomics-img-size;
     }
-    div#tokenomicsItemsContainer {
-        @include tokenomics-items-container-position;
-        @include tokenomics-items-container-size;
-        div.tokenomicsItem {
-            @include tokenomics-item-position;
-            @include tokenomics-item-size;
-        }
-        picture,
-        img {
-            border-radius: 16px;
-            @include tokenomics-img-position;
-            @include tokenomics-img-size;
-        }
-    }
+  }
 }

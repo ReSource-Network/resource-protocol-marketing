@@ -98,7 +98,7 @@ section#dex div#dex-table div.dex-table-row a.dex-logo img {
 }
 @media screen and (max-width: 720px) {
   section#dex div#dex-table div.dex-table-row a.dex-logo picture,
-section#dex div#dex-table div.dex-table-row a.dex-logo img {
+  section#dex div#dex-table div.dex-table-row a.dex-logo img {
     max-width: 40px;
     max-height: 32px;
   }
