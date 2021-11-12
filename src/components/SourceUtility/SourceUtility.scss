@@ -18,6 +18,7 @@ section#source-utility {
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        max-width: 1000px;
 
         div.source-utility-info-item {
             display: flex;
@@ -28,9 +29,21 @@ section#source-utility {
             color: white;
             margin: 16px;
             width: 300px;
+            @media screen and (max-width: 550px) {
+                width: 200px;
+                margin: 8px;
+            }
             h5 {
                 font-size: 18px;
                 margin-bottom: 8px;
+                @media screen and (max-width: 550px) {
+                    font-size: 16px;
+                }
+            }
+            p {
+                @media screen and (max-width: 550px) {
+                    font-size: 12px;
+                }
             }
         }
     }

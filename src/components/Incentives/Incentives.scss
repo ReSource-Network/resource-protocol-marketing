@@ -1,13 +1,13 @@
 // SECTION
 
-@mixin dex-section-position {
+@mixin incentives-section-position {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 }
 
-@mixin dex-section-size {
+@mixin incentives-section-size {
     width: calc(100vw - (64px * 2));
     height: auto;
     padding: 32px 64px 64px 64px;
@@ -19,15 +19,15 @@
 
 // SECTION TITLE
 
-@mixin dex-section-title-position {
-    margin-bottom: 0;
+@mixin incentives-section-title-position {
+    margin-bottom: 32px;
 }
 
-@mixin dex-section-title-size {
+@mixin incentives-section-title-size {
     font-size: 1.6em;
 }
 
-@mixin dex-section-title-style {
+@mixin incentives-section-title-style {
     color: white;
     font-weight: 600;
     text-align: center;
@@ -35,14 +35,14 @@
 
 // audit ITEMS CONTAINER
 
-@mixin dex-items-container-position {
+@mixin incentives-items-container-position {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
 
-@mixin dex-items-container-size {
+@mixin incentives-items-container-size {
     width: calc(80% + (8px * 4));
     @media screen and (max-width: 550px) {
         width: calc(80% + (16px * 2));
@@ -52,7 +52,7 @@
 
 // audit ITEM
 
-@mixin dex-item-position {
+@mixin incentives-item-position {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -60,7 +60,7 @@
     margin: 8px;
 }
 
-@mixin dex-item-size {
+@mixin incentives-item-size {
     width: auto;
     height: auto;
     padding: 32px;
@@ -69,7 +69,7 @@
     }
 }
 
-@mixin dex-item-style {
+@mixin incentives-item-style {
     border: 1px solid rgba(256, 256, 256, 0.2);
     border-radius: 16px;
     &:hover {
@@ -79,25 +79,25 @@
 
 // audit IMG
 
-@mixin dex-img-position {
+@mixin incentives-img-position {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
 }
 
-@mixin dex-img-size {
+@mixin incentives-img-size {
     width: auto;
     height: 48px;
 }
 
-section#dex {
-    @include dex-section-position;
-    @include dex-section-size;
+section#incentives {
+    @include incentives-section-position;
+    @include incentives-section-size;
     h4 {
-        @include dex-section-title-position;
-        @include dex-section-title-size;
-        @include dex-section-title-style;
+        @include incentives-section-title-position;
+        @include incentives-section-title-size;
+        @include incentives-section-title-style;
     }
     p {
         color: white;
@@ -106,47 +106,56 @@ section#dex {
             font-size: 12px;
         }
     }
-    div#dex-table {
+    div#incentives-table {
         display: flex;
         flex-flow: column nowrap;
         background-color: rgba(0, 0, 0, 0.1);
         border-radius: 32px;
         padding: 32px 32px 16px 32px;
+        @media screen and (max-width: 720px) {
+            padding: 16px 16px 8px 16px;
+            border-radius: 16px;
+        }
 
-        div#dex-table-header {
+        div#incentives-table-header {
             display: flex;
             flex-flow: row nowrap;
+            justify-content: space-between;
             margin-bottom: 16px;
 
             p {
                 text-align: right;
-                width: 150px;
                 padding-right: 16px;
-                margin-bottom: 0;
+                width: 180px;
                 @media screen and (max-width: 720px) {
                     width: 80px;
                 }
+                margin-bottom: 0;
                 &:first-child {
                     text-align: left;
                     width: 148px;
                     @media screen and (max-width: 720px) {
-                        width: 40px;
+                        width: 32px;
                     }
                 }
                 &:last-child {
                     padding-right: 0;
+                    width: 248px;
+                    @media screen and (max-width: 720px) {
+                        width: 80px;
+                    }
                 }
             }
         }
 
-        div.dex-table-row {
+        div.incentives-table-row {
             display: flex;
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 16px;
 
-            a.dex-logo {
+            a.incentives-logo {
                 display: flex;
                 flex-flow: row nowrap;
                 justify-content: center;
@@ -177,13 +186,32 @@ section#dex {
             p {
                 text-align: right;
                 padding-right: 16px;
-                width: 150px;
-                margin-bottom: 0;
+                margin: 8px 8px 0 0;
+                width: 180px;
                 @media screen and (max-width: 720px) {
                     width: 80px;
+                    padding-right: 4px;
                 }
-                &:last-child {
-                    padding-right: unset;
+            }
+
+            div.incentives-reward {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+
+                p {
+                    width: 200px;
+                    padding-right: 0;
+                    @media screen and (max-width: 720px) {
+                        width: 80px;
+                    }
+                }
+
+                picture, img {
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 40px;
+                    margin: 4px 0 0 0;
                 }
             }
         }

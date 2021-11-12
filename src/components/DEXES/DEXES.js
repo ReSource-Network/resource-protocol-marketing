@@ -60,7 +60,7 @@ class DEXES extends React.Component {
                 <div id={'dex-table'}>
                     <div id={'dex-table-header'}>
                         <p>Venue</p>
-                        <p>Price on LaunchPad</p>
+                        <p>Price on DEX</p>
                         <p>Allocation (SOURCE)</p>
                     </div>
                     {this.renderDEXESTableRows()}

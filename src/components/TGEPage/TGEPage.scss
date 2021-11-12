@@ -7,11 +7,17 @@ div#tgePage header
 ; align-items: center
 ; margin: 128px 0 64px 0
 ; color: white
+; @media screen and (max-width: 550px)
+    { margin: 64px 0 64px 0
+    }
 ; h1
     { color: white
     ; font-size: 3em
     ; text-align: center
     ; margin-top: 48px
+    ; @media screen and (max-width: 550px)
+        { font-size: 2em;
+        }
     }
 ; h2
     { color: white
@@ -20,9 +26,17 @@ div#tgePage header
     ; text-align: center
     ; font-weight: normal
     ; margin-top: 16px
+    ; @media screen and (max-width: 550px)
+        { font-size: 1.6em;
+        ; margin: 16px 16px 0 16px
+        }
     }
 ; img
     { width: 128px
     ; height: 128px
+    ; @media screen and (max-width: 550px)
+        { width: 64px;
+        ; height: 64px;
+        }
     }
 }

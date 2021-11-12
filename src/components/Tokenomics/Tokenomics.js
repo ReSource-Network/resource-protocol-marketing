@@ -34,7 +34,7 @@ class Tokenomics extends React.Component {
                 <picture>
                     <source srcSet={getCloudinaryImagePath(tokenomic.webpSrcName)} type={"image/webp"} />
                     <source srcSet={getCloudinaryImagePath(tokenomic.jpgSrcName)} type={"image/jpg"} />
-                    <img src={getCloudinaryImagePath(tokenomic.pngSrcName)} alt={tokenomic.altText} />
+                    <img src={getCloudinaryImagePath(tokenomic.jpgSrcName)} alt={tokenomic.altText} />
                 </picture>
             </div>
         ))

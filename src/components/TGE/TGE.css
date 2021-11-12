@@ -27,6 +27,11 @@ section#tge p {
 section#tge p:first-child {
   width: 148px;
 }
+@media screen and (max-width: 720px) {
+  section#tge p {
+    font-size: 12px;
+  }
+}
 section#tge div#tge-table {
   display: flex;
   flex-flow: column nowrap;
@@ -45,13 +50,28 @@ section#tge div#tge-table div#tge-table-header p {
   padding-right: 16px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 720px) {
+  section#tge div#tge-table div#tge-table-header p {
+    width: 80px;
+  }
+}
 section#tge div#tge-table div#tge-table-header p:first-child {
   text-align: left;
   width: 148px;
 }
+@media screen and (max-width: 720px) {
+  section#tge div#tge-table div#tge-table-header p:first-child {
+    width: 48px;
+  }
+}
 section#tge div#tge-table div#tge-table-header p:last-child {
   width: 160px;
   padding-right: 0;
+}
+@media screen and (max-width: 720px) {
+  section#tge div#tge-table div#tge-table-header p:last-child {
+    width: 80px;
+  }
 }
 section#tge div#tge-table div.tge-table-row {
   display: flex;
@@ -70,6 +90,13 @@ section#tge div#tge-table div.tge-table-row a.launchpad-logo {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
 }
+@media screen and (max-width: 720px) {
+  section#tge div#tge-table div.tge-table-row a.launchpad-logo {
+    height: 40px;
+    width: 56px;
+    border-radius: 8px;
+  }
+}
 section#tge div#tge-table div.tge-table-row a.launchpad-logo:hover {
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
@@ -78,15 +105,32 @@ section#tge div#tge-table div.tge-table-row a.launchpad-logo img {
   max-height: 40px;
   max-width: 124px;
 }
+@media screen and (max-width: 720px) {
+  section#tge div#tge-table div.tge-table-row a.launchpad-logo picture,
+section#tge div#tge-table div.tge-table-row a.launchpad-logo img {
+    max-width: 40px;
+    max-height: 32px;
+  }
+}
 section#tge div#tge-table div.tge-table-row p {
   width: 100px;
   text-align: right;
   padding-right: 16px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 720px) {
+  section#tge div#tge-table div.tge-table-row p {
+    width: 80px;
+  }
+}
 section#tge div#tge-table div.tge-table-row p:last-child {
   width: 160px;
   padding-right: unset;
+}
+@media screen and (max-width: 720px) {
+  section#tge div#tge-table div.tge-table-row p:last-child {
+    width: 80px;
+  }
 }
 
 /*# sourceMappingURL=TGE.css.map */

@@ -10,7 +10,7 @@ const daomaker = {
     altText: "daomaker logo",
     price: "$0.45",
     allocation: "2,722,222",
-    requirements: "KYC, no US-person, Stake DAO tokens"
+    requirements: "KYC, non US-person, Stake DAO tokens"
 }
 const infinitypad = {
     href: "https://infinitypad.com/company/resource-finance-ipad/",
@@ -19,7 +19,7 @@ const infinitypad = {
     altText: "infinitypad logo",
     price: "$0.45",
     allocation: "222,222",
-    requirements: "KYC, no US-person, Stake DAO tokens"
+    requirements: "KYC, non US-person, Stake DAO tokens"
 }
 const anypad = {
     href: "https://app.anypad.io/#/",

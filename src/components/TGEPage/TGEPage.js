@@ -5,6 +5,7 @@ import Tokenomics from "../Tokenomics/Tokenomics";
 import SOURCEImg from "./SOURCE.svg"
 import DEXES from "../DEXES/DEXES";
 import SourceUtility from "../SourceUtility/SourceUtility";
+import Incentives from "../Incentives/Incentives";
 
 class TGEPage extends React.Component {
     constructor(props) {
@@ -25,6 +26,7 @@ class TGEPage extends React.Component {
                 <DEXES />
                 <SourceUtility />
                 <Tokenomics />
+                <Incentives />
             </div>
         )
     }

@@ -105,6 +105,9 @@ section#tge {
         &:first-child {
             width: 148px;
         }
+        @media screen and (max-width: 720px) {
+            font-size: 12px;
+        }
     }
     div#tge-table {
         display: flex;
@@ -123,13 +126,22 @@ section#tge {
                 width: 100px;
                 padding-right: 16px;
                 margin-bottom: 0;
+                @media screen and (max-width: 720px) {
+                    width: 80px;
+                }
                 &:first-child {
                     text-align: left;
                     width: 148px;
+                    @media screen and (max-width: 720px) {
+                        width: 48px;
+                    }
                 }
                 &:last-child {
                     width: 160px;
                     padding-right: 0;
+                    @media screen and (max-width: 720px) {
+                        width: 80px;
+                    }
                 }
             }
         }
@@ -150,6 +162,11 @@ section#tge {
                 height: 72px;
                 border: 1px solid rgba(256, 256, 256, 0.2);
                 border-radius: 16px;
+                @media screen and (max-width: 720px) {
+                    height: 40px;
+                    width: 56px;
+                    border-radius: 8px;
+                }
                 &:hover {
                     border: 1px solid rgba(256, 256, 256, 0.4);
                 }
@@ -157,6 +174,10 @@ section#tge {
                 img {
                     max-height: 40px;
                     max-width: 124px;
+                    @media screen and (max-width: 720px) {
+                        max-width: 40px;
+                        max-height: 32px;
+                    }
                 }
             }
 
@@ -165,9 +186,15 @@ section#tge {
                 text-align: right;
                 padding-right: 16px;
                 margin-bottom: 0;
+                @media screen and (max-width: 720px) {
+                    width: 80px;
+                }
                 &:last-child {
                     width: 160px;
                     padding-right: unset;
+                    @media screen and (max-width: 720px) {
+                        width: 80px;
+                    }
                 }
             }
         }
