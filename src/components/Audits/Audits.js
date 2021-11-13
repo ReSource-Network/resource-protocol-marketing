@@ -6,7 +6,7 @@ import { getCloudinaryImagePath } from "../App/App"
 
 // data
 const hacken = {
-  href: "https://hacken.io/",
+  href: "/ReSourceNetwork_Hacken_Audit_Report.pdf",
   pngSrcName: "hacken_rf7deo.png",
   webpSrcName: "hacken_apedrr.webp",
   altText: "hacken logo",
