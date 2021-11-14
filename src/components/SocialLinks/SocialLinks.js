@@ -19,7 +19,7 @@ const telegram = {
   icon: faTelegram,
 }
 const discord = {
-  href: "https://discord.gg/UuTCRuuZMP",
+  href: "https://discord.gg/q4fJjWqD6g",
   titleText: "discord",
   descriptionText: "Chat with the community",
   icon: faDiscord,
