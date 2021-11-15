@@ -21,26 +21,26 @@ const infinitypad = {
   allocation: "222,222",
   requirements: "KYC, non US-person, Stake IPAD tokens",
 }
-const anypad = {
-  href: "https://app.anypad.io/#/",
-  pngSrcName: "anypad_mqlekf.png",
-  webpSrcName: "anypad_rfh5sr.webp",
-  altText: "anypad logo",
-  price: "$0.45",
-  allocation: "222,222",
-  requirements: "KYC, non US-person",
-}
 const gateio = {
   href: "https://www.gate.io/en/startup/278/",
   pngSrcName: "gateio_x4vsvy_azw11u.png",
   webpSrcName: "gateio_x4vsvy_g3xpb1.webp",
   altText: "gate.io logo",
   price: "$0.45",
+  allocation: "222,222",
+  requirements: "KYC, non US-person",
+}
+const anypad = {
+  href: "https://app.anypad.io/#/",
+  pngSrcName: "anypad_mqlekf.png",
+  webpSrcName: "anypad_rfh5sr.webp",
+  altText: "anypad logo",
+  price: "$0.45",
   allocation: "166,666",
   requirements: "KYC, non US-person",
 }
 
-const tgePads = [daomaker, infinitypad, anypad, gateio]
+const tgePads = [daomaker, infinitypad, gateio, anypad]
 
 class TGE extends React.Component {
   constructor(props) {
