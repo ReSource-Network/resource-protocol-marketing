@@ -1,5 +1,6 @@
 import React from "react"
 import "./TGEPage.css"
+import TGENav from "../TGENav/TGENav"
 import TGE from "../TGE/TGE"
 import Tokenomics from "../Tokenomics/Tokenomics"
 import SOURCEImg from "./SOURCE.svg"
@@ -16,6 +17,7 @@ class TGEPage extends React.Component {
   render() {
     return (
       <div id={"tgePage"}>
+        <TGENav />
         <header>
           <img src={SOURCEImg} alt="SOURCE token" />
           <h1> {"SOURCE"} </h1>
