@@ -35,19 +35,13 @@ class Nav extends React.Component {
       selected: null,
     }
 
-    this.handleClickNavLink = this.handleClickNavLink.bind(this)
-    // this.handleClickLogo = this.handleClickLogo.bind(this)
+    this.handleClickNavLink = this.handleClickNavLink.bind(this)  
     this.renderLinks = this.renderLinks.bind(this)
   }
 
   // handle event
   handleClickNavLink(event) {
     this.setState({ selected: event.target.id })
-  }
-
-  handleClickLogo(event) {
-    event.preventDefault()
-    this.setState({ selected: null })
   }
 
   // render
@@ -67,7 +61,6 @@ class Nav extends React.Component {
 
   renderLogo() {
     return (
-      // <Link to={"/"} onClick={this.handleClickLogo}>
       <Link to={"/"}>
         {
           <img

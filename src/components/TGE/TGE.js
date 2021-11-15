@@ -31,7 +31,7 @@ const anypad = {
   requirements: "KYC, non US-person",
 }
 const gateio = {
-  href: "https://gate.io/",
+  href: "https://www.gate.io/en/startup/278/",
   pngSrcName: "gateio_x4vsvy_azw11u.png",
   webpSrcName: "gateio_x4vsvy_g3xpb1.webp",
   altText: "gate.io logo",
