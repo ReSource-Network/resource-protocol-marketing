@@ -76,7 +76,7 @@ class TGE extends React.Component {
   render() {
     return (
       <section id={"tge"}>
-        <h4> {"SHO - Sold Out"} </h4>
+        <h4> {"SHO - Completed"} </h4>
         <p>
           {/*{"November 17th"} */}
         </p>
