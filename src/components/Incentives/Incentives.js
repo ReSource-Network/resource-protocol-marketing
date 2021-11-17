@@ -30,7 +30,7 @@ const ubeToken = {
   altText: "ubeswap token",
 }
 
-let incentiveRewards = [sourceToken, ubeToken, celoToken]
+let incentiveRewards = [ubeToken, celoToken]
 
 class Incentives extends React.Component {
   constructor(props) {
@@ -56,6 +56,7 @@ class Incentives extends React.Component {
     return (
       <section id={"incentives"}>
         <h4> {"Liquidity Mining Incentives"} </h4>
+        <p> {"Monday, November 22nd - 6am (UTC)"} </p>
         <div id={"incentives-table"}>
           <div id={"incentives-table-header"}>
             <p>Venue</p>

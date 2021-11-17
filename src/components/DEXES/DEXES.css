@@ -31,7 +31,7 @@ section#dex p {
 }
 section#dex div#dex-table {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 32px;
   padding: 32px 32px 16px 32px;
@@ -69,7 +69,7 @@ section#dex div#dex-table div.dex-table-row {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
+  margin: 0 16px 16px 16px;
 }
 section#dex div#dex-table div.dex-table-row a.dex-logo {
   display: flex;
@@ -98,7 +98,7 @@ section#dex div#dex-table div.dex-table-row a.dex-logo img {
 }
 @media screen and (max-width: 720px) {
   section#dex div#dex-table div.dex-table-row a.dex-logo picture,
-  section#dex div#dex-table div.dex-table-row a.dex-logo img {
+section#dex div#dex-table div.dex-table-row a.dex-logo img {
     max-width: 40px;
     max-height: 32px;
   }

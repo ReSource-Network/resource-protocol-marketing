@@ -11,6 +11,22 @@ const uniswap = {
   price: "Free Floating",
   allocation: "TBD",
 }
+const pancakeswap = {
+  href: "https://pancakeswap.finance/",
+  pngSrcName: "pancakeswap_hgsfc5.png",
+  webpSrcName: "pancakeswap_c2fbxd.webp",
+  altText: "pancake swap logo",
+  price: "Free Floating",
+  allocation: "TBD",
+}
+const gateio = {
+  href: "https://www.gate.io/",
+  pngSrcName: "gateio_x4vsvy_azw11u.png",
+  webpSrcName: "gateio_x4vsvy_g3xpb1.webp",
+  altText: "gate.io logo",
+  price: "Free Floating",
+  allocation: "TBD",
+}
 const ubeswap = {
   href: "https://ubeswap.org/",
   pngSrcName: "ubeswap_cqcrvk.png",
@@ -20,7 +36,7 @@ const ubeswap = {
   allocation: "TBD",
 }
 
-const dexes = [uniswap, ubeswap]
+const dexes = [uniswap, pancakeswap, gateio, ubeswap]
 
 class DEXES extends React.Component {
   constructor(props) {
@@ -46,8 +62,8 @@ class DEXES extends React.Component {
             <img src={getCloudinaryImagePath(dex.pngSrcName)} alt={dex.altText} />
           </picture>
         </a>
-        <p>{dex.price}</p>
-        <p>{dex.allocation}</p>
+        {/*<p>{dex.price}</p>*/}
+        {/*<p>{dex.allocation}</p>*/}
       </div>
     ))
   }
@@ -55,14 +71,9 @@ class DEXES extends React.Component {
   render() {
     return (
       <section id={"dex"}>
-        <h4> {"Decentralized Exchanges"} </h4>
-        <p> {"November 19th"} </p>
+        <h4> {"Exchanges"} </h4>
+        <p> {"Monday, November 22nd - 6am (UTC)"} </p>
         <div id={"dex-table"}>
-          <div id={"dex-table-header"}>
-            <p>Venue</p>
-            <p>Price on DEX</p>
-            <p>Allocation (SOURCE)</p>
-          </div>
           {this.renderDEXESTableRows()}
         </div>
       </section>

@@ -14,7 +14,7 @@ section#incentives {
   }
 }
 section#incentives h4 {
-  margin-bottom: 32px;
+  margin-bottom: 0;
   font-size: 1.6em;
   color: white;
   font-weight: 600;
@@ -111,7 +111,7 @@ section#incentives div#incentives-table div.incentives-table-row a.incentives-lo
 }
 @media screen and (max-width: 720px) {
   section#incentives div#incentives-table div.incentives-table-row a.incentives-logo picture,
-  section#incentives div#incentives-table div.incentives-table-row a.incentives-logo img {
+section#incentives div#incentives-table div.incentives-table-row a.incentives-logo img {
     max-width: 40px;
     max-height: 32px;
   }

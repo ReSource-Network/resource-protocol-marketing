@@ -24,11 +24,11 @@ class TGEPage extends React.Component {
           <p>(ERC20, Celo)</p>
           <h2> {"The Fuel of the ReSource Economy"} </h2>
         </header>
-        <TGE />
         <DEXES />
+        <Incentives />
+        <TGE />
         <SourceUtility />
         <Tokenomics />
-        <Incentives />
       </div>
     )
   }
