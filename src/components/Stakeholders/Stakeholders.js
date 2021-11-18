@@ -45,7 +45,7 @@ const ngcVentures = {
   href: "https://ngc.fund/home",
   pngSrcName: "stakeholders/ngc_tnz9kt.png",
   webpSrcName: "stakeholders/ngc_rt9ib1.webp",
-  altText: "davoa capital logo",
+  altText: "ngc ventures logo",
 }
 const eutopiaVentures = {
   href: "https://eutopia.vc",

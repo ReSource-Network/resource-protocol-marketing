@@ -22,6 +22,35 @@ class TGEPage extends React.Component {
           <img src={SOURCEImg} alt="SOURCE token" />
           <h1> {"SOURCE"} </h1>
           <p>(ERC20, Celo)</p>
+            <div id={"contracts"}>
+                <p id={'contracts-title'}>Contracts:</p>
+                <div className={'contract-item'}>
+                    <a
+                        href="https://explorer.celo.org/address/0x74c0C58B99b68cF16A717279AC2d056A34ba2bFe/contracts"
+                        target={"_blank"}
+                    >
+                        <span>Celo</span>
+                        (0x74c0...2bFe)
+                    </a>
+                </div>
+                <div className={'contract-item'}>
+                    <a
+                        href="https://etherscan.io/token/0x8d2b3350edf2e8a0bf9deee1dd215bcebc772048"
+                        target={"_blank"}
+                    >
+                        <span>ETH</span>
+                        (0x8d2b...2048)
+                    </a>
+                </div>
+                <div className={'contract-item'}>
+                    <a
+                        href=""
+                    >
+                        <span>BSC</span>
+                        (coming soon)
+                    </a>
+                </div>
+            </div>
           <h2> {"The Fuel of the ReSource Economy"} </h2>
         </header>
         <DEXES />

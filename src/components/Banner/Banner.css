@@ -1,11 +1,52 @@
-#banner-container {
+div#banners-wrap {
   position: fixed;
+  flex-flow: column nowrap;
+  z-index: 99;
+}
+
+section#contracts {
+  width: calc(100vw - 32px);
+  height: auto;
+  flex-flow: row wrap;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 16px 0 16px 32px;
+  font-size: 12px;
+}
+section#contracts p {
+  display: inline;
+  margin-right: 12px;
+}
+@media screen and (max-width: 650px) {
+  section#contracts p#contracts-title {
+    display: none;
+  }
+}
+section#contracts div.contract-item {
+  display: inline;
+}
+section#contracts a {
+  color: black;
+  padding: 4px 8px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-right: 12px;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+section#contracts a:hover {
+  border: 1px solid black;
+}
+section#contracts a span {
+  margin-right: 4px;
+  font-weight: normal;
+}
+
+#banner-container {
   display: flex;
   flex-flow: row nowrap;
   width: 100vw;
   height: auto;
-  top: 0;
-  z-index: 99;
 }
 
 #banner {

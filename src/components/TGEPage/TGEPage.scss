@@ -1,3 +1,53 @@
+div#contracts {
+  height: auto;
+  flex-flow: row wrap;
+  @media screen and (max-width: 600px) {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+  }
+  max-width: 90vw;
+  z-index: 99;
+  padding: 16px 0 16px 32px;
+  font-size: 12px;
+  margin-top: 6px;
+
+  p {
+    display: inline;
+    margin-right: 12px;
+    @media screen and (max-width: 600px) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  div.contract-item {
+    display: inline;
+    @media screen and (max-width: 600px) {display: block; margin: 16px 0;}
+  }
+
+  a {
+    color: white;
+    padding: 4px 8px;
+    border-radius: 24px;
+    border: 1px solid rgba(256, 256, 256, 0.3);
+    margin-right: 12px;
+    font-weight: lighter;
+    white-space: nowrap;
+
+    &:hover {
+      border: 1px solid white;
+    }
+
+    span {
+      margin-right: 4px;
+      font-weight: normal;
+    }
+  }
+}
+
+
 div#tgePage header {
   width: 100%;
   height: auto;

@@ -1,3 +1,56 @@
+div#contracts {
+  height: auto;
+  flex-flow: row wrap;
+  max-width: 90vw;
+  z-index: 99;
+  padding: 16px 0 16px 32px;
+  font-size: 12px;
+  margin-top: 6px;
+}
+@media screen and (max-width: 600px) {
+  div#contracts {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+  }
+}
+div#contracts p {
+  display: inline;
+  margin-right: 12px;
+}
+@media screen and (max-width: 600px) {
+  div#contracts p {
+    display: block;
+    text-align: center;
+  }
+}
+div#contracts div.contract-item {
+  display: inline;
+}
+@media screen and (max-width: 600px) {
+  div#contracts div.contract-item {
+    display: block;
+    margin: 16px 0;
+  }
+}
+div#contracts a {
+  color: white;
+  padding: 4px 8px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-right: 12px;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+div#contracts a:hover {
+  border: 1px solid white;
+}
+div#contracts a span {
+  margin-right: 4px;
+  font-weight: normal;
+}
+
 div#tgePage header {
   width: 100%;
   height: auto;
