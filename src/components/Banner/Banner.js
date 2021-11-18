@@ -43,10 +43,11 @@ class Banner extends React.Component {
           </div>
           <div className={'contract-item'}>
             <a
-                href=""
+                href="https://bscscan.com/address/0xea136fc555e695ba96d22e10b7e2151c4c6b2a20"
+                target={"_blank"}
             >
               <span>BSC</span>
-              (coming soon)
+              (0xea13...2a20)
             </a>
           </div>
         </section>
