@@ -7,6 +7,7 @@ import SOURCEImg from "./SOURCE.svg"
 import DEXES from "../DEXES/DEXES"
 import SourceUtility from "../SourceUtility/SourceUtility"
 import Incentives from "../Incentives/Incentives"
+import Roadmap from "../Roadmap/Roadmap";
 
 class TGEPage extends React.Component {
   constructor(props) {
@@ -59,6 +60,7 @@ class TGEPage extends React.Component {
         <TGE />
         <SourceUtility />
         <Tokenomics />
+        <Roadmap />
       </div>
     )
   }

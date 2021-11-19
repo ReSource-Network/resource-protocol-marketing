@@ -1,0 +1,17 @@
+section#roadmap {
+  width: 100vw;
+  height: auto;
+}
+section#roadmap h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  color: white;
+  margin: 48px 0 48px 0;
+}
+section#roadmap img, section#roadmap picture {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=Roadmap.css.map */
