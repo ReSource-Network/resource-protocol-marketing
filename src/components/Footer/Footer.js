@@ -21,9 +21,18 @@ class Footer extends React.Component {
           src={getCloudinaryImagePath(logosImgSrcName)}
           alt={"resource network logos"}
         />
-        <p>
-          <span>&copy;</span> ReSource Network
-        </p>
+        <div>
+          <p>
+            <span>&copy;</span> ReSource Network
+          </p>
+          <a
+            target="_blank"
+            style={{ color: "white", textDecoration: "underline" }}
+            href="https://resource.finance/"
+          >
+            <p>resource.finance</p>
+          </a>
+        </div>
       </footer>
     )
   }
