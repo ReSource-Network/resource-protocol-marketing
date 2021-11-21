@@ -28,9 +28,9 @@ class Footer extends React.Component {
           <a
             target="_blank"
             style={{ color: "white", textDecoration: "underline" }}
-            href="https://resource.finance/"
+            href="https://resourcenetwork.co/"
           >
-            <p>resource.finance</p>
+            <p>resourcenetwork.co</p>
           </a>
         </div>
       </footer>
