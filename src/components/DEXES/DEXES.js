@@ -36,7 +36,7 @@ const ubeswap = {
   allocation: "TBD",
 }
 
-const dexes = [uniswap, pancakeswap, gateio, ubeswap]
+const dexes = [pancakeswap, gateio, ubeswap]
 
 class DEXES extends React.Component {
   constructor(props) {
