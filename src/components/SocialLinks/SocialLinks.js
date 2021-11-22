@@ -9,6 +9,7 @@ import {
   faGithub,
   faFacebook,
   faTelegram,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons"
 
 // data
@@ -54,8 +55,14 @@ const github = {
   descriptionText: "Check out our code",
   icon: faGithub,
 }
+const youtube = {
+  href: "https://www.youtube.com/channel/UCphf6BYgfUDccb4OEmj_oqg",
+  titleText: "youtube",
+  descriptionText: "Watch the video explainer",
+  icon: faYoutube
+}
 
-const socials = [telegram, discord, twitter, facebook, medium, linkedin, github]
+const socials = [telegram, discord, twitter, facebook, medium, linkedin, github, youtube]
 
 class SocialLinks extends React.Component {
   constructor(props) {

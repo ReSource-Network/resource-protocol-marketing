@@ -51,8 +51,9 @@ class Hero extends React.Component {
               text={"How it works"}
               type={"cta"}
               color={"default"}
-              iconName={"arrowDown"}
-              href={"#howItWorks"}
+              iconName={"youtube"}
+              href={"https://www.youtube.com/embed/zPGoLcptHYo"}
+              target={"_blank"}
             />
 
             <Button

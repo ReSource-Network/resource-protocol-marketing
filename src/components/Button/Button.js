@@ -2,11 +2,13 @@ import React from "react"
 import "./Button.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExternalLinkAlt, faArrowDown } from "@fortawesome/free-solid-svg-icons"
+import { faYoutube } from "@fortawesome/free-brands-svg-icons"
 
 // icons
 const icons = {
   externalLink: <FontAwesomeIcon icon={faExternalLinkAlt} />,
   arrowDown: <FontAwesomeIcon icon={faArrowDown} />,
+  youtube: <FontAwesomeIcon icon={faYoutube} />
 }
 
 class Button extends React.Component {
