@@ -56,7 +56,7 @@ class Incentives extends React.Component {
     return (
       <section id={"incentives"}>
         <h4> {"Liquidity Mining Incentives"} </h4>
-        <p> {"Monday, November 22nd - 6am (UTC)"} </p>
+        <p> {"Thursday, November 25th"} </p>
         <div id={"incentives-table"}>
           <div id={"incentives-table-header"}>
             <p>Venue</p>
