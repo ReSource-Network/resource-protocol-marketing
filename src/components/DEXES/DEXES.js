@@ -11,6 +11,7 @@ const uniswap = {
   price: "Free Floating",
   allocation: "TBD",
 }
+
 const pancakeswap = {
   href: "https://pancakeswap.finance/",
   pngSrcName: "pancakeswap_hgsfc5.png",
@@ -18,25 +19,40 @@ const pancakeswap = {
   altText: "pancake swap logo",
   price: "Free Floating",
   allocation: "TBD",
+  pair: "SOURCE-BUSD",
 }
-const gateio = {
-  href: "https://www.gate.io/",
+
+const gateUSDT = {
+  href: "https://www.gate.io/trade/SOURCE_USDT",
   pngSrcName: "gateio_x4vsvy_azw11u.png",
   webpSrcName: "gateio_x4vsvy_g3xpb1.webp",
   altText: "gate.io logo",
   price: "Free Floating",
   allocation: "TBD",
+  pair: "SOURCE-USDT",
 }
+
+const gateioETH = {
+  href: "https://www.gate.io/trade/SOURCE_ETH",
+  pngSrcName: "gateio_x4vsvy_azw11u.png",
+  webpSrcName: "gateio_x4vsvy_g3xpb1.webp",
+  altText: "gate.io logo",
+  price: "Free Floating",
+  allocation: "TBD",
+  pair: "SOURCE-ETH",
+}
+
 const ubeswap = {
-  href: "https://ubeswap.org/",
+  href: "https://app.ubeswap.org/#/swap?inputCurrency=0x74c0C58B99b68cF16A717279AC2d056A34ba2bFe",
   pngSrcName: "ubeswap_cqcrvk.png",
   webpSrcName: "ubeswap_tdvjp1.webp",
   altText: "ubeswap logo",
   price: "Free Floating",
   allocation: "TBD",
+  pair: "SOURCE-mCUSD",
 }
 
-const dexes = [pancakeswap, gateio, ubeswap]
+const dexes = [gateUSDT, pancakeswap, ubeswap, gateioETH]
 
 class DEXES extends React.Component {
   constructor(props) {
@@ -62,7 +78,7 @@ class DEXES extends React.Component {
             <img src={getCloudinaryImagePath(dex.pngSrcName)} alt={dex.altText} />
           </picture>
         </a>
-        {/*<p>{dex.price}</p>*/}
+
         {/*<p>{dex.allocation}</p>*/}
       </div>
     ))
@@ -73,9 +89,7 @@ class DEXES extends React.Component {
       <section id={"dex"}>
         <h4> {"Exchanges"} </h4>
         <p> {"Monday, November 22nd - 6am (UTC)"} </p>
-        <div id={"dex-table"}>
-          {this.renderDEXESTableRows()}
-        </div>
+        <div id={"dex-table"}>{this.renderDEXESTableRows()}</div>
       </section>
     )
   }
