@@ -17,7 +17,7 @@ class Banner extends React.Component {
               <h4> {"SOURCE"} </h4>
               <p> {"- The Fuel of the ReSource Economy"} </p>
             </div>
-            <Link to={"/TGE"}>Learn More about the TGE</Link>
+            <Link to={"/TGE"}>Learn about the TGE</Link>
           </div>
         </section>
 
