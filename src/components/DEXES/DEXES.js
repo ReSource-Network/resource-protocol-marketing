@@ -26,7 +26,7 @@ const gateUSDT = {
   href: "https://www.gate.io/trade/SOURCE_USDT",
   pngSrcName: "gateio_x4vsvy_azw11u.png",
   webpSrcName: "gateio_x4vsvy_g3xpb1.webp",
-  altText: "gate.io logo",
+  altText: "gate.io logo two",
   price: "Free Floating",
   allocation: "TBD",
   pair: "SOURCE-USDT",
@@ -52,44 +52,40 @@ const ubeswap = {
   pair: "SOURCE-mCUSD",
 }
 
-const dexes = [gateUSDT, pancakeswap, ubeswap, gateioETH]
+const exchanges = [gateUSDT, pancakeswap, ubeswap, gateioETH]
 
 class DEXES extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
 
-    this.renderDEXESTableRows = this.renderDEXESTableRows.bind(this)
+    this.renderExchanges = this.renderExchanges.bind(this)
   }
 
-  renderDEXESTableRows() {
-    return dexes.map((dex) => (
-      <div className={"dex-table-row"}>
-        <a
-          key={dex.altText}
-          className={"dex-logo"}
-          href={dex.href}
-          target={"_blank"}
-          rel={"noreferrer"}
-        >
-          <picture>
-            <source srcSet={getCloudinaryImagePath(dex.webpSrcName)} type={"image/webp"} />
-            <source srcSet={getCloudinaryImagePath(dex.pngSrcName)} type={"image/png"} />
-            <img src={getCloudinaryImagePath(dex.pngSrcName)} alt={dex.altText} />
-          </picture>
-        </a>
-
-        {/*<p>{dex.allocation}</p>*/}
-      </div>
+  renderExchanges() {
+    return exchanges.map((exchange) => (
+      <a
+        key={exchange.altText}
+        className={"exchange-logo"}
+        href={exchange.href}
+        target={"_blank"}
+        rel={"noreferrer"}
+      >
+        <picture>
+          <source srcSet={getCloudinaryImagePath(exchange.webpSrcName)} type={"image/webp"} />
+          <source srcSet={getCloudinaryImagePath(exchange.pngSrcName)} type={"image/png"} />
+          <img src={getCloudinaryImagePath(exchange.pngSrcName)} alt={exchange.altText} />
+        </picture>
+      </a>
     ))
   }
 
   render() {
     return (
-      <section id={"dex"}>
+      <section id={"exchanges"}>
         <h4> {"Exchanges"} </h4>
         <p> {"Monday, November 22nd - 6am (UTC)"} </p>
-        <div id={"dex-table"}>{this.renderDEXESTableRows()}</div>
+        <div id={"exchange-logos"}>{this.renderExchanges()}</div>
       </section>
     )
   }

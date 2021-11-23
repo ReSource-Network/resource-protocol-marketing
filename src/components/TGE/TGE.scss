@@ -1,114 +1,39 @@
-// SECTION
 
-@mixin tge-section-position {
+section#tge {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-}
-
-@mixin tge-section-size {
   width: calc(100vw - (64px * 2));
   height: auto;
   padding: 32px 64px 64px 64px;
-  @media screen and (max-width: 550px) {
-    width: calc(100vw - (16px * 2));
-    padding: 16px;
+
+  @media screen and (max-width: 750px) {
+    width: 100vw;
+    padding: 32px 0;
   }
-}
 
-// SECTION TITLE
-
-@mixin tge-section-title-position {
-  margin-bottom: 0;
-}
-
-@mixin tge-section-title-size {
-  font-size: 1.6em;
-}
-
-@mixin tge-section-title-style {
-  color: white;
-  font-weight: 600;
-  text-align: center;
-}
-
-// audit ITEMS CONTAINER
-
-@mixin tge-items-container-position {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin tge-items-container-size {
-  width: calc(80% + (8px * 4));
-  @media screen and (max-width: 550px) {
-    width: calc(80% + (16px * 2));
-    padding: 16px;
-  }
-}
-
-// audit ITEM
-
-@mixin tge-item-position {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: 8px;
-}
-
-@mixin tge-item-size {
-  width: auto;
-  height: auto;
-  padding: 32px;
-  @media screen and (max-width: 550px) {
-    align-self: stretch;
-  }
-}
-
-@mixin tge-item-style {
-  border: 1px solid rgba(256, 256, 256, 0.2);
-  border-radius: 16px;
-  &:hover {
-    border: 1px solid rgba(256, 256, 256, 0.4);
-  }
-}
-
-// audit IMG
-
-@mixin tge-img-position {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@mixin tge-img-size {
-  width: auto;
-  height: 48px;
-}
-
-section#tge {
-  @include tge-section-position;
-  @include tge-section-size;
   h4 {
-    @include tge-section-title-position;
-    @include tge-section-title-size;
-    @include tge-section-title-style;
+    margin-bottom: 0;
+    font-size: 1.6em;
+    color: white;
+    font-weight: 600;
+    text-align: center;
   }
+
   p {
     color: white;
     margin-bottom: 32px;
+
     &:first-child {
       width: 148px;
     }
-    @media screen and (max-width: 720px) {
+
+    @media screen and (max-width: 750px) {
       font-size: 12px;
     }
   }
+
   div#tge-table {
     display: flex;
     flex-flow: column nowrap;
@@ -116,9 +41,17 @@ section#tge {
     border-radius: 32px;
     padding: 32px 32px 16px 32px;
 
+    @media screen and (max-width: 750px) {
+      border-radius: unset;
+      width: calc(100vw - 32px);
+      padding: 16px 32px 8px 16px;
+    }
+
+
     div#tge-table-header {
       display: flex;
       flex-flow: row nowrap;
+      justify-content: space-between;
       margin-bottom: 16px;
 
       p {
@@ -126,20 +59,25 @@ section#tge {
         width: 100px;
         padding-right: 16px;
         margin-bottom: 0;
-        @media screen and (max-width: 720px) {
+
+        @media screen and (max-width: 500px) {
           width: 80px;
         }
+
         &:first-child {
           text-align: left;
           width: 148px;
-          @media screen and (max-width: 720px) {
-            width: 48px;
+
+          @media screen and (max-width: 750px) {
+            width: 74px;
           }
         }
+
         &:last-child {
           width: 160px;
           padding-right: 0;
-          @media screen and (max-width: 720px) {
+
+          @media screen and (max-width: 500px) {
             width: 80px;
           }
         }
@@ -149,7 +87,7 @@ section#tge {
     div.tge-table-row {
       display: flex;
       flex-flow: row nowrap;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       margin-bottom: 16px;
 
@@ -162,20 +100,28 @@ section#tge {
         height: 72px;
         border: 1px solid rgba(256, 256, 256, 0.2);
         border-radius: 16px;
-        @media screen and (max-width: 720px) {
-          height: 40px;
-          width: 56px;
+
+        @media screen and (max-width: 750px) {
+          height: 48px;
+          width: 72px;
           border-radius: 8px;
         }
+
         &:hover {
           border: 1px solid rgba(256, 256, 256, 0.4);
         }
-        picture,
-        img {
+
+        picture, img {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+
           max-height: 40px;
           max-width: 124px;
-          @media screen and (max-width: 720px) {
-            max-width: 40px;
+
+          @media screen and (max-width: 750px) {
+            max-width: 48px;
             max-height: 32px;
           }
         }
@@ -186,13 +132,16 @@ section#tge {
         text-align: right;
         padding-right: 16px;
         margin-bottom: 0;
-        @media screen and (max-width: 720px) {
+
+        @media screen and (max-width: 500px) {
           width: 80px;
         }
+
         &:last-child {
           width: 160px;
           padding-right: unset;
-          @media screen and (max-width: 720px) {
+
+          @media screen and (max-width: 500px) {
             width: 80px;
           }
         }

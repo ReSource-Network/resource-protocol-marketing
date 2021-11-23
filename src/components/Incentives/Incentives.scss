@@ -1,120 +1,45 @@
-// SECTION
 
-@mixin incentives-section-position {
+section#incentives {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-}
-
-@mixin incentives-section-size {
   width: calc(100vw - (64px * 2));
   height: auto;
   padding: 32px 64px 64px 64px;
+
   @media screen and (max-width: 550px) {
-    width: calc(100vw - (16px * 2));
-    padding: 16px;
+    width: 100vw;
+    padding: 32px 0;
   }
-}
 
-// SECTION TITLE
-
-@mixin incentives-section-title-position {
-  margin-bottom: 0;
-}
-
-@mixin incentives-section-title-size {
-  font-size: 1.6em;
-}
-
-@mixin incentives-section-title-style {
-  color: white;
-  font-weight: 600;
-  text-align: center;
-}
-
-// audit ITEMS CONTAINER
-
-@mixin incentives-items-container-position {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-@mixin incentives-items-container-size {
-  width: calc(80% + (8px * 4));
-  @media screen and (max-width: 550px) {
-    width: calc(80% + (16px * 2));
-    padding: 16px;
-  }
-}
-
-// audit ITEM
-
-@mixin incentives-item-position {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: center;
-  margin: 8px;
-}
-
-@mixin incentives-item-size {
-  width: auto;
-  height: auto;
-  padding: 32px;
-  @media screen and (max-width: 550px) {
-    align-self: stretch;
-  }
-}
-
-@mixin incentives-item-style {
-  border: 1px solid rgba(256, 256, 256, 0.2);
-  border-radius: 16px;
-  &:hover {
-    border: 1px solid rgba(256, 256, 256, 0.4);
-  }
-}
-
-// audit IMG
-
-@mixin incentives-img-position {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-@mixin incentives-img-size {
-  width: auto;
-  height: 48px;
-}
-
-section#incentives {
-  @include incentives-section-position;
-  @include incentives-section-size;
   h4 {
-    @include incentives-section-title-position;
-    @include incentives-section-title-size;
-    @include incentives-section-title-style;
+    margin-bottom: 0;
+    font-size: 1.6em;
+    color: white;
+    font-weight: 600;
+    text-align: center;
   }
+
   p {
     color: white;
     margin-bottom: 32px;
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 750px) {
       font-size: 12px;
     }
   }
+
   div#incentives-table {
     display: flex;
     flex-flow: column nowrap;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 32px;
     padding: 32px 32px 16px 32px;
-    @media screen and (max-width: 720px) {
-      padding: 16px 16px 8px 16px;
-      border-radius: 16px;
+
+    @media screen and (max-width: 750px) {
+      width: calc(100vw - 48px);
+      padding: 16px 32px 8px 16px;
+      border-radius: unset;
     }
 
     div#incentives-table-header {
@@ -127,20 +52,26 @@ section#incentives {
         text-align: right;
         padding-right: 16px;
         width: 180px;
+
         @media screen and (max-width: 720px) {
           width: 80px;
         }
+
         margin-bottom: 0;
+
         &:first-child {
           text-align: left;
           width: 148px;
+
           @media screen and (max-width: 720px) {
             width: 32px;
           }
         }
+
         &:last-child {
           padding-right: 0;
           width: 248px;
+
           @media screen and (max-width: 720px) {
             width: 80px;
           }
@@ -164,20 +95,28 @@ section#incentives {
         height: 72px;
         border: 1px solid rgba(256, 256, 256, 0.2);
         border-radius: 16px;
-        @media screen and (max-width: 720px) {
-          height: 40px;
-          width: 56px;
+
+        @media screen and (max-width: 750px) {
+          height: 48px;
+          width: 72px;
           border-radius: 8px;
         }
+
         &:hover {
           border: 1px solid rgba(256, 256, 256, 0.4);
         }
-        picture,
-        img {
+
+        picture, img {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+          align-items: center;
+
           max-height: 40px;
           max-width: 124px;
-          @media screen and (max-width: 720px) {
-            max-width: 40px;
+
+          @media screen and (max-width: 750px) {
+            max-width: 48px;
             max-height: 32px;
           }
         }
@@ -188,7 +127,8 @@ section#incentives {
         padding-right: 16px;
         margin: 8px 8px 0 0;
         width: 180px;
-        @media screen and (max-width: 720px) {
+
+        @media screen and (max-width: 500px) {
           width: 80px;
           padding-right: 4px;
         }
@@ -202,13 +142,13 @@ section#incentives {
         p {
           width: 200px;
           padding-right: 0;
+
           @media screen and (max-width: 720px) {
             width: 80px;
           }
         }
 
-        picture,
-        img {
+        picture, img {
           width: 24px;
           height: 24px;
           border-radius: 40px;
