@@ -14,7 +14,7 @@ const ubeswap = {
 const celoToken = {
   pngSrcName: "asset_CELO_h8hu7a.png",
   webpSrcName: "asset_CELO_ljji6c.webp",
-  rewardAmount: "7,700 CELO / month",
+  rewardAmount: "8,180 CELO / month",
   altText: "celo token",
 }
 const sourceToken = {
