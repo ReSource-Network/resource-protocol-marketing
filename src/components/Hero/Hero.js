@@ -61,7 +61,7 @@ class Hero extends React.Component {
               type={"cta"}
               color={"primary"}
               iconName={"externalLink"}
-              href={"https://resource-protocol.gitbook.io/resource-litepaper/"}
+              href={"https://resource-network.gitbook.io/resource-litepaper/"}
               target={"_blank"}
             />
           </div>
