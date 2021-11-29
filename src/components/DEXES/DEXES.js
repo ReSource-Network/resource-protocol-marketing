@@ -3,14 +3,14 @@ import "./DEXES.css"
 import { getCloudinaryImagePath } from "../App/App"
 
 // data
-const uniswap = {
-  href: "https://uniswap.org/",
-  pngSrcName: "uniswap_hsyxjf.png",
-  webpSrcName: "uniswap_zvlhod.webp",
-  altText: "uniswap logo",
-  price: "Free Floating",
-  allocation: "TBD",
-}
+// const uniswap = {
+//   href: "https://uniswap.org/",
+//   pngSrcName: "uniswap_hsyxjf.png",
+//   webpSrcName: "uniswap_zvlhod.webp",
+//   altText: "uniswap logo",
+//   price: "Free Floating",
+//   allocation: "TBD",
+// }
 
 const pancakeswap = {
   href: "https://pancakeswap.finance/",

@@ -67,7 +67,7 @@ class Careers extends React.Component {
                 <p>
                     {career.role}
                 </p>
-                <a href={career.pdfLink} target={'_blank'}>
+                <a href={career.pdfLink} target={'_blank'} rel={"noreferrer"}>
                     View details
                 </a>
             </div>

@@ -26,11 +26,12 @@ class Footer extends React.Component {
             <span>&copy;</span> ReSource Network
           </p>
           <a
-            target="_blank"
+            target={"_blank"}
+            rel={"noreferrer"}
             style={{ color: "white", textDecoration: "underline" }}
-            href="https://resourcenetwork.co/"
+            href={"https://resourcenetwork.co/"}
           >
-            <p>resourcenetwork.co</p>
+            <p>{"resourcenetwork.co"}</p>
           </a>
         </div>
       </footer>
