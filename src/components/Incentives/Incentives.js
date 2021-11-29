@@ -30,7 +30,7 @@ const ubeToken = {
   altText: "ubeswap token",
 }
 
-let incentiveRewards = [ubeToken, celoToken]
+let incentiveRewards = [ubeToken, celoToken, sourceToken]
 
 class Incentives extends React.Component {
   constructor(props) {
