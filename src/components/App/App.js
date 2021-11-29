@@ -4,6 +4,7 @@ import "./App.css"
 
 import Home from "../Home/Home"
 import TGEPage from "../TGEPage/TGEPage"
+import Careers from "../Careers/Careers";
 
 export const getCloudinaryVideoPath = (fileName) =>
   "https://res.cloudinary.com/resource-network/video/upload/v1632944401/resource-protocol/" +
@@ -21,6 +22,7 @@ function App() {
         <Switch>
           <Route exact path={"/"} component={Home} />
           <Route path={"/TGE"} component={TGEPage} />
+          {/*<Route path={"/careers"} component={Careers} />*/}
         </Switch>
       </Router>
     </div>
