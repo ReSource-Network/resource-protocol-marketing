@@ -4,7 +4,7 @@ import "./Careers.css";
 
 // let protocolGrowthDirector = {
 //     title: "Protocol Growth Director",
-//     role: "",
+//     role: "This position will develop and manage relationships with external parties, from attending conferences to engaging on social media channels, to build a community and diverse ecosystem of innovative companies that will be foundational for the growth of the Protocol and the Company. This position will work closely with Operations, Engineering and Marketing teams. The main goal of the role is maximizing engagement with our staking and delegating product, and a secondary goal is to manage relations with exchanges, influencers, and other protocols.",
 //     responsibilities: {
 //         "Digital Growth": [
 //             "Work with our whitepaper author to publish and disseminate announcements and thought leadership across Medium, LinkedIn, Twitter, Discord, Telegram and other Social Media channels.",
@@ -44,7 +44,7 @@ import "./Careers.css";
 let protocolGrowthDirector = {
     title: "Protocol Growth Director",
     role: "This position will develop and manage relationships with external parties, from attending conferences to engaging on social media channels, to build a community and diverse ecosystem of innovative companies that will be foundational for the growth of the Protocol and the Company. This position will work closely with Operations, Engineering and Marketing teams. The main goal of the role is maximizing engagement with our staking and delegating product, and a secondary goal is to manage relations with exchanges, influencers, and other protocols.",
-    pdfLink: "https://docs.google.com/document/d/1qyY7jqDD04deZRi9vGt2x3ZDIb-J4s_KE8-dYiR4wCc/edit"
+    pdfLink: "https://docs.google.com/document/d/1CnREZmuL7GZsdHOYe0eqfpvXTRJGk7BsRhTq1a3H2H8/edit?usp=sharing"
 }
 
 let careers = [protocolGrowthDirector]
@@ -70,6 +70,9 @@ class Careers extends React.Component {
                 <a href={career.pdfLink} target={'_blank'} rel={"noreferrer"}>
                     View details
                 </a>
+                {/*<div className={"career-details" + "hide"}>*/}
+                {/*    */}
+                {/*</div>*/}
             </div>
         ))
     }

@@ -17,12 +17,11 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/*<Nav />*/}
         <div id={"parallax-overlay"} />
         <Switch>
           <Route exact path={"/"} component={Home} />
           <Route path={"/TGE"} component={TGEPage} />
-          {/*<Route path={"/careers"} component={Careers} />*/}
+          <Route path={"/careers"} component={Careers} />
         </Switch>
       </Router>
     </div>
