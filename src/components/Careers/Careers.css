@@ -7,7 +7,7 @@ div#careers-page {
 
 section#careers {
   width: calc(80vw);
-  max-width: 1000px;
+  max-width: 800px;
   height: auto;
   display: flex;
   flex-flow: column nowrap;
@@ -17,21 +17,74 @@ section#careers {
 section#careers h1 {
   font-size: 2.6em;
   font-weight: lighter;
-  margin: 100px 0px 50px 0;
+  margin: 100px 0 8px 0;
+}
+section#careers p#careers-about-resource {
+  font-size: 1.1em;
+  font-weight: lighter;
+  margin: 0 0 16px 0;
+}
+section#careers div#career-page-links {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0 0 50px 0;
+}
+section#careers div#career-page-links a {
+  margin-right: 16px;
+  color: white;
+  text-decoration: underline;
+}
+section#careers div#career-page-links a:last-child {
+  margin-right: 0;
 }
 section#careers div.career h4 {
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-bottom: 8px;
 }
 section#careers div.career p {
-  font-size: 1em;
+  font-size: 1.15em;
   line-height: 1.4em;
   margin-bottom: 16px;
 }
-section#careers div.career a {
+section#careers div.career button, section#careers div.career a {
+  padding: 6px 12px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
   color: white;
-  text-decoration: underline;
+  cursor: pointer;
+  font-weight: lighter;
+  text-transform: lowercase;
+  margin-left: -4px;
+}
+section#careers div.career button:hover, section#careers div.career a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+section#careers div.career button.apply-button, section#careers div.career a.apply-button {
+  background-color: white;
+  color: #957fef;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+section#careers div.career button.apply-button:hover, section#careers div.career a.apply-button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+section#careers div.career div.career-details h6 {
+  margin: 32px 0 0 0;
+}
+section#careers div.career div.career-details ul {
+  margin-block-start: 1em;
+  margin-inline-start: 1em;
+}
+section#careers div.career div.career-details p {
+  margin-top: 16px;
+}
+section#careers div.career div.career-details.hide {
+  display: none;
 }
 
 /*# sourceMappingURL=Careers.css.map */
