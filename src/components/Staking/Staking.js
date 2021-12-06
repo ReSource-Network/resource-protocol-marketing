@@ -18,39 +18,36 @@ const ubeswap = {
 
 const dexes = [uniswap, ubeswap]
 
-class Staking extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
 
-  renderTGEImages() {
+export const Staking = () => {
+
+  const renderTGEImages = () => {
     return dexes.map((dex) => (
-      <a
-        key={dex.altText}
-        className={"dexItem"}
-        href={dex.href}
-        target={"_blank"}
-        rel={"noreferrer"}
-      >
-        <picture>
-          <source srcSet={getCloudinaryImagePath(dex.webpSrcName)} type={"image/webp"} />
-          <source srcSet={getCloudinaryImagePath(dex.pngSrcName)} type={"image/png"} />
-          <img src={getCloudinaryImagePath(dex.pngSrcName)} alt={dex.altText} />
-        </picture>
-      </a>
+        <a
+            key={dex.altText}
+            className={"dexItem"}
+            href={dex.href}
+            target={"_blank"}
+            rel={"noreferrer"}
+        >
+          <picture>
+            <source srcSet={getCloudinaryImagePath(dex.webpSrcName)} type={"image/webp"} />
+            <source srcSet={getCloudinaryImagePath(dex.pngSrcName)} type={"image/png"} />
+            <img src={getCloudinaryImagePath(dex.pngSrcName)} alt={dex.altText} />
+          </picture>
+        </a>
     ))
   }
 
-  render() {
-    return (
+  return (
       <section id={"dexes"}>
         <h4> {"Staking & Incentives"} </h4>
         <p> {"November 19th"} </p>
-        <div id={"dexesItemsContainer"}>{this.renderTGEImages()}</div>
+        <div id={"dexesItemsContainer"}>
+          {renderTGEImages()}
+        </div>
       </section>
-    )
-  }
+  )
 }
 
 export default Staking

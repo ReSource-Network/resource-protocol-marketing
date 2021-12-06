@@ -2,15 +2,7 @@ import React from "react"
 import "./Incentives.css"
 import { getCloudinaryImagePath } from "../App/App"
 
-// data
-const ubeswap = {
-  href: "https://ubeswap.org/",
-  pngSrcName: "ubeswap_cqcrvk.png",
-  webpSrcName: "ubeswap_tdvjp1.webp",
-  altText: "ubeswap logo",
-  tokenPair: "SOURCE / mcUSD",
-}
-
+// token rewards
 const celoToken = {
   pngSrcName: "asset_CELO_h8hu7a.png",
   webpSrcName: "asset_CELO_ljji6c.webp",
@@ -30,16 +22,31 @@ const ubeToken = {
   altText: "ubeswap token",
 }
 
-let incentiveRewards = [ubeToken, celoToken, sourceToken]
+// data
+const ubeswap = {
+  href: "https://ubeswap.org/",
+  pngSrcName: "ubeswap_cqcrvk.png",
+  webpSrcName: "ubeswap_tdvjp1.webp",
+  altText: "ubeswap logo",
+  tokenPair: "SOURCE / mcUSD",
+  rewards: [ubeToken, celoToken, sourceToken]
+}
+const tokensfarm = {
+  href: "https://tokensfarm.com/source/lp/1",
+  pngSrcName: "tokensfarm_xwpdqg.png",
+  webpSrcName: "tokensfarm_ddwqji.webp",
+  altText: "tokensfarm logo",
+  tokenPair: "SOURCE / BUSD",
+  rewards: [sourceToken]
+}
 
-class Incentives extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
+const incentives = [ubeswap, tokensfarm]
 
-  renderIncentiveRewards() {
-    return incentiveRewards.map((reward) => (
+
+export const Incentives = () => {
+
+  const renderIncentiveRewards = rewards => {
+    return rewards.map((reward) => (
       <div className={"incentives-reward"}>
         <p>{reward.rewardAmount}</p>
 
@@ -52,40 +59,46 @@ class Incentives extends React.Component {
     ))
   }
 
-  render() {
-    return (
-      <section id={"incentives"}>
-        <h4> {"Liquidity Mining Incentives"} </h4>
-        <p> {"Thursday, November 25th"} </p>
-        <div id={"incentives-table"}>
-          <div id={"incentives-table-header"}>
-            <p>Venue</p>
-            <p>Token Pair</p>
-            <p>Incentives</p>
-          </div>
-          <div className={"incentives-table-row"}>
-            <a
-              key={ubeswap.altText}
-              className={"incentives-logo"}
-              href={ubeswap.href}
-              target={"_blank"}
-              rel={"noreferrer"}
-            >
-              <picture>
-                <source srcSet={getCloudinaryImagePath(ubeswap.webpSrcName)} type={"image/webp"} />
-                <source srcSet={getCloudinaryImagePath(ubeswap.pngSrcName)} type={"image/png"} />
-                <img src={getCloudinaryImagePath(ubeswap.pngSrcName)} alt={ubeswap.altText} />
-              </picture>
-            </a>
+  const renderIncentivesRows = () => {
+    return incentives.map((incentive) => (
+      <div className={"incentives-table-row"}>
+        <a
+            key={incentive.altText}
+            className={"incentives-logo"}
+            href={incentive.href}
+            target={"_blank"}
+            rel={"noreferrer"}
+        >
+          <picture>
+            <source srcSet={getCloudinaryImagePath(incentive.webpSrcName)} type={"image/webp"} />
+            <source srcSet={getCloudinaryImagePath(incentive.pngSrcName)} type={"image/png"} />
+            <img src={getCloudinaryImagePath(incentive.pngSrcName)} alt={incentive.altText} />
+          </picture>
+        </a>
 
-            <p>{ubeswap.tokenPair}</p>
+        <p>{incentive.tokenPair}</p>
 
-            <div id={"incentives-rewards"}>{this.renderIncentiveRewards()}</div>
-          </div>
+        <div id={"incentives-rewards"}>
+          {renderIncentiveRewards(incentive.rewards)}
         </div>
-      </section>
-    )
+      </div>
+    ))
   }
+
+  return (
+    <section id={"incentives"}>
+      <h4> {"Liquidity Mining Incentives"} </h4>
+      <p> {"Thursday, November 25th"} </p>
+      <div id={"incentives-table"}>
+        <div id={"incentives-table-header"}>
+          <p>Venue</p>
+          <p>Token Pair</p>
+          <p>Incentives</p>
+        </div>
+        {renderIncentivesRows()}
+      </div>
+    </section>
+  )
 }
 
 export default Incentives
