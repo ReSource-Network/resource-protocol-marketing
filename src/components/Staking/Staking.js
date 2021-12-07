@@ -4,16 +4,16 @@ import { getCloudinaryImagePath } from "../App/App"
 
 // data
 const uniswap = {
-  href: "https://uniswap.org/",
-  pngSrcName: "uniswap_hsyxjf.png",
-  webpSrcName: "uniswap_zvlhod.webp",
-  altText: "uniswap logo",
+    href: "https://uniswap.org/",
+    pngSrcName: "uniswap_hsyxjf.png",
+    webpSrcName: "uniswap_zvlhod.webp",
+    altText: "uniswap logo",
 }
 const ubeswap = {
-  href: "https://ubeswap.org/",
-  pngSrcName: "ubeswap_cqcrvk.png",
-  webpSrcName: "ubeswap_tdvjp1.webp",
-  altText: "ubeswap logo",
+    href: "https://ubeswap.org/",
+    pngSrcName: "ubeswap_cqcrvk.png",
+    webpSrcName: "ubeswap_tdvjp1.webp",
+    altText: "ubeswap logo",
 }
 
 const dexes = [uniswap, ubeswap]
@@ -21,33 +21,33 @@ const dexes = [uniswap, ubeswap]
 
 export const Staking = () => {
 
-  const renderTGEImages = () => {
-    return dexes.map((dex) => (
-        <a
-            key={dex.altText}
-            className={"dexItem"}
-            href={dex.href}
-            target={"_blank"}
-            rel={"noreferrer"}
-        >
-          <picture>
-            <source srcSet={getCloudinaryImagePath(dex.webpSrcName)} type={"image/webp"} />
-            <source srcSet={getCloudinaryImagePath(dex.pngSrcName)} type={"image/png"} />
-            <img src={getCloudinaryImagePath(dex.pngSrcName)} alt={dex.altText} />
-          </picture>
-        </a>
-    ))
-  }
+    const renderTGEImages = () => {
+        return dexes.map((dex) => (
+            <a
+                key={dex.altText}
+                className={"dexItem"}
+                href={dex.href}
+                target={"_blank"}
+                rel={"noreferrer"}
+            >
+                <picture>
+                    <source srcSet={getCloudinaryImagePath(dex.webpSrcName)} type={"image/webp"} />
+                    <source srcSet={getCloudinaryImagePath(dex.pngSrcName)} type={"image/png"} />
+                    <img src={getCloudinaryImagePath(dex.pngSrcName)} alt={dex.altText} />
+                </picture>
+            </a>
+        ))
+    }
 
-  return (
-      <section id={"dexes"}>
-        <h4> {"Staking & Incentives"} </h4>
-        <p> {"November 19th"} </p>
-        <div id={"dexesItemsContainer"}>
-          {renderTGEImages()}
-        </div>
-      </section>
-  )
+    return (
+        <section id={"dexes"}>
+            <h4> {"Staking & Incentives"} </h4>
+            <p> {"November 19th"} </p>
+            <div id={"dexesItemsContainer"}>
+                {renderTGEImages()}
+            </div>
+        </section>
+    )
 }
 
 export default Staking

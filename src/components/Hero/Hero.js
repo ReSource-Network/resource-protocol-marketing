@@ -8,67 +8,60 @@ import Typical from "react-typical"
 const creditCardsPngSrcName = "crypto-credit-cards_iabj40.png"
 const creditCardsWebpSrcName = "crypto-credit-cards_smht6f.webp"
 
-class Hero extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  render() {
+export const Hero = () => {
     return (
-      <section id={"hero"}>
-        {/* CREDIT CARDS IMAGE */}
-        <picture className={"creditCardImg"}>
-          <source srcSet={getCloudinaryImagePath(creditCardsWebpSrcName)} type={"image/webp"} />
-          <source srcSet={getCloudinaryImagePath(creditCardsPngSrcName)} type={"image/png"} />
-          <img
-            alt={"crypto credit line card with negative balance"}
-            src={getCloudinaryImagePath(creditCardsPngSrcName)}
-            className={"creditCardImg"}
-          />
-        </picture>
+        <section id={"hero"}>
+            {/* CREDIT CARDS IMAGE */}
+            <picture className={"creditCardImg"}>
+                <source srcSet={getCloudinaryImagePath(creditCardsWebpSrcName)} type={"image/webp"} />
+                <source srcSet={getCloudinaryImagePath(creditCardsPngSrcName)} type={"image/png"} />
+                <img
+                    alt={"crypto credit line card with negative balance"}
+                    src={getCloudinaryImagePath(creditCardsPngSrcName)}
+                    className={"creditCardImg"}
+                />
+            </picture>
 
-        {/* COPY */}
-        <header>
-          <Typical
-            loop={Infinity}
-            wrapper={"h1"}
-            steps={[
-              "Credit without creditors",
-              1000,
-              "Loans without interest payments",
-              1000,
-              "Trade without cash",
-              1000,
-            ]}
-          />
+            {/* COPY */}
+            <header>
+                <Typical
+                    loop={Infinity}
+                    wrapper={"h1"}
+                    steps={[
+                        "Credit without creditors",
+                        1000,
+                        "Loans without interest payments",
+                        1000,
+                        "Trade without cash",
+                        1000,
+                    ]}
+                />
 
-          <h2>{"Turn untapped resources into liquidity "}</h2>
+                <h2>{"Turn untapped resources into liquidity "}</h2>
 
-          {/* BUTTONS */}
-          <div id={"hero-buttons-container"}>
-            <Button
-              text={"How it works"}
-              type={"cta"}
-              color={"default"}
-              iconName={"youtube"}
-              href={"https://www.youtube.com/embed/zPGoLcptHYo"}
-              target={"_blank"}
-            />
+                {/* BUTTONS */}
+                <div id={"hero-buttons-container"}>
+                    <Button
+                        text={"How it works"}
+                        type={"cta"}
+                        color={"default"}
+                        iconName={"youtube"}
+                        href={"https://www.youtube.com/embed/zPGoLcptHYo"}
+                        target={"_blank"}
+                    />
 
-            <Button
-              text={"Whitepaper"}
-              type={"cta"}
-              color={"primary"}
-              iconName={"externalLink"}
-              href={"https://resource-network.gitbook.io/resource-technical/"}
-              target={"_blank"}
-            />
-          </div>
-        </header>
-      </section>
+                    <Button
+                        text={"Whitepaper"}
+                        type={"cta"}
+                        color={"primary"}
+                        iconName={"externalLink"}
+                        href={"https://resource-network.gitbook.io/resource-technical/"}
+                        target={"_blank"}
+                    />
+                </div>
+            </header>
+        </section>
     )
-  }
 }
 
 export default Hero

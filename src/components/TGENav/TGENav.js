@@ -11,76 +11,60 @@ const logoSrcName = "resource-finance-logo_bts9hl.svg"
 
 // data
 const telegram = {
-  href: "https://t.me/theresourcenetwork",
-  buttonText: "telegram",
-  icon: faTelegram,
+    href: "https://t.me/theresourcenetwork",
+    buttonText: "telegram",
+    icon: faTelegram,
 }
 const discord = {
-  href: "https://discord.gg/UuTCRuuZMP",
-  buttonText: "discord",
-  icon: faDiscord,
+    href: "https://discord.gg/UuTCRuuZMP",
+    buttonText: "discord",
+    icon: faDiscord,
 }
 const contact = {
-  href: "mailto:contact@resourcenetwork.co",
-  buttonText: "contact",
-  icon: faEnvelope,
+    href: "mailto:contact@resourcenetwork.co",
+    buttonText: "contact",
+    icon: faEnvelope,
 }
 
 const navLinks = [discord, telegram, contact]
 
-class Nav extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      selected: null,
+export const Nav = () => {
+
+    // render
+    const renderLinks = () => {
+        return navLinks.map((navLink) => (
+            <a
+                href={navLink.href}
+                target={"_blank"}
+                rel={"noreferrer"}
+                id={navLink.buttonText}
+                key={navLink.buttonText}
+            >
+                <FontAwesomeIcon icon={navLink.icon} />
+            </a>
+        ))
     }
 
-    this.handleClickNavLink = this.handleClickNavLink.bind(this)  
-    this.renderLinks = this.renderLinks.bind(this)
-  }
+    const renderLogo = () => {
+        return (
+            <Link to={"/"}>
+                {
+                    <img
+                        src={getCloudinaryImagePath(logoSrcName)}
+                        alt={"resource finance logo"}
+                        id={"logo"}
+                    />
+                }
+            </Link>
+        )
+    }
 
-  // handle event
-  handleClickNavLink(event) {
-    this.setState({ selected: event.target.id })
-  }
-
-  // render
-  renderLinks() {
-    return navLinks.map((navLink) => (
-      <a
-        href={navLink.href}
-        target={"_blank"}
-        rel={"noreferrer"}
-        id={navLink.buttonText}
-        key={navLink.buttonText}
-      >
-        <FontAwesomeIcon icon={navLink.icon} />
-      </a>
-    ))
-  }
-
-  renderLogo() {
     return (
-      <Link to={"/"}>
-        {
-          <img
-            src={getCloudinaryImagePath(logoSrcName)}
-            alt={"resource finance logo"}
-            id={"logo"}
-          />
-        }
-      </Link>
+        <nav id={"nav"} className={"tgeNav"}>
+            {renderLogo()}
+            <div id={"nav-link-list"}>{renderLinks()}</div>
+        </nav>
     )
-  }
-
-  render() {
-    return (
-      <nav id={"nav"} className={"tgeNav"}>
-        {this.renderLogo()}
-        <div id={"nav-link-list"}>{this.renderLinks()}</div>
-      </nav>
-    )
-  }
 }
 
 export default Nav

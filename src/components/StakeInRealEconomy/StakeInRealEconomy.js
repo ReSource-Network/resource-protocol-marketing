@@ -16,108 +16,108 @@ const cityImgSrcName = "city-buildings_i3hjgz.svg"
 
 // text
 const paragraphCopy =
-  "ReSource staking rewards stem from the activity of real world businesses -" +
-  " Brick and mortar shops, SaaS providers, and utility companies." +
-  " Even if crypto enters deep winter," +
-  " Bitcoin goes sideways and the DeFi space contracts," +
-  " ReSource staking pools remain exposed to real enterprises," +
-  " with real customers and real products."
+    "ReSource staking rewards stem from the activity of real world businesses -" +
+    " Brick and mortar shops, SaaS providers, and utility companies." +
+    " Even if crypto enters deep winter," +
+    " Bitcoin goes sideways and the DeFi space contracts," +
+    " ReSource staking pools remain exposed to real enterprises," +
+    " with real customers and real products."
 
 export const StakeInRealEconomy = () => {
-  const [email, setEmail] = useState()
-  const [submitted, setSubmitted] = useState(false)
+    const [email, setEmail] = useState()
+    const [submitted, setSubmitted] = useState(false)
 
-  const handleChange = (e) => {
-    const { value } = e.target
-    const emailState = value.trim().toLowerCase()
-    setEmail(emailState)
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-
-    try {
-      await captureFormSubmissionEmail(email)
-      setSubmitted(true)
-      setEmail("")
-    } catch (e) {
-      console.log("Error capturing email: ", e)
+    const handleChange = (e) => {
+        const { value } = e.target
+        const emailState = value.trim().toLowerCase()
+        setEmail(emailState)
     }
-  }
 
-  return (
-    <section id={"stakeInRealEconomy"}>
-      <h4>{"Stake into the real economy"}</h4>
+    const handleSubmit = async (e) => {
+        e.preventDefault()
 
-      <p>{paragraphCopy}</p>
+        try {
+            await captureFormSubmissionEmail(email)
+            setSubmitted(true)
+            setEmail("")
+        } catch (e) {
+            console.log("Error capturing email: ", e)
+        }
+    }
 
-      <form onSubmit={handleSubmit}>
-        <input id={"email"} type={"email"} onChange={handleChange} placeholder={"Enter email"} />
-        <input
-          id={"submit"}
-          type={"submit"}
-          value={submitted ? "Submitted!" : "Get TGE announcements"}
-        />
-      </form>
+    return (
+        <section id={"stakeInRealEconomy"}>
+            <h4>{"Stake into the real economy"}</h4>
 
-      <img
-        src={getCloudinaryImagePath(cityImgSrcName)}
-        alt={"city buildings illustration"}
-        id={"StakeInRealEconomyCityIllustration"}
-      />
-    </section>
-  )
+            <p>{paragraphCopy}</p>
+
+            <form onSubmit={handleSubmit}>
+                <input id={"email"} type={"email"} onChange={handleChange} placeholder={"Enter email"} />
+                <input
+                    id={"submit"}
+                    type={"submit"}
+                    value={submitted ? "Submitted!" : "Get TGE announcements"}
+                />
+            </form>
+
+            <img
+                src={getCloudinaryImagePath(cityImgSrcName)}
+                alt={"city buildings illustration"}
+                id={"StakeInRealEconomyCityIllustration"}
+            />
+        </section>
+    )
 }
 
 // for email capture
 const captureFormSubmissionEmail = async (email) => {
-  const customerIOConfig = {
-    method: "POST",
-    url: "https://track.customer.io/api/v1/forms/resource_protocol_email/submit",
-    crossDomain: true,
-    mode: "CORS",
-    headers: {
-      "Content-Type": "text/plain",
-    },
-    auth: {
-      username: siteId,
-      password: apiKey,
-    },
-    data: JSON.stringify({
-      data: {
-        email: email,
-        id: nanoid(),
-      },
-    }),
-  }
+    const customerIOConfig = {
+        method: "POST",
+        url: "https://track.customer.io/api/v1/forms/resource_protocol_email/submit",
+        crossDomain: true,
+        mode: "CORS",
+        headers: {
+            "Content-Type": "text/plain",
+        },
+        auth: {
+            username: siteId,
+            password: apiKey,
+        },
+        data: JSON.stringify({
+            data: {
+                email: email,
+                id: nanoid(),
+            },
+        }),
+    }
 
-  const segmentConfig = {
-    method: "POST",
-    url: "https://api.segment.io/v1/track",
-    crossDomain: true,
-    mode: "CORS",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    auth: {
-      username: writeToken,
-      password: "",
-    },
-    data: JSON.stringify({
-      userId: nanoid(),
-      event: "EmailCapture-ResourceProtocolMarketing",
-      properties: {
-        email: email,
-        tags: "ReSource Protocol Marketing Capture",
-      },
-    }),
-  }
+    const segmentConfig = {
+        method: "POST",
+        url: "https://api.segment.io/v1/track",
+        crossDomain: true,
+        mode: "CORS",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        auth: {
+            username: writeToken,
+            password: "",
+        },
+        data: JSON.stringify({
+            userId: nanoid(),
+            event: "EmailCapture-ResourceProtocolMarketing",
+            properties: {
+                email: email,
+                tags: "ReSource Protocol Marketing Capture",
+            },
+        }),
+    }
 
-  try {
-    return await Promise.all([axios(segmentConfig), axios(customerIOConfig)])
-  } catch (e) {
-    console.log("Error submitting to segment & customerio: ", e)
-  }
+    try {
+        return await Promise.all([axios(segmentConfig), axios(customerIOConfig)])
+    } catch (e) {
+        console.log("Error submitting to segment & customerio: ", e)
+    }
 }
 
 export default StakeInRealEconomy

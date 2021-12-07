@@ -17,45 +17,41 @@ import Banner from "../Banner/Banner"
 import Nav from "../Nav/Nav"
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      width: 0,
-      height: 0,
+    constructor(props) {
+        super(props)
+        this.state = {
+            width: 0,
+            height: 0,
+        }
     }
-  }
 
-  renderMain() {
-    return (
-      <div>
-        <Banner />
-        <Nav />
-        <main
-          id={"main"}
-          className={"parallax"}
-          style={{ height: `${this.height + "px"}`, color: "black" }}
-        >
-          <Hero />
-          <Background />
-          <ProtocolRoles />
-          <HowItWorks />
-          <StakeInRealEconomy />
-          <ReInventingMoney />
-          <SocialLinks />
-          <Team />
-          <Partners />
-          <Stakeholders />
-          <Audits />
-          <FutureIsMutual />
-          <Footer />
-        </main>
-      </div>
-    )
-  }
-
-  render() {
-    return this.renderMain()
-  }
+    render() {
+        return (
+            <div>
+                <Banner />
+                <Nav />
+                <main
+                    id={"main"}
+                    className={"parallax"}
+                    style={{ height: `${this.height + "px"}`, color: "black" }}
+                >
+                    <Hero />
+                    <Background />
+                    <ProtocolRoles />
+                    <HowItWorks />
+                    <StakeInRealEconomy />
+                    <ReInventingMoney />
+                    <SocialLinks />
+                    <Team />
+                    <Partners />
+                    <Stakeholders />
+                    <Audits />
+                    <FutureIsMutual />
+                    <Footer />
+                </main>
+            </div>
+        )
+    }
 }
 
 export default Home
