@@ -41,14 +41,13 @@ export const Banner = () => {
                 </div>
 
                 <div className={'contract-item'}>
-                    {/* <a
-                    href="https://etherscan.io/token/0x8d2b3350edf2e8a0bf9deee1dd215bcebc772048"
-                    target={"_blank"}
-                    rel="noreferrer"
-                    > */}
-                    <a href="" >
+                    <a
+                        href="https://etherscan.io/token/0x7118057ff0f4fd0994fb9d2d94de8231d5cca79e"
+                        target={"_blank"}
+                        rel="noreferrer"
+                    >
                         <span>ETH</span>
-                        (coming soon)
+                        (0x7118...a79e)
                     </a>
                 </div>
             </section>
