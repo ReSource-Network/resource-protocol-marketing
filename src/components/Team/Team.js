@@ -101,14 +101,6 @@ const nate = {
     webpSrcName: "team/_NATE_jpruah.webp",
     altText: "nate furbeyre headshot",
 }
-const nir = {
-    href: "https://www.linkedin.com/in/nirasaf/",
-    name: "Nir Asaf",
-    title: "Full Stack Developer",
-    pngSrcName: "team/_NIR_znbwaa.png",
-    webpSrcName: "team/_NIR_eyzpqv.webp",
-    altText: "nir asaf headshot",
-}
 const rachel = {
     href: "https://www.linkedin.com/in/rachel-hinds-5a9a21161/",
     name: "Rachel Hinds",
@@ -147,7 +139,6 @@ const team = [
     joe,
     julian,
     nate,
-    nir,
     rachel,
     nathan,
     alison,
