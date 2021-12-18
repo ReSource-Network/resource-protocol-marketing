@@ -10,7 +10,7 @@ export const getCloudinaryVideoPath = (fileName) =>
   "https://res.cloudinary.com/resource-network/video/upload/v1632944401/resource-protocol/" +
   fileName
 export const getCloudinaryImagePath = (fileName) =>
-  "https://res.cloudinary.com/resource-network/image/upload/v1632945917/resource-protocol/" +
+  "https://res.cloudinary.com/resource-network/image/upload/v1639786610/resource-protocol/" +
   fileName
 
 function App() {

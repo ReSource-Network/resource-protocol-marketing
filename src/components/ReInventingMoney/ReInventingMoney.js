@@ -9,6 +9,7 @@ const uncollatoralizedImgSrcName = "uncollateralized_t9z6ds.svg"
 const intelligentlyInclusiveImgSrcName = "intelligentlyInclusive_iep5oo.svg"
 // section padding img
 const containerPaddingImgSrcName = "container-padding_ihcaa9.svg"
+const containerPaddingImgSrcNameB = "container-padding-b_zyn2yc.svg"
 
 // data
 const fundingGrowthText = {
@@ -97,7 +98,7 @@ export const ReInventingMoney = () => {
             </div>
             <img
                 className={"containerPadding"}
-                src={getCloudinaryImagePath(containerPaddingImgSrcName)}
+                src={getCloudinaryImagePath(containerPaddingImgSrcNameB)}
                 alt={"fancy container padding"}
             />
         </section>

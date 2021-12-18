@@ -5,6 +5,7 @@ import { getCloudinaryImagePath } from "../App/App"
 // images
 const howItWorksIllustratedIconSrcName = "uncollateralized_t9z6ds.svg"
 const containerPaddingImgSrcName = "container-padding_ihcaa9.svg"
+const containerPaddingImgSrcNameB = "container-padding-b_zyn2yc.svg"
 
 // data
 const howItWorksText = {
@@ -59,7 +60,7 @@ export const ProtocolRoles = () => {
             {renderHowItWorksContent()}
             <img
                 className={"containerPadding"}
-                src={getCloudinaryImagePath(containerPaddingImgSrcName)}
+                src={getCloudinaryImagePath(containerPaddingImgSrcNameB)}
                 alt={"wavy container padding"}
             />
         </section>

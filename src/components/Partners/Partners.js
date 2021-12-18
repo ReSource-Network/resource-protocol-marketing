@@ -7,32 +7,32 @@ import { getCloudinaryImagePath } from "../App/App"
 // data
 const celo = {
     href: "https://celo.org/",
-    pngSrcName: "celo-logo_ibvhry.png",
-    webpSrcName: "celo-logo_jhith4.webp",
+    pngSrcName: "logos/celo-logo-white_qvxpw3.png",
+    webpSrcName: "logos/celo-logo-white_hfsqc8.webp",
     altText: "celo logo",
 }
 const teller = {
     href: "https://teller.finance/",
-    pngSrcName: "teller-logo_lscjwc.png",
-    webpSrcName: "teller-logo_qh8gba.webp",
+    pngSrcName: "logos/teller-logo-white_jp2g3w.png",
+    webpSrcName: "logos/teller-logo-white_tqbibw.webp",
     altText: "teller finance logo",
 }
 const blockchainAtBerkeley = {
     href: "https://blockchain.berkeley.edu/",
-    pngSrcName: "blockchain-at-berkeley-logo_n0s2zi.png",
-    webpSrcName: "blockchain-at-berkeley-logo_cp4cy8.webp",
+    pngSrcName: "logos/bab-logo-white_psk3ux.png",
+    webpSrcName: "logos/bab-logo-white_uttkzf.webp",
     altText: "blockchain at berkeley logo",
 }
 const irta = {
     href: "https://irta.com/",
-    pngSrcName: "irta-logo_j5fvfq.png",
-    webpSrcName: "irta-logo_o1mtsz.webp",
+    pngSrcName: "logos/irta-logo-white_a2waed.png",
+    webpSrcName: "logos/irta-logo-white_fzx9jr.webp",
     altText: "irta logo",
 }
 const doaMaker = {
     href: "https://daomaker.com/",
-    pngSrcName: "doa-maker-logo_e2itef.png",
-    webpSrcName: "doa-maker-logo_bno9wi.webp",
+    pngSrcName: "logos/doa-maker-logo-white_pftz3q.png",
+    webpSrcName: "logos/doa-maker-logo-white_dlopms.webp",
     altText: "doa maker logo",
 }
 

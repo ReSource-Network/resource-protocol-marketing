@@ -7,15 +7,15 @@ import { getCloudinaryImagePath } from "../App/App"
 // data
 const hacken = {
     href: "/ReSourceNetwork_Hacken_Audit_Report.pdf",
-    pngSrcName: "hacken_rf7deo.png",
-    webpSrcName: "hacken_apedrr.webp",
+    pngSrcName: "logos/hacken-logo-white_eqm3n9.png",
+    webpSrcName: "logos/hacken-logo-white_g6pdv9.webp",
     altText: "hacken logo",
 }
 
 const ambisafe = {
     href: "https://ambisafe.com/",
-    pngSrcName: "ambisafe_tpa5ap.png",
-    webpSrcName: "ambisafe_eesdkv.webp",
+    pngSrcName: "logos/ambisafe-logo-white_sww2ev.png",
+    webpSrcName: "logos/ambisafe-logo-white_pncuge.webp",
     altText: "ambisafe logo",
 }
 
