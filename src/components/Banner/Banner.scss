@@ -2,6 +2,7 @@ div#banners-wrap {
   position: fixed;
   flex-flow: column nowrap;
   z-index: 99;
+  bottom: 0;
 }
 
 section#contracts {
@@ -9,7 +10,7 @@ section#contracts {
   height: auto;
   flex-flow: row wrap;
   z-index: 99;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.3);
   padding: 16px 0 16px 32px;
   font-size: 12px;
   overflow-x: scroll;
@@ -64,8 +65,7 @@ section#contracts {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 100vw
-;
+  width: 100vw;
   padding: 16px 32px;
   background-color: rgba(255, 255, 255, 0.9);
   a {

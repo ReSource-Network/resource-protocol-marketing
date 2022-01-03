@@ -30,11 +30,6 @@ const navLinks = [discord, telegram, contact]
 
 export const Nav = () => {
 
-    // handle event
-    const handleClickLogo = event => {
-        event.preventDefault()
-    }
-
     // render
     const renderLinks = () => {
         return navLinks.map((navLink) => (
@@ -52,7 +47,7 @@ export const Nav = () => {
 
     const renderLogo = () => {
         return (
-            <Link to={"/"} onClick={handleClickLogo}>
+            <Link to={"/"}>
                 {
                     <img
                         src={getCloudinaryImagePath(logoSrcName)}
@@ -68,6 +63,12 @@ export const Nav = () => {
         <nav id={"nav"}>
             {renderLogo()}
             <div id={"nav-link-list"}>
+                <a href={"https://www.resourcenetwork.co"} target={'_blank'} className={'nav-text-link'}>
+                    App
+                </a>
+                <Link to={"/careers"} className={'nav-text-link'}>
+                    Careers
+                </Link>
                 {renderLinks()}
             </div>
         </nav>

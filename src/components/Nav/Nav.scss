@@ -7,7 +7,7 @@
   align-items: flex-start;
   margin: 0;
   position: absolute;
-  top: 124px;
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -38,9 +38,11 @@
 // LINKS LIST
 
 @mixin nav-links-list-position {
+  display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  @media screen and (max-width: 310px) {
+  justify-content: flex-start;
+  align-items: center;
+  @media screen and (max-width: 500px) {
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
@@ -57,9 +59,9 @@
 // LINK
 
 @mixin nav-link-position {
-  margin: 8px;
+  margin: 0 8px;
   @media screen and (max-width: 600px) {
-    margin: 4px;
+    margin: 0 4px;
   }
   @media screen and (max-width: 400px) {
     font-size: 1em;
@@ -68,8 +70,12 @@
 }
 
 @mixin nav-link-size {
-  padding: 10px 12px;
+  padding: 0 12px;
+  height: 100%;
   font-size: 1.2em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   @media screen and (max-width: 400px) {
     font-size: 1em;
     padding: 4px 8px;
@@ -101,14 +107,31 @@ nav#nav {
 img#logo {
   @include nav-logo-img-position;
   @include nav-logo-img-size;
+  cursor: pointer;
 }
 
 div#nav-link-list {
   @include nav-links-list-position;
   @include nav-links-list-size;
+  a { height: 41px; }
   svg {
     @include nav-link-position;
     @include nav-link-size;
     @include nav-link-style;
+  }
+}
+
+.nav-text-link {
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  color: white;
+  border-radius: 16px;
+  font-weight: 400;
+  padding: 0 12px;
+  margin: 0 4px;
+  transition: 0.5s;
+  &:hover {
+    background-color: rgba(256, 256, 256, 0.2);
   }
 }

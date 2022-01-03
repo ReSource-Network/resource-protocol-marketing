@@ -5,15 +5,15 @@ import { Link } from "react-router-dom"
 export const Banner = () => {
     return (
         <div id={'banners-wrap'}>
-            <section id={"banner-container"}>
-                <div id={"banner"}>
-                    <div id={"banner-text"}>
-                        <h4> {"SOURCE"} </h4>
-                        <p> {"- The Fuel of the ReSource Economy"} </p>
-                    </div>
-                    <Link to={"/TGE"}>Learn about the TGE</Link>
-                </div>
-            </section>
+            {/*<section id={"banner-container"}>*/}
+            {/*    <div id={"banner"}>*/}
+            {/*        <div id={"banner-text"}>*/}
+            {/*            <h4> {"SOURCE"} </h4>*/}
+            {/*            <p> {"- The Fuel of the ReSource Economy"} </p>*/}
+            {/*        </div>*/}
+            {/*        <Link to={"/TGE"}>Learn about the TGE</Link>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
 
             <section id={"contracts"}>
                 <p id={'contracts-title'}>Contracts:</p>

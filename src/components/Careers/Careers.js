@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import TGENav from "../TGENav/TGENav";
 import "./Careers.css";
+import Nav from "../Nav/Nav";
 
 let protocolGrowthDirector = {
     title: "Protocol Growth Director",
@@ -136,7 +137,8 @@ export const Careers = () => {
 
     return (
         <div id={'careers-page'}>
-            <TGENav />
+            {/*<TGENav />*/}
+            <Nav />
             <section id={"careers"}>
                 <h1>{"Careers"}</h1>
                 <p id={"careers-about-resource"}>
