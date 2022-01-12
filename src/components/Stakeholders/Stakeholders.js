@@ -5,6 +5,12 @@ import "./Stakeholders.css"
 import { getCloudinaryImagePath } from "../App/App"
 
 // data
+const celoStarter = {
+    href: "https://celostarter.net",
+    pngSrcName: "logos/cstarter-w_k9mm7s.png",
+    webpSrcName: "logos/cstarter-w_pc8liq.webp",
+    altText: "celo starter logo"
+}
 const futurePerfectVentures = {
     href: "https://www.futureperfectventures.com",
     pngSrcName: "logos/fpv-logo-white_iimkof.png",
@@ -63,6 +69,7 @@ const stakeholders = [
     ngcVentures,
     eutopiaVentures,
     dsrvLabs,
+    celoStarter
 ]
 
 export const Stakeholders = () => {

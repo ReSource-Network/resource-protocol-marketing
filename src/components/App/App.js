@@ -6,6 +6,7 @@ import Home from "../Home/Home"
 import TGEPage from "../TGEPage/TGEPage"
 import Careers from "../Careers/Careers";
 import Brand from "../Brand/Brand";
+import Blog from "../Blog/Blog";
 
 export const getCloudinaryVideoPath = (fileName) =>
   "https://res.cloudinary.com/resource-network/video/upload/v1632944401/resource-protocol/" +

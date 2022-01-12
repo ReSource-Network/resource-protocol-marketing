@@ -1,0 +1,85 @@
+main#blog {
+  margin-top: 100px;
+  width: 100vw;
+  height: auto;
+  overflow: hidden scroll;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+main#blog section#featured-post-preview {
+  color: white;
+  width: 80vw;
+  min-width: 350px;
+  max-width: 900px;
+  margin: 128px;
+}
+main#blog section#featured-post-preview h2 {
+  font-size: 36px;
+  line-height: 120%;
+}
+main#blog .blog-date {
+  padding: 10px 16px;
+  margin: 12px 0;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 12px;
+  display: inline-block;
+}
+main#blog .blog-summary {
+  margin: 24px 0 16px 0;
+  font-size: 18px;
+  line-height: 160%;
+}
+main#blog a.read-more-link {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.67);
+  width: unset;
+}
+main#blog a.read-more-link div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+main#blog a.read-more-link p {
+  display: inline-block;
+  margin-right: 6px;
+}
+main#blog a.read-more-link:hover {
+  color: white;
+}
+main#blog section#blog-previews {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80vw;
+  min-width: 350px;
+  margin: 0 128px 128px 128px;
+}
+main#blog section#blog-previews div.blog-preview {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 30%;
+  margin-right: 3.3%;
+  margin-bottom: 3%;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main#blog section#blog-previews div.blog-preview:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: -5px 5px rgba(0, 0, 0, 0.5);
+}
+main#blog section#blog-previews div.blog-preview .blog-date {
+  margin: 16px;
+}
+main#blog section#blog-previews div.blog-preview .blog-preview-title {
+  margin: 16px;
+  align-self: flex-start;
+}
+
+/*# sourceMappingURL=Blog.css.map */
