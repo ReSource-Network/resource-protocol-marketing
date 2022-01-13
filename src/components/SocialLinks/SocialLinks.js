@@ -26,7 +26,7 @@ const discord = {
     icon: faDiscord,
 }
 const twitter = {
-    href: "https://twitter.com/resourcemutual",
+    href: "https://twitter.com/ReSource_Fi",
     titleText: "twitter",
     descriptionText: "News and product updates",
     icon: faTwitter,
