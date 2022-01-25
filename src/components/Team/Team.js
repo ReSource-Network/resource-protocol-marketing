@@ -29,14 +29,6 @@ const duke = {
     webpSrcName: "team/_DUKE_h1jzs4.webp",
     altText: "duke jones headshot",
 }
-const ofir = {
-    href: "https://www.linkedin.com/in/ofir-avigad-64888123/",
-    name: "Ofir Avigad",
-    title: "Co-Founder & CMO",
-    pngSrcName: "team/_OFIR_s5eztl.png",
-    webpSrcName: "team/_OFIR_wn5wkf.webp",
-    altText: "ofir avigad headshot",
-}
 const sayer = {
     href: "https://www.linkedin.com/in/sayertindall/",
     name: "Sayer Tindall",
@@ -138,7 +130,6 @@ const team = [
     david,
     ashley,
     duke,
-    ofir,
     sayer,
     joaquin,
     bridger,
