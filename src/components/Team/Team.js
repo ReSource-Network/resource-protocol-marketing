@@ -125,6 +125,14 @@ const charly = {
     webpSrcName: "team/charly_gtsmix.webp",
     altText: "charly louise headshot",
 }
+const jon = {
+    href: "https://www.linkedin.com/in/jongillon/",
+    name: "Jon Gillon",
+    title: "Head of Protocol Growth",
+    pngSrcName: "team/jon_efxvm7.png",
+    webpSrcName: "team/jon_ma69sx.webp",
+    altText: "Jon Gillon headshot",
+}
 
 const team = [
     david,
@@ -141,7 +149,8 @@ const team = [
     nate,
     alison,
     nathan,
-    charly
+    charly,
+    jon
 ]
 
 export const Team = () => {
