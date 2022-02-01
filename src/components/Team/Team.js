@@ -112,7 +112,7 @@ const nathan = {
 const alison = {
     href: "https://www.linkedin.com/in/alisonleasher/",
     name: "Alison Sher",
-    title: "Relationship Manager",
+    title: "Director of Communications",
     pngSrcName: "team/alison_ned4kz.png",
     webpSrcName: "team/alison_iasuxb.webp",
     altText: "alison sher headshot",
