@@ -309,8 +309,8 @@ export const Brand = () => {
     }
     const renderColors = () => {
         return Object.keys(colors).map((color) =>
-            <div className={'brand-color'}
-                style={{
+            <div className = {'brand-color'}
+                style = {{
                     'background-color': colors[color],
                     'color': color === 'white' ? 'black' : color === 'primary variant' ? 'black' : 'white',
                 }}
@@ -323,7 +323,7 @@ export const Brand = () => {
 
     return (
         <section id={"brand"}>
-            <div style={{'max-width':'1200px'}}>
+            <div style={{'max-width': '1200px'}}>
                 { renderHeader() }
                 { renderBrandImages('Logotype') }
                 { renderBrandImages('Logo') }

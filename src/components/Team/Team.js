@@ -133,6 +133,14 @@ const jon = {
     webpSrcName: "team/jon_ma69sx.webp",
     altText: "Jon Gillon headshot",
 }
+const asad = {
+    href: "https://www.linkedin.com/in/asadzeeshan/",
+    name: "Asad Zeeshan",
+    title: "Head of Protocol Marketing",
+    pngSrcName: "team/asad_cgv7lt.png",
+    webpSrcName: "team/asad_aukflv.webp",
+    altText: "Asad Zeeshan headshot"
+}
 
 const team = [
     david,
@@ -150,7 +158,8 @@ const team = [
     alison,
     nathan,
     charly,
-    jon
+    jon,
+    asad
 ]
 
 export const Team = () => {
