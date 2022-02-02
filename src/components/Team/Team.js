@@ -141,6 +141,22 @@ const asad = {
     webpSrcName: "team/asad_aukflv.webp",
     altText: "Asad Zeeshan headshot"
 }
+const anisa = {
+    href: "https://www.linkedin.com/in/anisagillfillan/",
+    name: "Anisa Gillfillan",
+    title: "Head of Business Development - Austin, TX",
+    pngSrcName: "team/anisa_yiq5ev.png",
+    webpSrcName: "team/anisa_undinp.webp",
+    altText: "Anisa Gillfillan headshot"
+}
+const jimmy = {
+    href: "https://www.linkedin.com/in/jimmy-garcia37/",
+    name: "Jimmy Garcia",
+    title: "Full Stack Engineer",
+    pngSrcName: "team/jimmy-sm_cpy6qj.png",
+    webpSrcName: "team/jimmy-sm_ivtnb4.webp",
+    altText: "Jimmy Garcia headshot"
+}
 
 const team = [
     david,
@@ -159,7 +175,9 @@ const team = [
     nathan,
     charly,
     jon,
-    asad
+    asad,
+    anisa,
+    jimmy
 ]
 
 export const Team = () => {
